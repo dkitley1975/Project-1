@@ -1,31 +1,32 @@
-# **Naturazy**
-
+## **Yoga Centric**
 ![Mokeup image](wireframes/mockup-image.jpg)
 
 ## **The goal for this project** 
 
 Welcome to Yoga Centric! 
-This is an information site about yoga (whodathoughtit).
-Rhe goal of the site is to inform the user about the yoga life style and to encourage the user to try out some easy poses. these are to be demonstrated with either still images and some videos.
+This is an information site about yoga (whodathoughtit).The goal of the site is to inform the user about the yoga life style and to encourage the user to try out some easy poses. these are to be demonstrated with either still images and some videos.
 
 Thank you for visiting my project!
 
 ---
 <a></a>
 ## Table of contents 
-- [**Naturazy**](#naturazy)
-  - [**The goal for this project**](#the-goal-for-this-project)
-  - [Table of contents](#table-of-contents)
-  - [**UX**](#ux)
-    - [**The User Goals**](#the-user-goals)
-    - [**User Stories**](#user-stories)
-    - [**Site owners Goals**](#site-owners-goals)
-    - [**User Requirements and Expectations**](#user-requirements-and-expectations)
-      - [Requirements](#requirements)
-      - [Expectations](#expectations)
-    - [**Design Choices**](#design-choices)
-      - [Typeface](#typeface)
-      - [Colors](#colors)
+- [**Yoga Centric**](#yoga-centric)
+- [**The goal for this project**](#the-goal-for-this-project)
+- [Table of contents](#table-of-contents)
+- [**UX**](#ux)
+  - [**The User Goals**](#the-user-goals)
+  - [**User Stories**](#user-stories)
+  - [**Site owners Goals**](#site-owners-goals)
+  - [**User Requirements and Expectations**](#user-requirements-and-expectations)
+    - [Requirements](#requirements)
+    - [Expectations](#expectations)
+  - [**Design Choices**](#design-choices)
+    - [Typeface](#typeface)
+    - [Colors](#colors)
+- [**Wireframes**](#wireframes)
+  - [Mobile Wireframe](#mobile-wireframe)
+  - [Tablet Wireframe](#tablet-wireframe)
 
 
 <a name="ux"></a>
@@ -89,16 +90,44 @@ This font is visually appealing and pairs well with source sans pro.
 
 <a></a>
 #### Colors
-I based my color scheme on a pallet devised around beauty spots, using greens from landscapes and creams from beach landscapes which creates a calm, natural feeling. 
+I based my color scheme on a pallet devised around beach landscapes using the crams of the sand to help create a calm, natural feeling. 
 
 ![Color Scheme](wireframes/color-scheme.png)
 
-* rgba(86, 66, 61, 1) This color is called Field Drab - will be used as my primary text-color. It is a dark brown color (referring to natures tree trunks) and it a great contrast to the other colours. 
-* rgba(255, 230, 224, 1) This color is called Misty Rose.
-* rgba(207, 160, 149, 1) This color is a called Tuscany - a mid colour between the pale cream and my brown text colour.
-* rgba(172, 183, 160, 1) This color is called Laurel Green.
-* rgba(227, 239, 215,) This color is called Beige - It's a pale green which stands out as a background colors in contrast to the pale cream.
-* rgba(227, 239, 215, 80) This color is a tint of my called Beige -  It is to be used as a background color to my text block with the Field Drab brown text of the top.
+* rgba(254, 232, 223, 1) This color is called Champagne Pink - will be used as  a background colour. 
+* rgba(222, 183, 152, 1) This color is called tumbleweed - to be used as a contrast tot the background colour.
+* rgba(153, 95, 58, 1) This color is a called Brown Sugar - This is to be used as my header colours.
+* The main colour of my text is to be black.
+
 
 I have used to contract checker on Coolors in order to make sure that the contract is sufficient.
 This way my content will be easily readable. 
+
+
+[Back to Top](#table-of-contents)
+
+--- 
+<a></a>
+## **Wireframes**
+I have decided to use [Balsamic](https://balsamiq.com/wireframes/) to create wireframes for my website. 
+Initially I created a basic wireframe for the mobile and then for tablet with the desktop last. 
+For my website I have decided to go for a 1 page scrolling website which suits more with todays current trends, with a fixed navigation bar at the top for easy navigation. 
+I based the wireframe on the smaller iphone 5s screen and will apply media queries where required to keep the responsiveness site.
+
+You can find my wireframes below:
+
+### [Mobile Wireframe](wireframes/mobile-wireframe.png)
+### [Tablet Wireframe](wireframes/tablet-wireframe.png)
+below are reduced sized images.
+![Mobile Wireframe](wireframes/mobile-wireframe-thumb.png) 
+![Tablet Wireframe](wireframes/tablet-wireframe-thumb.png)
+
+
+[Back to Top](#table-of-contents)
+
+---
+
+
+[Back to Top](#table-of-contents)
+
+---
