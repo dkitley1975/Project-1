@@ -219,4 +219,111 @@ a{
     }
 }
 /*** END Nav ***/
+/*** START Hero styling ***/
+.hero-container{
+    width: 100vw;
+    margin: 0px 0px 0px 0px;
+}
 
+.hero-image{
+height:65vh;
+width: 100vw;
+background: url('../images/pretty-blonde-woman-stretching-beach_10887539.jpg') no-repeat center left;
+background-size: cover;
+overflow: hidden;
+/* Animates zoom effect on loading the page */
+animation-name: hero-zoom;
+animation-duration: 10s;
+animation-fill-mode: forwards;
+}
+
+/* Creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+
+.hero-quotation{
+    width: 50vw;
+    height: fit-content;
+    padding: 50px 3vw 3vw 3vw;
+    background-color: var(--clr-primary-250);
+    margin:auto;
+    transform: translate(0%, -180px);
+    margin-bottom: -100px;
+  }
+  .lotus-flower-vertical-line {
+    content:"";
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid var(--clr-primary-400);
+    transform: translate(-50%);
+  }
+  .lotus-flower{
+    width: 42px;
+    height:42px;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("../images/lotus-flower.svg") no-repeat center center;
+    /* Animates zoom effect on loading the page */
+    animation-name: lotus-flower-zoom;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Creates the level of zoom for Lotus Flower image */
+  @keyframes lotus-flower-zoom {
+      from{
+          transform: rotate(180deg);
+      }
+      to{
+          transform: rotate(0deg);
+      }
+  }
+  .hero-quotation h2 {
+    text-transform: uppercase;
+    padding: 0vw 3vw 3vw 3vw;
+    text-align: center;    
+    letter-spacing: 3px;
+    line-height: 150%;
+    color: var(--clr-primary-400);
+    font-family: var(--ff-quotation);
+    font-size: var(--fs-3);
+}
+
+/*** START Hero section media queries ***/
+  @media screen and (max-width: 320px){
+    .hero-quotation{
+        width:100vw;
+        height: fit-content;
+        padding: 27px 10vw 3vw 10vw; 
+        transform: translate(0%, -150px);
+    }
+
+    .hero-quotation h2{
+        padding:10px;
+        font-size: 97%;
+    }
+    .lotus-flower-vertical-line {
+        height: 30px;
+      }
+      .lotus-flower{
+        width: 30px;
+        height:30px;
+        top: 0px;
+      }
+}
+/*** END Hero section media queries ***/
+
+/*** End Hero styling ***/
