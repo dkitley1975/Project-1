@@ -94,9 +94,10 @@ I based my color scheme on a pallet devised around beach landscapes using the cr
 
 ![Color Scheme](wireframes/color-scheme.png)
 
-* rgba(254, 232, 223, 1) This color is called Champagne Pink - will be used as  a background colour. 
+* rgba(254, 232, 223, 1) This color is called Champagne Pink - will be used as  a background colour and will be used with a .6 transparency. 
 * rgba(222, 183, 152, 1) This color is called tumbleweed - to be used as a contrast tot the background colour.
 * rgba(153, 95, 58, 1) This color is a called Brown Sugar - This is to be used as my header colours.
+* rgba(153, 95, 58, 1) This color is a called Van Dyke Brown - This is to be used as my colour to over lay the Champagne Pink.
 * The main colour of my text is to be black.
 
 
