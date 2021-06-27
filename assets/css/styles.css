@@ -110,16 +110,17 @@ a{
     color: var(--clr-primary-400);
     background-color: var(--clr-primary-100);
     margin:0;
+    height: 50px;
     padding:0;
     list-style: none;
     overflow: hidden;
-    margin-top: -5px;
+    margin-top: 0px;
 }
 .nav-bar ul a{
     font-family: var(--ff-main);
     display: block;
     outline: 1px solid var(--clr-primary-300);
-    padding: 20px;
+    padding: 10px;
     color: var(--clr-primary-400);
     text-decoration: none;
     border-right: 1px solid var(--clr-primary-300);
@@ -204,10 +205,10 @@ a{
     }   
     .nav-bar li a {
         background-color: none;
-        height:19px;
+        height:55px;
         border: none;
         outline: none;
-        padding: 18px 30px;
+        padding: 18px 15px;
     } 
     .nav-bar .nav-bar-menu-list{
         clear:none;
