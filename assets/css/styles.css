@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Lato:wght@700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+/* setting initial page margins, padding and borders to 0 */
+*{
+    margin:0px;
+    padding:0px;
+    border:0px;   
+}
+:root {
+/*  Fonts for the site  -  select using font-family: var(--ff-main); within classes etc. change here to affect whole site */
+    --ff-main: 'Source Sans Pro', sans-serif;
+    --ff-headline: 'Lato', serif; 
+    --ff-quotation: 'Patrick Hand', cursive;
+/*  FONT WEIGHTS  -  Select using font-weight: var(--fw-m); Change here to affect whole site */
+    --fw-l: 300; /* light */
+    --fw-li: 300; /* light italic */
+    --fw-n: 400; /* Normal */
+    --fw-m: 600; /* Semi-Bold */
+    --fw-b: 700; /* Bold - Headline Only - Lato */
+/* Font Sizes  -  Select using font-size: var(--fs-1); Change here to affect whole site   1 rem is 16px */
+    --fs-1: 2rem; 
+    --fs-2: 1.7rem; 
+    --fs-3: 1.5rem; 
+    --fs-4: 1.2rem; 
+    --fs-5: .83rem;
+    --fs-6: .75rem; 
+    --fs-p: 1.25rem; /* 1 rem is p 16px equivalent */
+/* I am adding my basic colours for the site here */  
+      --clr-primary-100:rgba(254, 232, 223, 1);
+      --clr-primary-130:rgba(254, 232, 223, 0.3);
+      --clr-primary-150:rgba(254, 232, 223, 0.5);
+      --clr-primary-160:rgba(254, 232, 223, 0.6);
+      --clr-primary-170:rgba(254, 232, 223, 0.7);
+      --clr-primary-200:rgba(222, 183, 152, 1);
+      --clr-primary-250:rgba(222, 183, 152, 0.6);
+      --clr-primary-300:rgba(153, 95, 58, 1);
+      --clr-primary-350:rgba(153, 95, 58, 0.6);
+      --clr-primary-400:rgb(100, 64, 41, 1);
+      --clr-box-shadow:rgb(136, 148, 141);
+}
+/* setting the basic font weights and sizes here */
+body { 
+    font-family: var(--ff-main);
+    font-weight: Var(--fw-n);
+  }
+  h1 {
+    font-family: var(--ff-headline);
+    font-size: var(--fs-1);
+    font-weight: Var(--fw-b);
+  }
+  h2 {
+    font-family: var(--ff-headline);
+    font-size: var(--fs-2);
+    font-weight: Var(--fw-b);
+  }
+  h3 {
+    font-family: var(--ff-headline);
+    font-size: var(--fs-3);
+    font-weight: Var(--fw-b);
+  }
+  h4 {
+    font-family: var(--ff-headline);
+    font-size: var(--fs-4);
+    font-weight: Var(--fw-b);
+  }
+  h5 {
+    font-family: var(--ff-headline);
+    font-size: var(--fs-5);
+    font-weight: Var(--fw-b);
+  }
+  h6 {
+    font-family: var(--ff-headline);
+    font-size: var(--fs-6);
+    font-weight: Var(--fw-b);
+  }
+  p {
+    font-family: var(--ff-main);
+    font-size: var(--fs-p);
+  }
+  .body-light {
+    font-family: var(--ff-main);
+    font-size: var(--fs-p);
+    font-weight: Var(--fw-l);
+  }
+  .body-light-italic {
+    font-family: var(--ff-main);
+    font-size: var(--fs-p);
+    font-weight: Var(--fw-li);
+    font-style: italic;
+  }
+   *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+/*** Start Nav bar ***/
+a{
+    color: var(--clr-primary-400);
+}
+.nav-bar{
+    position:fixed;
+    width:100vw;
+    z-index:99;
+    height: 50px;
+    background-color: var(--clr-primary-100);
+    box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
+    -webkit-box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
+    -moz-box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
+}
+.nav-bar ul{
+    color: var(--clr-primary-400);
+    background-color: var(--clr-primary-100);
+    margin:0;
+    padding:0;
+    list-style: none;
+    overflow: hidden;
+    margin-top: -5px;
+}
+.nav-bar ul a{
+    font-family: var(--ff-main);
+    display: block;
+    outline: 1px solid var(--clr-primary-300);
+    padding: 20px;
+    color: var(--clr-primary-400);
+    text-decoration: none;
+    border-right: 1px solid var(--clr-primary-300);
+} 
+.nav-bar li a:hover, .nav-bar .nav-bar-menu-button:hover{
+    background-color: var(--clr-primary-250);
+} 
+.nav-bar .nav-bar-home-logo{
+    font-family: var(--ff-main);
+    font-size: var(--fs-3);
+    color: var(--clr-primary-400);
+    text-decoration: none;
+    padding: 10px 5vw;
+    float:left;
+}
+.nav-bar .nav-bar-menu-list{
+    clear:both; /*clears the float */
+    max-height:0;
+    transition: .4s ease-out;
+    min-width: 25vw;
+    float:right;
+}
+/* nav bar hamburger icon for smaller devices */
+.nav-bar .nav-bar-menu-icon{
+    padding: 25px 20px;
+    position: relative;
+    float:right;
+    cursor: pointer;
+    user-select: none;
+}
+.nav-bar .nav-bar-menu-icon .nav-bar-icon-top{
+    background-color: var(--clr-primary-400);
+    display:block;
+    height: 2px;
+    width: 18px;
+    top: -6px;
+    position: relative;
+    transition: .4s ease-out; 
+}
+.nav-bar .nav-bar-menu-icon .nav-bar-icon-middle{
+    background-color: var(--clr-primary-400);
+    display:block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: .4s ease-out; 
+}
+.nav-bar .nav-bar-menu-icon .nav-bar-icon-bottom{
+    background-color: var(--clr-primary-400);
+    display:block;
+    height: 2px;
+    width: 18px;
+    top: 6px;
+    position: relative;
+    transition: .4s ease-out; 
+}
+.nav-bar .nav-bar-menu-button{
+    display:none;
+}
+/* click to reveal the nav menu on smaller devices  */
+.nav-bar .nav-bar-menu-button:checked ~ .nav-bar-menu-list{
+    max-height: 300px;
+} 
+/* change hamburger into an close icon when hamburger selected */
+.nav-bar .nav-bar-menu-button:checked ~ .nav-bar-menu-icon .nav-bar-icon-top{
+    transform: rotate(-45deg);
+    transition: .20s ease-out;
+    top: 2px;
+}.nav-bar .nav-bar-menu-button:checked ~ .nav-bar-menu-icon .nav-bar-icon-middle{
+    display: none;
+}
+.nav-bar .nav-bar-menu-button:checked ~ .nav-bar-menu-icon .nav-bar-icon-bottom{
+    transform: rotate(45deg);
+    transition: .20s ease-out;
+    top: 0px;
+}
+/* Nav bar media query */
+@media (min-width: 760px)
+{
+    .nav-bar li{  
+        float: left;
+    }   
+    .nav-bar li a {
+        background-color: none;
+        height:19px;
+        border: none;
+        outline: none;
+        padding: 18px 30px;
+    } 
+    .nav-bar .nav-bar-menu-list{
+        clear:none;
+        float: right;
+        max-height: none;
+    }
+    .nav-bar .nav-bar-menu-icon{
+        display: none;
+    }
+}
+/*** END Nav ***/
+
