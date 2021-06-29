@@ -46,11 +46,13 @@ body {
     font-family: var(--ff-headline);
     font-size: var(--fs-1);
     font-weight: Var(--fw-b);
+    color: var(--clr-primary-300);
   }
   h2 {
     font-family: var(--ff-headline);
     font-size: var(--fs-2);
     font-weight: Var(--fw-b);
+    color: var(--clr-primary-300);
   }
   h3 {
     font-family: var(--ff-headline);
@@ -292,7 +294,7 @@ animation-fill-mode: forwards;
           transform: rotate(0deg);
       }
   }
-  .hero-quotation h2 {
+  .hero-quotation-style {
     text-transform: uppercase;
     padding: 0vw 3vw 3vw 3vw;
     text-align: center;    
@@ -304,7 +306,7 @@ animation-fill-mode: forwards;
 }
 
 /*** START Hero section media queries ***/
-  @media screen and (max-width: 320px){
+  @media screen and (max-width: 768px){
     .hero-quotation{
         width:100vw;
         height: fit-content;
@@ -326,99 +328,159 @@ animation-fill-mode: forwards;
       }
 }
 /*** END Hero section media queries ***/
-
 /*** End Hero styling ***/
 
-/*** START Benefits section ***/
 
-#benefits-container{
-    background-color: var(--clr-primary-150);
+/*** START Benefits section ***/
+#benefits-container {
     width: 100vw;
-    height: 500px;
-    padding: 50px;
-    }
+    height: fit-content;
+    padding: 5vh 5vw 5vh 5vw;
+    background-color: var(--clr-primary-150);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "benefits-text benefits-text benefits-text benefits-image benefits-image"
+        "benefits-text benefits-text benefits-text benefits-image benefits-image"
+}
     .benefits-text{
-    background-color: var(--clr-primary-160);
-    height: 400px;
-    border-radius: 20px;
-    box-shadow:  0 0 10px  var(--clr-box-shadow);
-    padding: 30px;
-    float: left;
-    width: 600px;
-    margin-left: 250px;
+    grid-area: benefits-text;
+    height: auto;
+    max-width: 60vw;
+    margin: auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: left;
     }
     .benefits-text h1{
-    color: var(--clr-primary-400);
-    line-height: 200%;
+        line-height: 200%;
     }
     .benefits-text p{
-    color: var(--clr-primary-400);
-    line-height: 140%;
-    }
-    
-    .benefits-image{  
-    margin-right: 250px;
-    }
-    .benefits-image img{
-    height: 400px;  
-    max-width: 80vw;
-    float: right;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow:  0 0 10px  var(--clr-box-shadow);
-    }
-    .benefits-image figcaption{
-    text-align: right;
-    float: right;
-    font-size: var(--fs-6);
-    color: var(--clr-primary-200);
-    clear:both;
-    
-    }
-    /*** START Benefits section media queries ***/
-    @media screen and (max-width: 320){
-    #benefits-container{
-        height: auto;
-        padding: 10px;
-        }
-    .benefits-text{
-        margin: auto;
-        background-color: transparent;
-        border-radius: none;
-        box-shadow:  none;
-        float: none;
-        width: 80vw;
-        padding: auto;
-        margin-left: auto;
-    
-    }
-    .benefits-text h1{ 
-        font-size: var(--fs-3);
+        margin-top: 5vh;
+        color: var(--clr-primary-400);
         line-height: 150%;
     }
-        .benefits-text p{  
-            font-size: 95%;
-        }
-        .benefits-image{  
-            margin:10vw;
-        }
-        .benefits-image img{
-           float: none;
-        }
-        .benefits-image figcaption{
-            float: none;
-        }
+    .benefits-image{ 
+        max-width: 60vw;
+        max-height: 70vh;
+        grid-area: benefits-image;  
+        margin: auto;   
     }
-    /*** END Benefits section media queries ***/
+    .benefits-image img{
+        height: 300px;
+        max-width: 70vw;
+        overflow: hidden;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow:  0 0 10px  var(--clr-box-shadow);
+    }
+    .benefits-image figcaption{
+        text-align: right;
+        margin: 1vw;
+        font-size: var(--fs-6);
+        color: var(--clr-primary-200);
     
+    }
+
+    /*** START Benefits section media queries ***/
+    @media screen and (max-width: 768px){
+        #benefits-container {
+            grid-template-areas: 
+                "benefits-text benefits-text benefits-text benefits-text benefits-text"
+                "benefits-image benefits-image benefits-image benefits-image benefits-image"
+        }
+            .benefits-text{
+            max-width: 90vw;
+            }
+            .benefits-text h1{
+                color: var(--clr-primary-300);
+                line-height: 150%;
+            }
+            .benefits-text p{
+                margin-top: 5vh;
+                line-height: 150%;
+                font-size: 95%;
+            }
+            .benefits-image{ 
+                max-width: 60vw;
+                max-height: 70vh;
+                grid-area: i;  
+                margin: auto;
+                
+            }
+            .benefits-image img{
+                height: 300px;
+                max-width: 70vw;
+            }
+        }
+    /*** END Benefits section media queries ***/
     /*** End Benefits styling ***/
 
 
+    /*** START History section ***/
+    #history-container{
+        width: 100vw;
+        height: fit-content;
+        padding: 5vh 5vw 5vh 5vw;
+        display: grid;
+        row-gap: 5vw;
+        column-gap: 5vw;
+        padding: 5vw 2.5vw 5vw 2.5vw;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+        grid-template-areas: 
+            "a-brief-history a-brief-history a-brief-history a-brief-history"
+            "history-classical history-classical history-classical history-post-classical"
+            "history-modern-yoga history-modern-yoga history-modern-yoga history-image"
+        }
+        .a-brief-history{
+          grid-area: a-brief-history;
+          padding: 2vw;
+        }
+        .a-brief-history h1{
+          line-height: 200%;
+        }
+        .a-brief-history p{
+          margin-top: 5vh;
+          color: var(--clr-primary-400);
+          line-height: 150%;
+        }
+        .history-classical{
+          grid-area: history-classical;
+          padding: 2vw;
+        }
+        .history-post-classical{
+          grid-area: history-post-classical;
+          padding: 2vw;
+        }
+        .history-modern-yoga{
+          grid-area: history-modern-yoga;
+          padding: 2vw;
+        }
+        .history-image{
+          grid-area: history-image;
+        }
+        .history-image img{
+          height: 300px;
+          overflow: hidden;
+          border-radius: 10px 10px 10px 10px;
+          box-shadow:  0 0 10px  var(--clr-box-shadow);
+        }
+        .history-image figcaption{
+          text-align: right;
+          margin: 1vw;
+          font-size: var(--fs-6);
+          color: var(--clr-primary-200);
+        
+        }
 
 
 
-    #about{
 
-    }
+
+
+   
     #quotation-1{
     
     }
@@ -436,4 +498,12 @@ animation-fill-mode: forwards;
     }
     #footer{
     
+    }
+
+    .blank-spacer{
+        background-color: var(--clr-primary-400);        
+        min-height: 150px;
+        width:100vw;
+
+        margin-top: 50px;
     }
