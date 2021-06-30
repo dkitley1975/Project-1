@@ -516,19 +516,19 @@ animation-fill-mode: forwards;
 
 
 /** Start Quotation Block 1 **/
-   
-    
     .quotation-image{
     height:65vh;
     width: 100vw;
-    background: url('../images/attractive-blonde-woman-doing-yoga-outdoors_10887532.jpg') no-repeat center left;
+    background: url('../images/attractive-blonde-woman-doing-yoga-outdoors_10887532.jpg') no-repeat center center;
     background-size: cover;
-    overflow: hidden;
-   
-
-       
+    overflow: hidden; 
     }
-  
+    .quotation-image figcaption{
+        text-align: left;
+        margin-left:10px;
+        margin-top:10px;
+        color: var(--clr-primary-400);
+    }
    .quotation-1{
         width: 50vw;
         height: fit-content;
@@ -545,7 +545,15 @@ animation-fill-mode: forwards;
         width:80vw;
         height: fit-content;
         padding: 27px 10vw 3vw 10vw; 
-        margin:-200px auto auto auto;    }
+        margin:-200px auto auto auto;
+    }
+
+    .quotation-image figcaption{
+        text-align: left;
+        margin-left:10px;
+        margin-top:10px;
+        color: var(--clr-primary-400);
+    }
 
     .quotation-1 h2{
         padding:10px;
