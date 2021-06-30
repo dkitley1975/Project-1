@@ -9,7 +9,7 @@
 /*  Fonts for the site  -  select using font-family: var(--ff-main); within classes etc. change here to affect whole site */
     --ff-main: 'Source Sans Pro', sans-serif;
     --ff-headline: 'Lato', serif; 
-    --ff-quotation: 'Patrick Hand', cursive;
+    --ff-quotation: 'Patrick Hand', 'Source Sans Pro', sans-serif;
 /*  FONT WEIGHTS  -  Select using font-weight: var(--fw-m); Change here to affect whole site */
     --fw-l: 300; /* light */
     --fw-n: 400; /* Normal */
@@ -378,12 +378,10 @@ animation-fill-mode: forwards;
     }
     .benefits-image{ 
         max-width: 60vw;
-        max-height: 70vh;
         grid-area: benefits-image;  
         margin: auto;   
     }
     .benefits-image img{
-        /* height: 300px; */
         max-width: 30vw;
         overflow: hidden;
         border-radius: 10px 10px 10px 10px;
@@ -411,18 +409,16 @@ animation-fill-mode: forwards;
                 font-size: 95%;
             }
             .benefits-image{ 
-                width: 60vw;
-                /* max-height: 70vh; */
+                width: 70vw;
                 grid-area: benefits-image;  
                 margin: auto;
                 
             }
             .benefits-image img{
-                height: 50vh;
                 overflow: hidden;
                 display:block;
                 margin:auto;
-                max-width: 50vw;
+                max-width: 65vw;
             }
         }
     /*** END Benefits section media queries ***/
