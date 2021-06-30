@@ -134,17 +134,16 @@ a{
     color: var(--clr-primary-400);
     background-color: var(--clr-primary-100);
     margin:0;
-    height: 50px;
     padding:0;
     list-style: none;
     overflow: hidden;
-    margin-top: 0px;
+    margin-top: -5px;
 }
 .nav-bar ul a{
     font-family: var(--ff-main);
     display: block;
     outline: 1px solid var(--clr-primary-300);
-    padding: 10px;
+    padding: 20px;
     color: var(--clr-primary-400);
     text-decoration: none;
     border-right: 1px solid var(--clr-primary-300);
@@ -157,7 +156,7 @@ a{
     font-size: var(--fs-3);
     color: var(--clr-primary-400);
     text-decoration: none;
-    padding: 10px 5vw;
+    padding: 10px 20px;
     float:left;
 }
 .nav-bar .nav-bar-menu-list{
@@ -229,10 +228,10 @@ a{
     }   
     .nav-bar li a {
         background-color: none;
-        height:55px;
+        height:19px;
         border: none;
         outline: none;
-        padding: 18px 15px;
+        padding: 18px 30px;
     } 
     .nav-bar .nav-bar-menu-list{
         clear:none;
@@ -326,7 +325,9 @@ animation-fill-mode: forwards;
         padding: 27px 10vw 3vw 10vw; 
         transform: translate(0%, -150px);
     }
-
+    .quotation-block{
+        width: 100vw;
+    }
     .hero-quotation h2{
         padding:10px;
         font-size: 97%;
