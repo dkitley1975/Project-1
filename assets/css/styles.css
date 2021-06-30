@@ -1,689 +1,732 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Lato:wght@700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
 /* setting initial page margins, padding and borders to 0 */
-*{
-    margin:0px;
-    padding:0px;
-    border:0px;   
+
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
 }
+
 :root {
-/*  Fonts for the site  -  select using font-family: var(--ff-main); within classes etc. change here to affect whole site */
-    --ff-main: 'Source Sans Pro', sans-serif;
-    --ff-headline: 'Lato', serif; 
-    --ff-quotation: 'Patrick Hand', 'Source Sans Pro', sans-serif;
-/*  FONT WEIGHTS  -  Select using font-weight: var(--fw-m); Change here to affect whole site */
-    --fw-l: 300; /* light */
-    --fw-n: 400; /* Normal */
-    --fw-m: 600; /* Semi-Bold */
-    --fw-b: 700; /* Bold - Headline Only - Lato */
-/* Font Sizes  -  Select using font-size: var(--fs-1); Change here to affect whole site   1 rem is 16px */
-    --fs-1: 2rem; 
-    --fs-2: 1.7rem; 
-    --fs-3: 1.5rem; 
-    --fs-4: 1.2rem; 
-    --fs-5: .83rem;
-    --fs-6: .75rem; 
-    --fs-p: 1.25rem; /* 1 rem is p 16px equivalent */
-/* I am adding my basic colours for the site here */  
-      --clr-primary-100:rgba(254, 232, 223, 1);
-      --clr-primary-130:rgba(254, 232, 223, 0.3);
-      --clr-primary-150:rgba(254, 232, 223, 0.5);
-      --clr-primary-160:rgba(254, 232, 223, 0.6);
-      --clr-primary-170:rgba(254, 232, 223, 0.7);
-      --clr-primary-200:rgba(222, 183, 152, 1);
-      --clr-primary-250:rgba(222, 183, 152, 0.6);
-      --clr-primary-300:rgba(153, 95, 58, 1);
-      --clr-primary-350:rgba(153, 95, 58, 0.6);
-      --clr-primary-400:rgb(100, 64, 41, 1);
-      --clr-box-shadow:rgb(136, 148, 141);
+   /*  Fonts for the site  -  select using font-family: var(--ff-main); within classes etc. change here to affect whole site */
+   --ff-main: 'Source Sans Pro', sans-serif;
+   --ff-headline: 'Lato', serif;
+   --ff-quotation: 'Patrick Hand', 'Source Sans Pro', sans-serif;
+   /*  FONT WEIGHTS  -  Select using font-weight: var(--fw-m); Change here to affect whole site */
+   --fw-l: 300;
+   --fw-n: 400;
+   --fw-m: 600;
+   --fw-b: 700;  /* Bold - Headline Only - Lato */
+  
+   /* Font Sizes */
+   --fs-1: 3.2rem;
+   --fs-2: 2.4rem;
+   --fs-3: 1.87rem;
+   --fs-4: 1.6rem;
+   --fs-5: 1.33rem;
+   --fs-6: 1.072rem;
+   --fs-default: 1.6rem;
+
+   /* I am adding my basic colours for the site here */
+   --clr-primary-100: rgba(254, 232, 223, 1);
+   --clr-primary-130: rgba(254, 232, 223, 0.3);
+   --clr-primary-150: rgba(254, 232, 223, 0.5);
+   --clr-primary-160: rgba(254, 232, 223, 0.6);
+   --clr-primary-170: rgba(254, 232, 223, 0.7);
+   --clr-primary-200: rgba(222, 183, 152, 1);
+   --clr-primary-250: rgba(222, 183, 152, 0.6);
+   --clr-primary-300: rgba(153, 95, 58, 1);
+   --clr-primary-350: rgba(153, 95, 58, 0.6);
+   --clr-primary-400: rgb(100, 64, 41, 1);
+   --clr-box-shadow: rgb(136, 148, 141);
 }
+
+
 /* setting the basic font weights and sizes here */
-body { 
-    font-family: var(--ff-main);
-    font-weight: Var(--fw-n);
-  }
-  h1 {
-    font-family: var(--ff-headline);
-    font-size: var(--fs-1);
-    font-weight: Var(--fw-b);
-    color: var(--clr-primary-300);
-  }
-  h2 {
-    font-family: var(--ff-headline);
-    font-size: var(--fs-2);
-    font-weight: Var(--fw-b);
-    color: var(--clr-primary-300);
-  }
-  h3 {
-    font-family: var(--ff-headline);
-    font-size: var(--fs-3);
-    font-weight: Var(--fw-b);
-    color: var(--clr-primary-300);
 
-  }
-  h4 {
-    font-family: var(--ff-headline);
-    font-size: var(--fs-4);
-    font-weight: Var(--fw-b);
-  }
-  h5 {
-    font-family: var(--ff-headline);
-    font-size: var(--fs-5);
-    font-weight: Var(--fw-b);
-  }
-  h6 {
-    font-family: var(--ff-headline);
-    font-size: var(--fs-6);
-    font-weight: Var(--fw-b);
-  }
-  p {
-    font-family: var(--ff-main);
-    font-size: var(--fs-p);
-  }
-  .quotation {
-    text-transform: uppercase;
-    text-align: center;    
-    letter-spacing: 3px;
-    line-height: 150%;
-    color: var(--clr-primary-400);
-    font-family: var(--ff-quotation);
-    font-size: var(--fs-3);
+html {
+   scroll-behavior: smooth;
+   font-size: 62.5%;
 }
-  .author {
-    font-family: var(--ff-main);
-    font-size: var(--fs-p);
-    font-weight: Var(--fw-l);
-    font-style: italic;
-    text-transform: uppercase;
-    text-align: right;    
-    letter-spacing: 3px;
-    line-height: 150%;
-    color: var(--clr-primary-400);
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-  }
-  figcaption{
-    text-align: center;
-    margin: 3px;
-    font-size: var(--fs-6);
-    color: var(--clr-primary-200);
-}
-li{
-    list-style-position: inside; 
-}
-   *, *::before, *::after {
-    box-sizing: border-box;
-  }
 
+body {
+   font-family: var(--ff-main);
+   font-size: var(--fs-default);
+   font-weight: var(--fw-n);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: var(--ff-headline);
+   font-weight: var(--fw-b);
+   color: var(--clr-primary-300);
+}
+
+.quotation {
+   text-transform: uppercase;
+   text-align: center;
+   letter-spacing: 3px;
+   line-height: 150%;
+   color: var(--clr-primary-400);
+   font-family: var(--ff-quotation);
+   font-size: var(--fs-3);
+}
+
+.author {
+   font-family: var(--ff-main);
+   font-size: var(--fs-p);
+   font-weight: var(--fw-l);
+   font-style: italic;
+   text-transform: uppercase;
+   text-align: right;
+   letter-spacing: 3px;
+   line-height: 150%;
+   color: var(--clr-primary-400);
+   margin-top: 1vw;
+   margin-bottom: 1vw;
+}
+
+li {
+   list-style-position: inside;
+   font-size: var(--fs-default);
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
 
 
 /*** Start Nav bar ***/
-a{
-    color: var(--clr-primary-400);
-}
-.nav-bar{
-    position:fixed;
-    width:100vw;
-    z-index:99;
-    height: 50px;
-    background-color: var(--clr-primary-100);
-    box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
-    -webkit-box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
-    -moz-box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
-}
-.nav-bar ul{
-    color: var(--clr-primary-400);
-    background-color: var(--clr-primary-100);
-    margin:0;
-    padding:0;
-    list-style: none;
-    overflow: hidden;
-    margin-top: -5px;
-}
-.nav-bar ul a{
-    font-family: var(--ff-main);
-    display: block;
-    outline: 1px solid var(--clr-primary-300);
-    padding: 20px;
-    color: var(--clr-primary-400);
-    text-decoration: none;
-    border-right: 1px solid var(--clr-primary-300);
-} 
-.nav-bar li a:hover, .nav-bar .nav-bar-menu-button:hover{
-    background-color: var(--clr-primary-250);
-} 
-.nav-bar .nav-bar-home-logo{
-    font-family: var(--ff-main);
-    font-size: var(--fs-3);
-    color: var(--clr-primary-400);
-    text-decoration: none;
-    padding: 10px 20px;
-    float:left;
-}
-.nav-bar .nav-bar-menu-list{
-    clear:both; /*clears the float */
-    max-height:0;
-    transition: .4s ease-out;
-    min-width: 25vw;
-    float:right;
-}
-/* nav bar hamburger icon for smaller devices */
-.nav-bar .nav-bar-menu-icon{
-    padding: 25px 20px;
-    position: relative;
-    float:right;
-    cursor: pointer;
-    user-select: none;
-}
-.nav-bar .nav-bar-menu-icon .nav-bar-icon-top{
-    background-color: var(--clr-primary-400);
-    display:block;
-    height: 2px;
-    width: 18px;
-    top: -6px;
-    position: relative;
-    transition: .4s ease-out; 
-}
-.nav-bar .nav-bar-menu-icon .nav-bar-icon-middle{
-    background-color: var(--clr-primary-400);
-    display:block;
-    height: 2px;
-    width: 18px;
-    position: relative;
-    transition: .4s ease-out; 
-}
-.nav-bar .nav-bar-menu-icon .nav-bar-icon-bottom{
-    background-color: var(--clr-primary-400);
-    display:block;
-    height: 2px;
-    width: 18px;
-    top: 6px;
-    position: relative;
-    transition: .4s ease-out; 
-}
-.nav-bar .nav-bar-menu-button{
-    display:none;
-}
-/* click to reveal the nav menu on smaller devices  */
-.nav-bar .nav-bar-menu-button:checked ~ .nav-bar-menu-list{
-    max-height: 300px;
-} 
-/* change hamburger into an close icon when hamburger selected */
-.nav-bar .nav-bar-menu-button:checked ~ .nav-bar-menu-icon .nav-bar-icon-top{
-    transform: rotate(-45deg);
-    transition: .20s ease-out;
-    top: 2px;
-}.nav-bar .nav-bar-menu-button:checked ~ .nav-bar-menu-icon .nav-bar-icon-middle{
-    display: none;
-}
-.nav-bar .nav-bar-menu-button:checked ~ .nav-bar-menu-icon .nav-bar-icon-bottom{
-    transform: rotate(45deg);
-    transition: .20s ease-out;
-    top: 0px;
-}
-/* Nav bar media query */
-@media (min-width: 760px)
-{
-    .nav-bar li{  
-        float: left;
-    }   
-    .nav-bar li a {
-        background-color: none;
-        height:19px;
-        border: none;
-        outline: none;
-        padding: 18px 30px;
-    } 
-    .nav-bar .nav-bar-menu-list{
-        clear:none;
-        float: right;
-        max-height: none;
-    }
-    .nav-bar .nav-bar-menu-icon{
-        display: none;
-    }
-}
-/*** END Nav ***/
-/*** START Hero styling ***/
-.hero-container{
-    width: 100vw;
-    margin: 0px 0px 0px 0px;
+
+a {
+   color: var(--clr-primary-400);
 }
 
-.hero-image{
-height:65vh;
-width: 100vw;
-background: url('../images/pretty-blonde-woman-stretching-beach_10887539.jpg') no-repeat center left;
-background-size: cover;
-overflow: hidden;
-/* Animates zoom effect on loading the page */
-animation-name: hero-zoom;
-animation-duration: 13s;
-animation-fill-mode: forwards;
+.nav-bar {
+   position: fixed;
+   width: 100vw;
+   z-index: 99;
+   height: 50px;
+   background-color: var(--clr-primary-100);
+   box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
+   -webkit-box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
+   -moz-box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
 }
+
+.nav-bar ul {
+   color: var(--clr-primary-400);
+   background-color: var(--clr-primary-100);
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   overflow: hidden;
+   margin-top: -5px;
+}
+
+.nav-bar ul a {
+   font-family: var(--ff-main);
+   display: block;
+   outline: 1px solid var(--clr-primary-300);
+   padding: 20px;
+   color: var(--clr-primary-400);
+   text-decoration: none;
+   border-right: 1px solid var(--clr-primary-300);
+}
+
+.nav-bar li a:hover,
+.nav-bar .nav-bar-menu-button:hover {
+   background-color: var(--clr-primary-250);
+}
+
+.nav-bar .nav-bar-home-logo {
+   font-family: var(--ff-main);
+   font-size: var(--fs-3);
+   color: var(--clr-primary-400);
+   text-decoration: none;
+   padding: 10px 20px;
+   float: left;
+}
+
+.nav-bar .nav-bar-menu-list {
+   clear: both;
+   /*clears the float */
+   max-height: 0;
+   transition: .4s ease-out;
+   min-width: 25vw;
+   float: right;
+}
+
+
+/* nav bar hamburger icon for smaller devices */
+
+.nav-bar .nav-bar-menu-icon {
+   padding: 25px 20px;
+   position: relative;
+   float: right;
+   cursor: pointer;
+   user-select: none;
+}
+
+.nav-bar .nav-bar-menu-icon .nav-bar-icon-top {
+   background-color: var(--clr-primary-400);
+   display: block;
+   height: 2px;
+   width: 18px;
+   top: -6px;
+   position: relative;
+   transition: .4s ease-out;
+}
+
+.nav-bar .nav-bar-menu-icon .nav-bar-icon-middle {
+   background-color: var(--clr-primary-400);
+   display: block;
+   height: 2px;
+   width: 18px;
+   position: relative;
+   transition: .4s ease-out;
+}
+
+.nav-bar .nav-bar-menu-icon .nav-bar-icon-bottom {
+   background-color: var(--clr-primary-400);
+   display: block;
+   height: 2px;
+   width: 18px;
+   top: 6px;
+   position: relative;
+   transition: .4s ease-out;
+}
+
+.nav-bar .nav-bar-menu-button {
+   display: none;
+}
+
+
+/* click to reveal the nav menu on smaller devices  */
+
+.nav-bar .nav-bar-menu-button:checked~.nav-bar-menu-list {
+   max-height: 300px;
+}
+
+
+/* change hamburger into an close icon when hamburger selected */
+
+.nav-bar .nav-bar-menu-button:checked~.nav-bar-menu-icon .nav-bar-icon-top {
+   transform: rotate(-45deg);
+   transition: .20s ease-out;
+   top: 2px;
+}
+
+.nav-bar .nav-bar-menu-button:checked~.nav-bar-menu-icon .nav-bar-icon-middle {
+   display: none;
+}
+
+.nav-bar .nav-bar-menu-button:checked~.nav-bar-menu-icon .nav-bar-icon-bottom {
+   transform: rotate(45deg);
+   transition: .20s ease-out;
+   top: 0px;
+}
+
+
+/* Nav bar media query */
+
+@media (min-width: 760px) {
+   .nav-bar li {
+      float: left;
+   }
+   .nav-bar li a {
+      background-color: none;
+      height: 19px;
+      border: none;
+      outline: none;
+      padding: 18px 30px;
+   }
+   .nav-bar .nav-bar-menu-list {
+      clear: none;
+      float: right;
+      max-height: none;
+   }
+   .nav-bar .nav-bar-menu-icon {
+      display: none;
+   }
+}
+
+
+/*** END Nav ***/
+
+
+/*** START Hero styling ***/
+
+.hero-container {
+   width: 100vw;
+   margin: 0px 0px 0px 0px;
+}
+
+.hero-image {
+   height: 65vh;
+   width: 100vw;
+   background: url('../images/pretty-blonde-woman-stretching-beach_10887539.jpg') no-repeat center left;
+   background-size: cover;
+   overflow: hidden;
+   /* Animates zoom effect on loading the page */
+   animation-name: hero-zoom;
+   animation-duration: 13s;
+   animation-fill-mode: forwards;
+}
+
 
 /* Creates the level of zoom for hero image */
+
 @keyframes hero-zoom {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.05);
-    }
+   from {
+      transform: scale(1);
+   }
+   to {
+      transform: scale(1.05);
+   }
 }
 
-.quotation-block{
-    width: 50vw;
-    height: fit-content;
-    padding: 30px 3vw 2.5vw 3vw;
-    background-color: var(--clr-primary-250);
-    margin:auto;
-    transform: translate(0%, -130px);
-    margin-bottom: -100px;
-  }
-  .lotus-flower-vertical-line {
-    content:"";
-    height: 30px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    border-left: 1px solid var(--clr-primary-400);
-    transform: translate(-50%);
-  }
-  .lotus-flower{
-    width: 42px;
-    height:42px;
-    position: relative;
-    z-index: 2;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: url("../images/lotus-flower.svg") no-repeat center center;
-    /* Animates zoom effect on loading the page */
-    animation-name: lotus-flower-zoom;
-    animation-duration: 15s;
-    animation-fill-mode: forwards;
-  }
-  
-  /* Creates the level of zoom for Lotus Flower image */
-  @keyframes lotus-flower-zoom {
-      from{
-          transform: rotate(180deg);
-      }
-      to{
-          transform: rotate(0deg);
-      }
-  }
-  
+.quotation-block {
+   width: 50vw;
+   height: fit-content;
+   padding: 30px 3vw 2.5vw 3vw;
+   background-color: var(--clr-primary-250);
+   margin: auto;
+   transform: translate(0%, -130px);
+   margin-bottom: -100px;
+}
+
+.lotus-flower-vertical-line {
+   content: "";
+   height: 30px;
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   bottom: 0;
+   left: 50%;
+   border-left: 1px solid var(--clr-primary-400);
+   transform: translate(-50%);
+}
+
+.lotus-flower {
+   width: 42px;
+   height: 42px;
+   position: relative;
+   z-index: 2;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+   background: url("../images/lotus-flower.svg") no-repeat center center;
+   /* Animates zoom effect on loading the page */
+   animation-name: lotus-flower-zoom;
+   animation-duration: 15s;
+   animation-fill-mode: forwards;
+}
+
+
+/* Creates the level of zoom for Lotus Flower image */
+
+@keyframes lotus-flower-zoom {
+   from {
+      transform: rotate(180deg);
+   }
+   to {
+      transform: rotate(0deg);
+   }
+}
+
 
 /*** START Hero section media queries ***/
-  @media screen and (max-width: 768px){
-    .hero-quotation{
-        width:100vw;
-        height: fit-content;
-        padding: 27px 10vw 3vw 10vw; 
-        transform: translate(0%, -150px);
-    }
-    .quotation-block{
-        width: 100vw;
-    }
-    .hero-quotation h2{
-        padding:10px;
-        font-size: 97%;
-    }
-    .lotus-flower-vertical-line {
-        height: 30px;
-      }
-      .lotus-flower{
-        width: 30px;
-        height:30px;
-        top: 0px;
-      }
+
+@media screen and (max-width: 768px) {
+   .hero-quotation {
+      width: 100vw;
+      height: fit-content;
+      padding: 27px 10vw 3vw 10vw;
+      transform: translate(0%, -150px);
+   }
+   .quotation-block {
+      width: 100vw;
+   }
+   .hero-quotation h2 {
+      padding: 10px;
+      font-size: 97%;
+   }
+   .lotus-flower-vertical-line {
+      height: 30px;
+   }
+   .lotus-flower {
+      width: 30px;
+      height: 30px;
+      top: 0px;
+   }
 }
+
+
 /*** END Hero section media queries ***/
+
+
 /*** End Hero styling ***/
 
 
 /*** START Benefits section ***/
+
 #benefits-container {
-    width: 100vw;
-    height: fit-content;
-    padding: 5vh 5vw 5vh 5vw;
-    background-color: var(--clr-primary-150);
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-        "benefits-text benefits-text benefits-text benefits-image benefits-image"
-        "benefits-text benefits-text benefits-text benefits-image benefits-image"
+   width: 100vw;
+   height: fit-content;
+   padding: 5vh 5vw 5vh 5vw;
+   background-color: var(--clr-primary-150);
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: auto auto;
+   grid-template-areas: "benefits-text benefits-text benefits-text benefits-image benefits-image" "benefits-text benefits-text benefits-text benefits-image benefits-image"
 }
-    .benefits-text{
-    grid-area: benefits-text;
-    height: auto;
-    max-width: 60vw;
-    margin: auto;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    text-align: left;
-    }
-    .benefits-text h1{
-        line-height: 200%;
-    }
-    .benefits-text p{
-        margin-top: 5vh;
-        color: var(--clr-primary-400);
-        line-height: 150%;
-    }
-    .benefits-image{ 
-        max-width: 60vw;
-        grid-area: benefits-image;  
-        margin: auto;   
-    }
-    .benefits-image img{
-        max-width: 30vw;
-        overflow: hidden;
-        border-radius: 10px 10px 10px 10px;
-        box-shadow:  0 0 10px  var(--clr-box-shadow);
-    }
-   
 
-    /*** START Benefits section media queries ***/
-    @media screen and (max-width: 768px){
-        #benefits-container {
-            grid-template-areas: 
-                "benefits-text benefits-text benefits-text benefits-text benefits-text"
-                "benefits-image benefits-image benefits-image benefits-image benefits-image"
-        }
-            .benefits-text{
-            max-width: 90vw;
-            }
-            .benefits-text h1{
-                color: var(--clr-primary-300);
-                line-height: 150%;
-            }
-            .benefits-text p{
-                margin-top: 5vh;
-                line-height: 150%;
-                font-size: 95%;
-            }
-            .benefits-image{ 
-                width: 70vw;
-                grid-area: benefits-image;  
-                margin: auto;
-                
-            }
-            .benefits-image img{
-                overflow: hidden;
-                display:block;
-                margin:auto;
-                max-width: 65vw;
-            }
-        }
-    /*** END Benefits section media queries ***/
-    /*** End Benefits styling ***/
+.benefits-text {
+   grid-area: benefits-text;
+   height: auto;
+   max-width: 60vw;
+   margin: auto;
+   padding-left: 10vw;
+   padding-right: 10vw;
+   text-align: left;
+}
+
+.benefits-text h1 {
+   line-height: 200%;
+}
+
+.benefits-text p {
+   margin-top: 5vh;
+   color: var(--clr-primary-400);
+   line-height: 150%;
+}
+
+.benefits-image {
+   max-width: 60vw;
+   grid-area: benefits-image;
+   margin: auto;
+}
+
+.benefits-image img {
+   max-width: 30vw;
+   overflow: hidden;
+   border-radius: 10px 10px 10px 10px;
+   box-shadow: 0 0 10px var(--clr-box-shadow);
+}
 
 
-    /*** START History section ***/
-    #history-container{
-        width: 95vw;
-        height: fit-content;
-        display: grid;
-        row-gap: 2.5vw;
-        column-gap: 5vw;
-        padding: 5vw 2.5vw 5vw 2.5vw;
-        grid-template-columns: repeat(5, 1fr);
-        grid-auto-rows: minmax(100px, auto);
-        grid-template-areas: 
-            "a-brief-history a-brief-history a-brief-history a-brief-history a-brief-history"
-            "history-classical history-classical history-classical history-post-classical history-post-classical"
-            "history-modern-yoga history-modern-yoga history-modern-yoga history-image history-image"
-        }
-        .a-brief-history{
-          grid-area: a-brief-history;
-          padding: 2vw 10vw 2vw 10vw;
-        }
-        .a-brief-history h1{
-          line-height: 200%;
-        }
-        .a-brief-history p{
-          margin-top: 5vh;
-          color: var(--clr-primary-400);
-          line-height: 150%;
-        }
-        .history-classical{
-          grid-area: history-classical;
-          padding: 2vw;
-          border-radius: 30px;
-        }
-        .history-post-classical{
-          grid-area: history-post-classical;
-          padding: 2vw;
-          background-color: var(--clr-primary-130);
-          border-radius: 30px;
-        }
-        .history-modern-yoga{
-          grid-area: history-modern-yoga;
-          padding: 2vw;
-          background-color: var(--clr-primary-130);
-          border-radius: 30px;
-        }
-        .history-image{
-          grid-area: history-image;
-          margin: auto;
-        }
-        .history-image img{
-          max-width: 30vh;
-          overflow: hidden;
-          border-radius: 10px 10px 10px 10px;
-          box-shadow:  0 0 10px  var(--clr-box-shadow);
-        }
-       
+/*** START Benefits section media queries ***/
+
+@media screen and (max-width: 768px) {
+   #benefits-container {
+      grid-template-areas: "benefits-text benefits-text benefits-text benefits-text benefits-text" "benefits-image benefits-image benefits-image benefits-image benefits-image"
+   }
+   .benefits-text {
+      max-width: 90vw;
+   }
+   .benefits-text h1 {
+      color: var(--clr-primary-300);
+      line-height: 150%;
+   }
+   .benefits-text p {
+      margin-top: 5vh;
+      line-height: 150%;
+      font-size: 95%;
+   }
+   .benefits-image {
+      width: 70vw;
+      grid-area: benefits-image;
+      margin: auto;
+   }
+   .benefits-image img {
+      overflow: hidden;
+      display: block;
+      margin: auto;
+      max-width: 65vw;
+   }
+}
+
+
+/*** END Benefits section media queries ***/
+
+
+/*** End Benefits styling ***/
+
+
+/*** START History section ***/
+
+#history-container {
+   width: 95vw;
+   height: fit-content;
+   display: grid;
+   row-gap: 2.5vw;
+   column-gap: 5vw;
+   padding: 5vw 2.5vw 5vw 2.5vw;
+   grid-template-columns: repeat(5, 1fr);
+   grid-auto-rows: minmax(100px, auto);
+   grid-template-areas: "a-brief-history a-brief-history a-brief-history a-brief-history a-brief-history" "history-classical history-classical history-classical history-post-classical history-post-classical" "history-modern-yoga history-modern-yoga history-modern-yoga history-image history-image"
+}
+
+.a-brief-history {
+   grid-area: a-brief-history;
+   padding: 2vw 10vw 2vw 10vw;
+}
+
+.a-brief-history h1 {
+   line-height: 200%;
+}
+
+.a-brief-history p {
+   margin-top: 5vh;
+   color: var(--clr-primary-400);
+   line-height: 150%;
+}
+
+.history-classical {
+   grid-area: history-classical;
+   padding: 2vw;
+   border-radius: 30px;
+}
+
+.history-post-classical {
+   grid-area: history-post-classical;
+   padding: 2vw;
+   background-color: var(--clr-primary-130);
+   border-radius: 30px;
+}
+
+.history-modern-yoga {
+   grid-area: history-modern-yoga;
+   padding: 2vw;
+   background-color: var(--clr-primary-130);
+   border-radius: 30px;
+}
+
+.history-image {
+   grid-area: history-image;
+   margin: auto;
+}
+
+.history-image img {
+   max-width: 30vh;
+   overflow: hidden;
+   border-radius: 10px 10px 10px 10px;
+   box-shadow: 0 0 10px var(--clr-box-shadow);
+}
+
+
 /*** START History section media queries ***/
-@media screen and (max-width: 768px){
-    #history-container{
-        width: 100vw;
-        height: fit-content;
-        display: grid;
-        row-gap: 5vw;
-        column-gap: 1vw;
-        padding: 5vw 6vw 5vw 6vw;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-template-areas: 
-            "a-brief-history a-brief-history"
-            "history-classical history-classical"
-            "history-image history-image "
-            "history-post-classical history-post-classical"
-            "history-modern-yoga history-modern-yoga" 
-        }
-    .history-post-classical{
-            background-color: unset;
-    }
-    .history-modern-yoga{
-        background-color: unset;
-    }
-    }
+
+@media screen and (max-width: 768px) {
+   #history-container {
+      width: 100vw;
+      height: fit-content;
+      display: grid;
+      row-gap: 5vw;
+      column-gap: 1vw;
+      padding: 5vw 6vw 5vw 6vw;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(150px, auto);
+      grid-template-areas: "a-brief-history a-brief-history" "history-classical history-classical" "history-image history-image " "history-post-classical history-post-classical" "history-modern-yoga history-modern-yoga"
+   }
+   .history-post-classical {
+      background-color: unset;
+   }
+   .history-modern-yoga {
+      background-color: unset;
+   }
+}
+
+
 /*** END History section media queries ***/
+
+
 /*** End History styling ***/
 
 
-
-
 /** Start Quotation Block 1 **/
-    .quotation-image{
-    height:65vh;
-    width: 100vw;
-    background: url('../images/attractive-blonde-woman-doing-yoga-outdoors_10887532.jpg') no-repeat center center;
-    background-size: cover;
-    overflow: hidden; 
-    }
-    .quotation-image figcaption{
-        text-align: right;
-        margin-left:10px;
-        margin-top:10px;
-        color: var(--clr-primary-400);
-    }
-   .quotation-1{
-        width: 50vw;
-        height: fit-content;
-        padding: 1.5vw 2vw 1vw 2vw;
-        background-color: var(--clr-primary-250);
-        margin:-200px auto 10vh auto;
-        border-radius: 20px;
-    }
+
+.quotation-image {
+   height: 65vh;
+   width: 100vw;
+   background: url('../images/attractive-blonde-woman-doing-yoga-outdoors_10887532.jpg') no-repeat center center;
+   background-size: cover;
+   overflow: hidden;
+}
+
+.quotation-image figcaption {
+   text-align: right;
+   margin-left: 10px;
+   margin-top: 10px;
+   color: var(--clr-primary-400);
+}
+
+.quotation-1 {
+   width: 50vw;
+   height: fit-content;
+   padding: 1.5vw 2vw 1vw 2vw;
+   background-color: var(--clr-primary-250);
+   margin: -200px auto 10vh auto;
+   border-radius: 20px;
+}
 
 
 /*** START Quotation section media queries ***/
-@media screen and (max-width: 768px){
-    .quotation-1{
-        width:80vw;
-        height: fit-content;
-        padding: 27px 10vw 3vw 10vw; 
-        margin:-200px auto auto auto;
-    }
 
-    .quotation-image figcaption{
-        text-align: left;
-        margin-left:10px;
-        margin-top:10px;
-        color: var(--clr-primary-400);
-    }
-
-    .quotation-1 h2{
-        padding:10px;
-        font-size: 97%;
-    }
-   
+@media screen and (max-width: 768px) {
+   .quotation-1 {
+      width: 80vw;
+      height: fit-content;
+      padding: 27px 10vw 3vw 10vw;
+      margin: -200px auto auto auto;
+   }
+   .quotation-image figcaption {
+      text-align: left;
+      margin-left: 10px;
+      margin-top: 10px;
+      color: var(--clr-primary-400);
+   }
+   .quotation-1 h2 {
+      padding: 10px;
+      font-size: 97%;
+   }
 }
+
+
 /*** END Quotation section media queries ***/
+
+
 /** End Quotation Block 1 **/
 
 
 /*** Start Poses ***/
-#poses-container{
-    width: 95vw;
-    height: fit-content;
-    display: grid;
-    row-gap: 2.5vw;
-    column-gap: 5vw;
-    padding: 8vw 8vw 8vw 8vw;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: 
-    "information information information"
-        "warrior-i warrior-ii cobra"
-        "dog bridge tree"
-        "supinetwist cat-cow forward-fold"
-    }
-video{
-    width: 20vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#poses-container h3{
-text-align: center;
-padding-bottom: 15px;
-}
-.poses-border{
-    width: 22vw;
-    padding: 25px;    
-    color: var(--clr-primary-500);
-    border-radius: 10px 10px 10px 10px;
-    box-shadow:  0 0 10px  var(--clr-box-shadow);
 
+#poses-container {
+   width: 95vw;
+   height: fit-content;
+   display: grid;
+   row-gap: 2.5vw;
+   column-gap: 5vw;
+   padding: 8vw 8vw 8vw 8vw;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: minmax(100px, auto);
+   grid-template-areas: "information information information" "warrior-i warrior-ii cobra" "dog bridge tree" "supinetwist cat-cow forward-fold"
 }
-.pose-information{
-    grid-area: information;
+
+video {
+   width: 20vw;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
 }
-.pose-warrior-i{
-    grid-area: warrior-i;
+
+#poses-container h3 {
+   text-align: center;
+   padding-bottom: 15px;
 }
-.pose-warrior-ii{
-    grid-area: warrior-ii;
+
+.poses-border {
+   width: 22vw;
+   padding: 25px;
+   color: var(--clr-primary-500);
+   border-radius: 10px 10px 10px 10px;
+   box-shadow: 0 0 10px var(--clr-box-shadow);
 }
-.pose-cobra{
-    grid-area: cobra;
+
+.pose-information {
+   grid-area: information;
 }
-.pose-down-dog{
-    grid-area: dog;
+
+.pose-warrior-i {
+   grid-area: warrior-i;
 }
-.pose-bridge{
-    grid-area: bridge;
+
+.pose-warrior-ii {
+   grid-area: warrior-ii;
 }
-.pose-tree{
-    grid-area: tree;
+
+.pose-cobra {
+   grid-area: cobra;
 }
-.pose-supinetwist{
-    grid-area: supinetwist;
+
+.pose-down-dog {
+   grid-area: dog;
 }
-.pose-cat-cow{
-    grid-area: cat-cow;
+
+.pose-bridge {
+   grid-area: bridge;
 }
-.pose-forward-fold{
-    grid-area: forward-fold;
+
+.pose-tree {
+   grid-area: tree;
 }
+
+.pose-supinetwist {
+   grid-area: supinetwist;
+}
+
+.pose-cat-cow {
+   grid-area: cat-cow;
+}
+
+.pose-forward-fold {
+   grid-area: forward-fold;
+}
+
 
 /*** START poses section media queries ***/
-@media screen and (max-width: 768px){
-    #poses-container{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "information information"
-        "warrior-i warrior-ii"
-        "cobra dog"
-        "bridge tree"
-        "supinetwist cat-cow"
-        "forward-fold ."
-    }
-    video{
-        width: 30vw;
-    }
-   
-    .poses-border{
-        width: 40vw;
-    }
-   
+
+@media screen and (max-width: 768px) {
+   #poses-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "information information" "warrior-i warrior-ii" "cobra dog" "bridge tree" "supinetwist cat-cow" "forward-fold ."
+   }
+   video {
+      width: 30vw;
+   }
+   .poses-border {
+      width: 40vw;
+   }
 }
-@media screen and (max-width: 425px){
-    #poses-container{
-        display: inline-block;
-    }
-    video{
-        width: 70vw;
-    } 
-    .poses-border{
-        margin-top: 25px;
-        width: 80vw;
-    }
+
+@media screen and (max-width: 425px) {
+   #poses-container {
+      display: inline-block;
+   }
+   video {
+      width: 70vw;
+   }
+   .poses-border {
+      margin-top: 25px;
+      width: 80vw;
+   }
 }
+
+
 /*** End poses section media queries ***/
+
+
 /*** End poses section ***/
-   
 
+#quotation-2 {}
 
+#videos {}
 
+#contact {}
 
-    #videos{
-    
-    }
-   
-    #quotation-2{
-    
-    }
-    #contact{
-    
-    }
-    #footer{
-    
-    }
+#footer {}
 
-    .blank-spacer{
-        background-color: var(--clr-primary-400);        
-        min-height: 150px;
-        width:100vw;
-
-        margin-top: 100px;
-    }
+.blank-spacer {
+   background-color: var(--clr-primary-400);
+   min-height: 150px;
+   width: 100vw;
+   margin-top: 100px;
+}
