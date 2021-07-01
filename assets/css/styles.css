@@ -18,7 +18,6 @@
    --fw-n: 400;
    --fw-m: 600;
    --fw-b: 700;
-  
    /* Font Sizes */
    --fs-1: 3.2rem;
    --fs-2: 2.4rem;
@@ -27,7 +26,6 @@
    --fs-5: 1.33rem;
    --fs-6: 1.072rem;
    --fs-default: 1.6rem;
-
    /* I am adding my basic colours for the site here */
    --clr-primary-100: rgba(254, 232, 223, 1);
    --clr-primary-130: rgba(254, 232, 223, 0.3);
@@ -79,12 +77,12 @@ h6 {
 
 .author {
    font-family: var(--ff-main);
-   font-size: var(--fs-p);
+   font-size: var(--fs-default);
    font-weight: var(--fw-l);
    font-style: italic;
    text-transform: uppercase;
    text-align: right;
-   letter-spacing: 3px;
+   letter-spacing: .3rem;
    line-height: 150%;
    color: var(--clr-primary-400);
    margin-top: 1vw;
@@ -106,154 +104,96 @@ li {
 /*** Start Nav bar ***/
 
 a {
-   color: var(--clr-primary-400);
+   text-decoration: none;
 }
 
-.nav-bar {
-   position: fixed;
+.nav-bar-header {
+   background-color: var(--clr-primary-100);
+   border-bottom: 1px solid var(--clr-primary-250);
    width: 100vw;
+   position: fixed;
    z-index: 99;
-   height: 50px;
-   background-color: var(--clr-primary-100);
-   box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
-   -webkit-box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
-   -moz-box-shadow: 1px 1px 1px 0px var(--clr-primary-300);
 }
 
-.nav-bar ul {
-   color: var(--clr-primary-400);
-   background-color: var(--clr-primary-100);
-   margin: 0;
-   padding: 0;
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 1.5rem;
+}
+
+.hamburger {
+   display: none;
+}
+
+.bar {
+   display: block;
+   width: 2.5rem;
+   height: .25rem;
+   margin: .55rem auto;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   background-color: var(--clr-primary-400);
+}
+
+.nav-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-item {
    list-style: none;
-   overflow: hidden;
-   margin-top: -5px;
+   margin-left: 5rem;
 }
 
-.nav-bar ul a {
-   font-family: var(--ff-main);
-   display: block;
-   outline: 1px solid var(--clr-primary-300);
-   padding: 20px;
+.nav-link {
+   font-size: var(--fs-default);
+   font-weight: var(--fw-m);
    color: var(--clr-primary-400);
-   text-decoration: none;
-   border-right: 1px solid var(--clr-primary-300);
 }
 
-.nav-bar li a:hover,
-.nav-bar .nav-bar-menu-button:hover {
-   background-color: var(--clr-primary-250);
+.nav-link:hover {
+   color: var(--clr-primary-300);
 }
 
-.nav-bar .nav-bar-home-logo {
-   font-family: var(--ff-main);
-   font-size: var(--fs-3);
-   color: var(--clr-primary-400);
-   text-decoration: none;
-   padding: 10px 20px;
-   float: left;
+.nav-logo {
+   font-size: 2rem;
+   font-weight: var(--fw-b);
+   color: var(--clr-primary-400)
 }
 
-.nav-bar .nav-bar-menu-list {
-   clear: both;
-   /*clears the float */
-   max-height: 0;
-   transition: .4s ease-out;
-   min-width: 25vw;
-   float: right;
-}
-
-
-/* nav bar hamburger icon for smaller devices */
-
-.nav-bar .nav-bar-menu-icon {
-   padding: 25px 20px;
-   position: relative;
-   float: right;
-   cursor: pointer;
-   user-select: none;
-}
-
-.nav-bar .nav-bar-menu-icon .nav-bar-icon-top {
-   background-color: var(--clr-primary-400);
-   display: block;
-   height: 2px;
-   width: 18px;
-   top: -6px;
-   position: relative;
-   transition: .4s ease-out;
-}
-
-.nav-bar .nav-bar-menu-icon .nav-bar-icon-middle {
-   background-color: var(--clr-primary-400);
-   display: block;
-   height: 2px;
-   width: 18px;
-   position: relative;
-   transition: .4s ease-out;
-}
-
-.nav-bar .nav-bar-menu-icon .nav-bar-icon-bottom {
-   background-color: var(--clr-primary-400);
-   display: block;
-   height: 2px;
-   width: 18px;
-   top: 6px;
-   position: relative;
-   transition: .4s ease-out;
-}
-
-.nav-bar .nav-bar-menu-button {
-   display: none;
-}
-
-
-/* click to reveal the nav menu on smaller devices  */
-
-.nav-bar .nav-bar-menu-button:checked~.nav-bar-menu-list {
-   max-height: 300px;
-}
-
-
-/* change hamburger into an close icon when hamburger selected */
-
-.nav-bar .nav-bar-menu-button:checked~.nav-bar-menu-icon .nav-bar-icon-top {
-   transform: rotate(-45deg);
-   transition: .20s ease-out;
-   top: 2px;
-}
-
-.nav-bar .nav-bar-menu-button:checked~.nav-bar-menu-icon .nav-bar-icon-middle {
-   display: none;
-}
-
-.nav-bar .nav-bar-menu-button:checked~.nav-bar-menu-icon .nav-bar-icon-bottom {
-   transform: rotate(45deg);
-   transition: .20s ease-out;
-   top: 0px;
-}
-
-
-/* Nav bar media query */
-
-@media (min-width: 760px) {
-   .nav-bar li {
-      float: left;
+@media only screen and (max-width: 800px) {
+   .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: var(--clr-primary-100);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
    }
-   .nav-bar li a {
-      background-color: none;
-      height: 19px;
-      border: none;
-      outline: none;
-      padding: 18px 30px;
+   .nav-menu.active {
+      left: 0;
    }
-   .nav-bar .nav-bar-menu-list {
-      clear: none;
-      float: right;
-      max-height: none;
+   .nav-item {
+      margin: 2.5rem 0;
    }
-   .nav-bar .nav-bar-menu-icon {
-      display: none;
+   .hamburger {
+      display: block;
+      cursor: pointer;
+   }
+   .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+   }
+   .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+   }
+   .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
    }
 }
 
@@ -265,7 +205,7 @@ a {
 
 .hero-container {
    width: 100vw;
-   margin: 0px 0px 0px 0px;
+   margin: 0;
 }
 
 .hero-image {
@@ -274,26 +214,11 @@ a {
    background: url('../images/pretty-blonde-woman-stretching-beach_10887539.jpg') no-repeat center left;
    background-size: cover;
    overflow: hidden;
-   /* Animates zoom effect on loading the page */
-   animation-name: hero-zoom;
-   animation-duration: 13s;
-   animation-fill-mode: forwards;
-}
-
-
-/* Creates the level of zoom for hero image */
-
-@keyframes hero-zoom {
-   from {
-      transform: scale(1);
-   }
-   to {
-      transform: scale(1.05);
-   }
 }
 
 .quotation-block {
    width: 50vw;
+   max-width: 60ch;
    height: fit-content;
    padding: 30px 3vw 2.5vw 3vw;
    background-color: var(--clr-primary-250);
@@ -355,7 +280,7 @@ a {
       width: 100vw;
    }
    .hero-quotation h2 {
-      padding: 10px;
+      padding: 1rem;
       font-size: 97%;
    }
    .lotus-flower-vertical-line {
@@ -383,7 +308,7 @@ a {
    padding: 5vh 5vw 5vh 5vw;
    background-color: var(--clr-primary-150);
    display: grid;
-   grid-gap: 10px;
+   grid-gap: 1rem;
    grid-template-columns: repeat(5, 1fr);
    grid-template-rows: auto auto;
    grid-template-areas: "benefits-text benefits-text benefits-text benefits-image benefits-image" "benefits-text benefits-text benefits-text benefits-image benefits-image"
@@ -410,7 +335,7 @@ a {
 }
 
 .benefits-image {
-   max-width: 60vw;
+   /* max-width: 60vw; */
    grid-area: benefits-image;
    margin: auto;
 }
@@ -418,8 +343,8 @@ a {
 .benefits-image img {
    max-width: 30vw;
    overflow: hidden;
-   border-radius: 10px 10px 10px 10px;
-   box-shadow: 0 0 10px var(--clr-box-shadow);
+   border-radius: 1rem 1rem 1rem 1rem;
+   box-shadow: 0 0 1rem var(--clr-box-shadow);
 }
 
 
@@ -518,8 +443,8 @@ a {
 .history-image img {
    max-width: 30vh;
    overflow: hidden;
-   border-radius: 10px 10px 10px 10px;
-   box-shadow: 0 0 10px var(--clr-box-shadow);
+   border-radius: 1rem 1rem 1rem 1rem;
+   box-shadow: 0 0 1rem var(--clr-box-shadow);
 }
 
 
@@ -562,20 +487,14 @@ a {
    overflow: hidden;
 }
 
-.quotation-image figcaption {
-   text-align: right;
-   margin-left: 10px;
-   margin-top: 10px;
-   color: var(--clr-primary-400);
-}
-
 .quotation-1 {
    width: 50vw;
+   max-width: 60ch;
    height: fit-content;
    padding: 1.5vw 2vw 1vw 2vw;
-   background-color: var(--clr-primary-250);
-   margin: -200px auto 10vh auto;
-   border-radius: 20px;
+   background-color: var(--clr-primary-200);
+   margin: -15rem auto 10vh auto;
+   border-radius: 2rem;
 }
 
 
@@ -585,17 +504,10 @@ a {
    .quotation-1 {
       width: 80vw;
       height: fit-content;
-      padding: 27px 10vw 3vw 10vw;
-      margin: -200px auto auto auto;
-   }
-   .quotation-image figcaption {
-      text-align: left;
-      margin-left: 10px;
-      margin-top: 10px;
-      color: var(--clr-primary-400);
+      padding: 3rem;
    }
    .quotation-1 h2 {
-      padding: 10px;
+      padding: 1rem;
       font-size: 97%;
    }
 }
@@ -611,17 +523,17 @@ a {
 
 #poses-container {
    width: 95vw;
+   margin-left: auto;
+   margin-right: auto;
    height: fit-content;
    display: grid;
-   row-gap: 2.5vw;
-   column-gap: 5vw;
-   padding: 8vw 8vw 8vw 8vw;
+   column-gap: 7rem;
    grid-template-columns: repeat(3, 1fr);
    grid-auto-rows: minmax(100px, auto);
    grid-template-areas: "information information information" "warrior-i warrior-ii cobra" "dog bridge tree" "supinetwist cat-cow forward-fold"
 }
 
-video {
+.pose-video {
    width: 20vw;
    position: relative;
    left: 50%;
@@ -634,15 +546,19 @@ video {
 }
 
 .poses-border {
+   margin-left: auto;
+   margin-right: auto;
    width: 22vw;
-   padding: 25px;
+   padding: 2vw;
+   margin-bottom: 5rem;
    color: var(--clr-primary-500);
-   border-radius: 10px 10px 10px 10px;
-   box-shadow: 0 0 10px var(--clr-box-shadow);
+   border-radius: 1rem 1rem 1rem 1rem;
+   box-shadow: 0 0 1rem var(--clr-box-shadow);
 }
 
 .pose-information {
    grid-area: information;
+   margin: auto;
 }
 
 .pose-warrior-i {
@@ -684,12 +600,14 @@ video {
 
 /*** START poses section media queries ***/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
    #poses-container {
+      column-gap: 6rem;
+      padding: 0 auto 0 auto;
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "information information" "warrior-i warrior-ii" "cobra dog" "bridge tree" "supinetwist cat-cow" "forward-fold ."
    }
-   video {
+   .pose-video {
       width: 30vw;
    }
    .poses-border {
@@ -699,13 +617,21 @@ video {
 
 @media screen and (max-width: 425px) {
    #poses-container {
+      max-width: 95vw;
+      padding: 0 1vw 0 1vw;
+      margin: 2vw;
+      align-content: center;
       display: inline-block;
    }
-   video {
-      width: 70vw;
+   .pose-information {
+      margin-top: 1rem;
+      width: 80vw;
+   }
+   .pose-video {
+      width: 65vw;
    }
    .poses-border {
-      margin-top: 25px;
+      margin-top: 2rem;
       width: 80vw;
    }
 }
@@ -716,17 +642,123 @@ video {
 
 /*** End poses section ***/
 
-#quotation-2 {}
 
-#videos {}
+/*** Start Exercise Videos ***/
 
-#contact {}
-
-#footer {}
-
-.blank-spacer {
-   background-color: var(--clr-primary-400);
-   min-height: 150px;
-   width: 100vw;
-   margin-top: 100px;
+.ytube-video-header h1 {
+   text-align: center;
 }
+
+#videos-container {
+   width: 100vw;
+   height: fit-content;
+   display: grid;
+   column-gap: 5rem;
+   padding: 0 2rem 0 2rem;
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: minmax(100px, auto);
+   grid-template-areas: "heading heading" "video-1 video-2" "video-3 video-4"
+}
+
+iframe {
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 356px;
+   height: 200px;
+}
+
+.ytube-video-header {
+   grid-area: heading;
+   padding: 0%
+}
+
+.video-1 {
+   grid-area: video-1;
+}
+
+.video-2 {
+   grid-area: video-2;
+}
+
+.video-3 {
+   grid-area: video-3;
+}
+
+.video-4 {
+   grid-area: video-3;
+}
+
+.ytube-video {
+   margin: 1rem .5rem 6rem .5rem;
+}
+
+.ytube-video p {
+   padding-left: 3rem;
+   padding-right: 3rem;
+   color: var(--clr-primary-300);
+   text-align: center;
+}
+
+
+/*** START Exercise Videos section media queries ***/
+
+@media screen and (max-width: 1000px) {
+   .iframe {
+      width: 400px;
+      height: 225.5px;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   #videos-container {
+      display: inline-block;
+   }
+   .ytube-video-header {
+      padding-top: 8rem;
+      text-align: center;
+   }
+   iframe {
+      width: 650px;
+      height: 365.625px;
+   }
+   @media screen and (max-width: 700px) {
+      iframe {
+         width: 500px;
+         height: 281.25px;
+      }
+   }
+   @media screen and (max-width: 600px) {
+      iframe {
+         width: 400px;
+         height: 225.5px;
+      }
+   }
+   @media screen and (max-width: 500px) {
+      iframe {
+         width: 300px;
+         height: 168.75px;
+      }
+   }
+   @media screen and (max-width: 400px) {
+      #videos-container {
+         width: 100vw;
+         padding: 0;
+      }
+      iframe {
+         width: 250px;
+         height: 140.625px;
+      }
+   }
+   /*** End Exercise Videos section media queries ***/
+   /*** End Exercise Videos section ***/
+   #quotation-2 {}
+   #videos {}
+   #contact {}
+   #footer {}
+   .blank-spacer {
+      background-color: var(--clr-primary-400);
+      min-height: 150px;
+      width: 100vw;
+      margin-top: 100px;
+   }

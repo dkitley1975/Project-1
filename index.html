@@ -9,21 +9,31 @@
       <link rel="stylesheet" href="assets/css/styles.css">
    </head>
    <body>
-      <header>
-         <nav class="nav-bar">
-            <a href="/" class="nav-bar-home-logo">Yoga Centric</a>
-            <input class="nav-bar-menu-button" type="checkbox" id="nav-bar-menu-button"/>
-            <label class="nav-bar-menu-icon" for="nav-bar-menu-button">
-            <span class="nav-bar-icon-top"></span>
-            <span class="nav-bar-icon-middle"></span>
-            <span class="nav-bar-icon-bottom"></span></label>
-            <ul class="nav-bar-menu-list">
-               <li><a href="#hero-container">Home</a></li>
-               <li><a href="#benefits-container">Yoga's Benefits</a></li>
-               <li><a href="#history-container">History</a></li>
-               <li><a href="#poses-container">Instructional Poses</a></li>
-               <li><a href="#">yoga_videos</a></li>
+      <header class="nav-bar-header">
+         <nav class="navbar">
+            <a href="#hero-container" class="nav-logo">Yoga Centric</a>
+            <ul class="nav-menu">
+               <li class="nav-item">
+                  <a href="#hero-container" class="nav-link">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#benefits-container" class="nav-link">Yoga's Benefits</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#history-container" class="nav-link">A Brief History</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#poses-container" class="nav-link">Yoga Poses</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#videos-container" class="nav-link">Exercise Videos</a>
+               </li>
             </ul>
+            <div class="hamburger">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
          </nav>
       </header>
       <section id="hero-container">
@@ -74,7 +84,6 @@
                <li>Samadhi – the combination of mediation and the subject of meditation, this is often related to obtaining enlightenment</li>
                <li>Yama – these are the ethical rules relating to the conduct towards others or social discipline</li>
             </ul>
-            
          </div>
          <div class="history-post-classical">
             <h2>Post-Classical</h2>
@@ -129,7 +138,7 @@
          </div>
          <div class="poses-border pose-warrior-i">
             <h3>Warrior-I Pose</h3>
-            <video src="assets/images/yoga_videos/warrior_I.mp4" controls autoplay muted>
+            <video src="assets/images/yoga_videos/warrior_I.mp4" class="pose-video" controls autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -144,7 +153,7 @@
          </div>
          <div class="poses-border pose-warrior-ii">
             <h3>Warrior-II Pose</h3>
-            <video src="assets/images/yoga_videos/warrior_II.mp4" controls autoplay muted>
+            <video src="assets/images/yoga_videos/warrior_II.mp4" class="pose-video" controls autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -161,7 +170,7 @@
          </div>
          <div class="poses-border pose-cobra">
             <h3>Cobra</h3>
-            <video src="assets/images/yoga_videos/cobra.mp4" controls  autoplay muted>
+            <video src="assets/images/yoga_videos/cobra.mp4" class="pose-video" controls  autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -175,7 +184,7 @@
          </div>
          <div class="poses-border pose-down-dog">
             <h3>Downward-Facing Dog</h3>
-            <video src="assets/images/yoga_videos/downward-facing-dog.mp4" controls autoplay muted>
+            <video src="assets/images/yoga_videos/downward-facing-dog.mp4" class="pose-video" controls autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -189,7 +198,7 @@
          </div>
          <div class="poses-border pose-bridge">
             <h3>Bridge Pose</h3>
-            <video src="assets/images/yoga_videos/Bridge_ose.mp4" controls  autoplay muted>
+            <video src="assets/images/yoga_videos/Bridge_ose.mp4" class="pose-video" controls  autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -202,7 +211,7 @@
          </div>
          <div class="poses-border pose-tree">
             <h3>Tree Pose</h3>
-            <video src="assets/images/yoga_videos/tree_pose.mp4" controls  autoplay muted>
+            <video src="assets/images/yoga_videos/tree_pose.mp4" class="pose-video" controls  autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -217,7 +226,7 @@
          </div>
          <div class="poses-border pose-supinetwist">
             <h3>Supine Twist</h3>
-            <video src="assets/images/yoga_videos/supine_twist.mp4" controls  autoplay muted>
+            <video src="assets/images/yoga_videos/supine_twist.mp4" class="pose-video" controls  autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -231,7 +240,7 @@
          </div>
          <div class="poses-border pose-cat-cow">
             <h3>Cat Cow</h3>
-            <video src="assets/images/yoga_videos/Cat-cow.mp4" controls  autoplay muted>
+            <video src="assets/images/yoga_videos/Cat-cow.mp4" class="pose-video" controls  autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -245,7 +254,7 @@
          </div>
          <div class="poses-border pose-forward-fold">
             <h3>Seated Forward Fold</h3>
-            <video src="assets/images/yoga_videos/seated_forward_fold.mp4" controls  autoplay muted>
+            <video src="assets/images/yoga_videos/seated_forward_fold.mp4" class="pose-video" controls  autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -259,9 +268,33 @@
          </div>
       </section>
       <section id="quotation-2"></section>
-      <section id="videos"></section>
+      <section id="videos">
+         <section id="videos-container">
+            <div class="ytube-video-header">
+               <h1>Exercise Videos</h1>
+               <p>Four Yoga videos from <br>Lindsay Jays Youtube channel.</p>
+            </div>
+            <div class="ytube-video video-1">
+               <iframe src="https://www.youtube.com/embed/bTs73IH7Ycw?rel=0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <p>Wake Up & Flow Yoga | YogaFit Retreats - Lindsay Jay</p>
+            </div>
+            <div class="ytube-video video-2">
+               <iframe src="https://www.youtube.com/embed/JFgdMq9L1Vw?rel=0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <p>Sunset Yoga Flow | Relax & Let Go - Lindsay Jay</p>
+            </div>
+            <div class="ytube-video video-3">
+               <iframe src="https://www.youtube.com/embed/nSISnimEq30?rel=0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <p>Happiness & Gratitude Meditation - Lindsay Jay</p>
+            </div>
+            <div class="ytube-video video-4">
+               <iframe src="https://www.youtube.com/embed/KarBeaitMNs?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <p>Lindsay Jay Yoga</p>
+            </div>
+         </section>
+      </section>
       <div class="blank-spacer"></div>
       <section id="contact"></section>
       <section id="footer"></section>
    </body>
+   <script src="./assets/scripts/main.js"></script>
 </html>
