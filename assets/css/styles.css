@@ -736,6 +736,7 @@ iframe {
       width: 650px;
       height: 365.625px;
    }
+}
    @media screen and (max-width: 700px) {
       iframe {
          width: 500px;
@@ -766,12 +767,26 @@ iframe {
    }
    /*** End Exercise Videos section media queries ***/
    /*** End Exercise Videos section ***/
-   #quotation-2 {}
-   #videos {}
    #contact {}
-   #footer {}
+
+   .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background-color: var(--clr-primary-300);
+      min-height: 10rem;      
+      padding:0 20vw 0 20vw;
+
+   }
+   i.fab {
+      font-size: 4rem;
+      color: white;
+    }
+  
    .blank-spacer {
-      background-color: var(--clr-primary-400);
+      background-color: var(--clr-primary-300);
       min-height: 150px;
       width: 100vw;
       margin-top: 100px;
