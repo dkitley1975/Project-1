@@ -7,6 +7,8 @@
       <meta name="description" content="A simple single page scrolling website for project 1 - Yoga Centric">
       <meta name="author" content="David Kitley-McNamara">
       <link rel="stylesheet" href="assets/css/styles.css">
+      <script src="./assets/scripts/main.js"></script>
+      <script src="https://kit.fontawesome.com/bfd0787cc4.js" crossorigin="anonymous"></script>
    </head>
    <body>
       <header class="nav-bar-header">
@@ -27,6 +29,9 @@
                </li>
                <li class="nav-item">
                   <a href="#videos-container" class="nav-link">Exercise Videos</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#newsletter-signup-section" class="nav-link">Newsletter Signup</a>
                </li>
             </ul>
             <div class="hamburger">
@@ -183,7 +188,7 @@
             </ol>
          </div>
          <div class="poses-border pose-down-dog">
-            <h3>Downward-Facing Dog</h3>
+            <h3>Downward Dog</h3>
             <video src="assets/images/yoga_videos/downward-facing-dog.mp4" class="pose-video" controls autoplay muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
@@ -275,52 +280,50 @@
             <p class="author">– Aadil Palkhivala</p>
          </div>
       </section>
-      
-      <section id="videos">
-         <section id="videos-container">
-            <div class="ytube-video-header">
-               <h1>Exercise Videos</h1>
-               <p>Four Yoga videos from Lindsay Jays Youtube channel.</p>
-            </div>
-            <div class="ytube-video video-1">
-               <iframe src="https://www.youtube.com/embed/bTs73IH7Ycw?rel=0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               <p>Wake Up & Flow Yoga | YogaFit Retreats - Lindsay Jay</p>
-            </div>
-            <div class="ytube-video video-2">
-               <iframe src="https://www.youtube.com/embed/JFgdMq9L1Vw?rel=0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               <p>Sunset Yoga Flow | Relax & Let Go - Lindsay Jay</p>
-            </div>
-            <div class="ytube-video video-3">
-               <iframe src="https://www.youtube.com/embed/nSISnimEq30?rel=0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               <p>Happiness & Gratitude Meditation - Lindsay Jay</p>
-            </div>
-            <div class="ytube-video video-4">
-               <iframe src="https://www.youtube.com/embed/KarBeaitMNs?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               <p>Lindsay Jay Yoga</p>
-            </div>
-         </section>
+      <section id="videos-container">
+         <div class="ytube-video-header">
+            <h2>Exercise Videos</h2>
+            <p>Yoga videos from Lindsay Jays Youtube channel</p>
+         </div>
+         <div class="ytube-video video-1">
+            <iframe src="https://www.youtube-nocookie.com/embed/bTs73IH7Ycw?rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Wake Up & Flow Yoga | YogaFit Retreats - Lindsay Jay</p>
+         </div>
+         <div class="ytube-video video-2">
+            <iframe src="https://www.youtube-nocookie.com/embed/JFgdMq9L1Vw?rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Sunset Yoga Flow | Relax & Let Go - Lindsay Jay</p>
+         </div>
+         <div class="ytube-video video-3">
+            <iframe src="https://www.youtube-nocookie.com/embed/nSISnimEq30?rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Happiness & Gratitude Meditation - Lindsay Jay</p>
+         </div>
+         <div class="ytube-video video-4">
+            <iframe src="https://www.youtube-nocookie.com/embed/KarBeaitMNs?rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Lindsay Jay Yoga</p>
+         </div>
       </section>
-
-
-      <section id="contact"></section>
-
-
-      
+      <section id="newsletter-signup-section">
+         <form class="newsletter-signup-form">
+            <h2>Sign up to our Newsletter for monthly Yoga guides</h2>
+            <label for="firstname">First Name</label>
+            <input id="firstname" class="text-input" name="first_name" type="text" required>
+            <label for="lastname" >Last Name</label>
+            <input id="lastname" class="text-input" name="last_name" type="text" required>
+            <label for="email">Email Address</label>
+            <input class="text-input" type="email" id="email" name="email_address" required>
+            <input class="newsletter-button" type="submit" value="Send me the Newsletter">
+            <p>* This is a sample form, the information will not be submitted *</p>
+         </form>
+      </section>
       <footer class="footer social-networks">
-             <a href="https://facebook.com" target="_blank" rel="noopener"
-                     aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
-            
-                 <a href="https://twitter.com" target="_blank" rel="noopener"
-                     aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
-             
-                 <a href="https://youtube.com" target="_blank" rel="noopener"
-                     aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
-             
-                 <a href="https://instagram.com" target="_blank" rel="noopener"
-                     aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram-square"></i></a>
-     </footer>
+         <a href="https://facebook.com" target="_blank" rel="noopener"
+            aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
+         <a href="https://twitter.com" target="_blank" rel="noopener"
+            aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+         <a href="https://youtube.com" target="_blank" rel="noopener"
+            aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+         <a href="https://instagram.com" target="_blank" rel="noopener"
+            aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram-square"></i></a>
+      </footer>
    </body>
-   <script src="./assets/scripts/main.js"></script>
-   <script src="https://kit.fontawesome.com/bfd0787cc4.js" crossorigin="anonymous"></script>
-
 </html>
