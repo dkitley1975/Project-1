@@ -105,28 +105,28 @@ li {
 
 a {
 	text-decoration: none;
-}
-
-.nav-bar-header {
+ }
+ 
+ .nav-bar-header{
 	background-color: var(--clr-primary-100);
 	border-bottom: 1px solid var(--clr-primary-250);
-	width: 100vw;
+	width: 99vw;
 	position: fixed;
 	z-index: 99;
-}
-
-.navbar {
+ }
+ 
+ .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 1.5rem;
-}
-
-.hamburger {
+ }
+ 
+ .hamburger {
 	display: none;
-}
-
-.bar {
+ }
+ 
+ .bar {
 	display: block;
 	width: 2.5rem;
 	height: .25rem;
@@ -134,41 +134,36 @@ a {
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	background-color: var(--clr-primary-400);
-}
-
-.nav-menu {
+ }
+ 
+ .nav-menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.nav-item {
+ }
+ 
+ .nav-item {
 	list-style: none;
 	margin-left: 5rem;
-}
-
-.nav-link {
+ }
+ 
+ .nav-link{
 	font-size: var(--fs-default);
 	font-weight: var(--fw-m);
 	color: var(--clr-primary-400);
-}
-
-.nav-link:hover {
+ }
+ .nav-link:hover{
 	color: var(--clr-primary-300);
-}
-
-.active {
-	border-bottom: 1px solid #3a3a3a;
-}
-
-.nav-logo {
+	
+ }
+ 
+ .nav-logo {
 	font-size: 2rem;
 	font-weight: var(--fw-b);
-	color: var(--clr-primary-400);
-	margin-left: 2rem;
-}
-
-@media only screen and (max-width: 800px) {
+	color: var(--clr-primary-400)
+ }
+ 
+ @media only screen and (max-width: 768px) {
 	.nav-menu {
 		position: fixed;
 		left: -100%;
@@ -178,29 +173,36 @@ a {
 		width: 100%;
 		text-align: center;
 		transition: 0.3s;
+		
 	}
+ 
 	.nav-menu.active {
 		left: 0;
 	}
+ 
 	.nav-item {
 		margin: 2.5rem 0;
 	}
+ 
 	.hamburger {
 		display: block;
 		cursor: pointer;
 	}
+ 
 	.hamburger.active .bar:nth-child(2) {
 		opacity: 0;
 	}
+ 
 	.hamburger.active .bar:nth-child(1) {
 		-webkit-transform: translateY(8px) rotate(45deg);
 		transform: translateY(8px) rotate(45deg);
 	}
+ 
 	.hamburger.active .bar:nth-child(3) {
 		-webkit-transform: translateY(-8px) rotate(-45deg);
 		transform: translateY(-8px) rotate(-45deg);
 	}
-}
+ }
 
 
 /*** END Nav ***/
