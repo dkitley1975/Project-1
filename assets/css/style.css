@@ -7,7 +7,11 @@
 	padding: 0;
 	border: 0;
 }
-
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 :root {
 	/*  Fonts for the site  -  select using font-family: var(--ff-main); within classes etc. change here to affect whole site */
 	--ff-main: 'Source Sans Pro', sans-serif;
@@ -77,7 +81,6 @@ h6 {
 
 .author {
 	font-family: var(--ff-main);
-	font-size: var(--fs-default);
 	font-weight: var(--fw-l);
 	font-style: italic;
 	text-transform: uppercase;
@@ -91,14 +94,9 @@ h6 {
 
 li {
 	list-style-position: inside;
-	font-size: var(--fs-default);
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
+
 
 
 /*** Start Nav bar ***/
@@ -148,7 +146,6 @@ a {
  }
  
  .nav-link{
-	font-size: var(--fs-default);
 	font-weight: var(--fw-m);
 	color: var(--clr-primary-400);
  }
@@ -287,7 +284,6 @@ a {
 	}
 	.hero-quotation h2 {
 		padding: 1rem;
-		font-size: 97%;
 	}
 	.lotus-flower-vertical-line {
 		height: 35px;
@@ -340,14 +336,12 @@ a {
 
 .benefits-text h1 {
 	line-height: 200%;
-	font-size: var(--fs-1);
 }
 
 .benefits-text p {
 	margin-top: 5vh;
 	color: var(--clr-primary-400);
 	line-height: 150%;
-	font-size: var--(--fs-default);
 }
 
 .benefits-image {
@@ -376,12 +370,10 @@ a {
 	.benefits-text h1 {
 		color: var(--clr-primary-300);
 		line-height: 150%;
-		font-size: var(--fs-1);
 	}
 	.benefits-text p {
 		margin-top: 5vh;
 		line-height: 150%;
-		font-size: 95%;
 	}
 	.benefits-image {
 		width: 70vw;
@@ -424,7 +416,6 @@ a {
 
 .a-brief-history h1 {
 	line-height: 200%;
-	font-size: var(--fs-1);
 }
 
 .a-brief-history p {
@@ -533,7 +524,6 @@ a {
 	}
 	.quotation-block h2 {
 		padding: 1rem;
-		font-size: 97%;
 	}
 }
 
@@ -838,7 +828,6 @@ iframe {
 	margin: 2rem 0 0 0;
 	color: var(--clr-primary-400);
 	font-style: italic;
-	font-size: 90%;
 }
 
 .newsletter-signup-form h2 {
@@ -866,7 +855,6 @@ iframe {
 	border-radius: 1.5rem;
 	padding: 1.8rem 2rem 1.8rem 2rem;
 	text-align: center;
-	font-size: 100%;
 	background-color: var(--clr-primary-200);
 	color: var(--clr-primary-300);
 }
