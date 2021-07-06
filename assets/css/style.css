@@ -140,7 +140,7 @@ a {
  .nav-bar-header{
 	background-color: var(--clr-primary-100);
 	border-bottom: 1px solid var(--clr-primary-250);
-	width: 99vw;
+	width: 100vw;
 	position: fixed;
 	z-index: 99;
  }
@@ -547,26 +547,24 @@ a {
 }
 
 .quotation-block {
-	width: 50vw;
-	max-width: 60ch;
+	width: 70vw;
 	height: fit-content;
 	padding: 1.5vw 2vw 1vw 2vw;
 	background-color: var(--clr-primary-200);
 	margin: 0rem auto 1vh auto;
 	border-radius: 2rem;
 }
-
-
+.quotation-block h2 {
+	padding: 1rem;
+	font-size: var(--fs-default);
+}
 /*** START Quotation section media queries ***/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 	.quotation-block {
-		width: 80vw;
+		max-width: 70ch;
 		height: fit-content;
 		padding: 3rem;
-	}
-	.quotation-block h2 {
-		padding: 1rem;
 	}
 }
 
