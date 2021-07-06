@@ -395,15 +395,17 @@ a {
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 2vw;
 		padding: 5vh 3vw 5vh 3vw;
+		align-items: center;
 		grid-template-areas: "benefits-text-area benefits-image-container benefits-image-container";
 	}
 	
 	.benefits-text-area {
 		grid-area: benefits-text-area;
 		max-width: 35vw;
-		margin-left: 2vw;
-		padding-left: 2vw;
+		margin-left: 10vw;
+		padding-left: 20vw;
 		padding-right: 5vw;
+		
 
 	}
 	
@@ -769,7 +771,7 @@ iframe {
 /*** Start newsletter-signup-section section ***/
 
 #newsletter-signup-section {
-	background: url('../images/pretty-woman-practicing-yoga-beach_10887529.jpg') no-repeat center left;
+	background: url('../images/beautiful-blonde-woman-doing-yoga-outdoors_10887584.jpg') no-repeat bottom left;
 	background-size: cover;
 	overflow: hidden;
 	width: 95vw;
