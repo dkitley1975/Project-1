@@ -11,7 +11,7 @@
       <script src="https://kit.fontawesome.com/bfd0787cc4.js" crossorigin="anonymous"></script>
    </head>
    <body>
-      <header class="nav-bar-header">
+      <header id="nav-bar-header">
          <nav class="navbar">
              <a href="#hero-container" class="nav-logo">Yoga Centric</a>
              <ul class="nav-menu">
@@ -41,14 +41,15 @@
       <section id="hero-container">
          <div class="hero-image"></div>
          <div class="quotation-block">
-            <div class="lotus-flower-and-line"></div>
-            <div class="lotus-flower-vertical-line"></div>
-            <div class="lotus-flower"></div>
+            <div class="lotus-flower-and-line">
+               <div class="lotus-flower-vertical-line"></div>
+               <div class="lotus-flower"></div>
+            </div>
             <h2 class="quotation">"The gift of learning to meditate is the greatest gift you can give yourself in this lifetime"</h2>
          </div>
       </section>
       <section id="benefits-container">
-         <div class="benefits-text">
+         <div class="benefits-text-area">
             <h1>The health benefits of Yoga</h1>
             <p>Yoga is a safe and effective way to increase your physical activity.<br>
                Yoga helps with increasing strength, balance and flexibility.<br>
@@ -136,7 +137,7 @@
          </div>
          <div class="poses-video-container pose-warrior-i">
             <h3>Warrior-I Pose</h3>
-            <video src="assets/images/yoga_videos/warrior_I.mp4" class="pose-video" controls autoplay loop playsinline muted>
+            <video src="assets/images/yoga_videos/warrior_I.mp4" class="pose-video" controls autoplay playsinline muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -151,7 +152,7 @@
          </div>
          <div class="poses-video-container pose-warrior-ii">
             <h3>Warrior-II Pose</h3>
-            <video src="assets/images/yoga_videos/warrior_II.mp4" class="pose-video" controls autoplay loop playsinline muted>
+            <video src="assets/images/yoga_videos/warrior_II.mp4" class="pose-video" controls autoplay playsinline muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -168,7 +169,7 @@
          </div>
          <div class="poses-video-container pose-cobra">
             <h3>Cobra</h3>
-            <video src="assets/images/yoga_videos/cobra.mp4" class="pose-video" controls autoplay loop playsinline muted>
+            <video src="assets/images/yoga_videos/cobra.mp4" class="pose-video" controls autoplay playsinline muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -182,7 +183,7 @@
          </div>
          <div class="poses-video-container pose-down-dog">
             <h3>Downward Dog</h3>
-            <video src="assets/images/yoga_videos/downward-facing-dog.mp4" class="pose-video" controls autoplay loop playsinline muted>
+            <video src="assets/images/yoga_videos/downward-facing-dog.mp4" class="pose-video" controls autoplay playsinline muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -196,7 +197,7 @@
          </div>
          <div class="poses-video-container pose-bridge">
             <h3>Bridge Pose</h3>
-            <video src="assets/images/yoga_videos/Bridge_ose.mp4" class="pose-video" controls autoplay loop playsinline muted>
+            <video src="assets/images/yoga_videos/Bridge_ose.mp4" class="pose-video" controls autoplay playsinline muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -209,7 +210,7 @@
          </div>
          <div class="poses-video-container pose-tree">
             <h3>Tree Pose</h3>
-            <video src="assets/images/yoga_videos/tree_pose.mp4" class="pose-video" controls autoplay loop playsinline muted>
+            <video src="assets/images/yoga_videos/tree_pose.mp4" class="pose-video" controls autoplay playsinline muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -224,7 +225,7 @@
          </div>
          <div class="poses-video-container pose-supinetwist">
             <h3>Supine Twist</h3>
-            <video src="assets/images/yoga_videos/supine_twist.mp4" class="pose-video" controls autoplay loop playsinline muted>
+            <video src="assets/images/yoga_videos/supine_twist.mp4" class="pose-video" controls autoplay playsinline muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -238,7 +239,7 @@
          </div>
          <div class="poses-video-container pose-cat-cow">
             <h3>Cat Cow</h3>
-            <video src="assets/images/yoga_videos/Cat-cow.mp4" class="pose-video" controls autoplay loop playsinline muted>
+            <video src="assets/images/yoga_videos/Cat-cow.mp4" class="pose-video" controls autoplay playsinline muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -252,7 +253,7 @@
          </div>
          <div class="poses-video-container pose-forward-fold">
             <h3>Seated Forward Fold</h3>
-            <video src="assets/images/yoga_videos/seated_forward_fold.mp4" class="pose-video" controls autoplay loop playsinline muted>
+            <video src="assets/images/yoga_videos/seated_forward_fold.mp4" class="pose-video" controls autoplay playsinline muted>
                <p>Your browser doesn't support HTML5 video.</p>
             </video>
             <ol>
@@ -279,21 +280,18 @@
             <p>Yoga videos from Lindsay Jays Youtube channel</p>
          </div>
          <div class="ytube-video video-1">
-            <iframe src="https://www.youtube-nocookie.com/embed/bTs73IH7Ycw?rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video src="./assets/images/yoga_videos/wake-up-flow-yoga-yogafit-retreats_360p.mp4" controls muted><p>Your browser doesn't support HTML5 video.</p><a href="./assets/images/yoga_videos/wake-up-flow-yoga-yogafit-retreats_360p.mp4">Link to the video.</a></video>
             <p>Wake Up & Flow Yoga | YogaFit Retreats - Lindsay Jay</p>
          </div>
          <div class="ytube-video video-2">
-            <iframe src="https://www.youtube-nocookie.com/embed/JFgdMq9L1Vw?rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Sunset Yoga Flow | Relax & Let Go - Lindsay Jay</p>
-         </div>
-         <div class="ytube-video video-3">
-            <iframe src="https://www.youtube-nocookie.com/embed/nSISnimEq30?rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video src="./assets/images/yoga_videos/happiness-gratitude-meditation-lindsay-jay_360p.mp4" controls muted><p>Your browser doesn't support HTML5 video.</p><a href="./assets/images/yoga_videos/happiness-gratitude-meditation-lindsay-jay_360p">Link to the video.</a></video>
             <p>Happiness & Gratitude Meditation - Lindsay Jay</p>
          </div>
-         <div class="ytube-video video-4">
-            <iframe src="https://www.youtube-nocookie.com/embed/KarBeaitMNs?rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <div class="ytube-video video-3">
+            <video src="./assets/images/yoga_videos/lindsay-jay-yoga_360p.mp4" controls muted><p>Your browser doesn't support HTML5 video.</p><a href="./assets/images/yoga_videos/lindsay-jay-yoga_360p.mp4">Link to the video.</a></video>
             <p>Lindsay Jay Yoga</p>
          </div>
+   
       </section>
       <section id="newsletter-signup-section">
          <form class="newsletter-signup-form">
@@ -319,5 +317,5 @@
             aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram-square"></i></a>
       </footer>
    </body>
-   <script src="./assets/scripts/main.js"></script>
+   <script src="./assets/scripts/nav-bar.js"></script>
 </html>
