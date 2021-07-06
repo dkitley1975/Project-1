@@ -92,15 +92,18 @@ h6 {
 	margin-top: 1vw;
 	margin-bottom: 1vw;
 }
-.benefits-text-area h1 {
-	line-height: 200%;
-}
+
 #poses-container h3 {
 	text-align: center;
 	padding-bottom: 15px;
 }
+
+.benefits-text-area h1 {
+	line-height: 150%;
+
+}
 .benefits-text-area p {
-	margin-top: 5vh;
+	margin-top: 2vh;
 	color: var(--clr-primary-400);
 	line-height: 150%;
 }
@@ -140,12 +143,13 @@ li {
 }
 a {
 	text-decoration: none;
-	
  }
+ 
+ 
 
 /*** Start Nav bar ***/
  
- .nav-bar-header{
+ #nav-bar-header{
 	background-color: var(--clr-primary-100);
 	border-bottom: 1px solid var(--clr-primary-250);
 	width: 100vw;
@@ -261,46 +265,47 @@ a {
 }
 
 .quotation-block {
-	width: 50vw;
+	width: 100vw;
 	max-width: 60ch;
 	height: fit-content;
-	padding: 30px 3vw 2.5vw 3vw;
+	padding:  3rem 2rem 1rem 2rem;
 	background-color: var(--clr-primary-250);
 	margin: auto;
+	margin-bottom: -8rem;
 	transform: translate(0%, -130px);
 }
 
 .lotus-flower-vertical-line {
 	content: "";
-	height: 25px;
+	height: 3rem;
 	position: absolute;
 	z-index: 1;
 	top: 0;
-	bottom: 0;
+	margin-bottom: 0;
 	left: 50%;
 	border-left: 1px solid var(--clr-primary-400);
 	/* transform: translate(-50%); */
 }
 
 .lotus-flower {
-	width: 35px;
-	height: 35px;
+	width: 4rem;
+	height: 4rem;
 	position: relative;
 	z-index: 2;
 	margin: auto;
-	top: 8px;
-	margin-bottom: 25px;
+	top: 0;
+	margin-bottom: 2.5rem;
 	background: url("../images/lotus-flower.svg") no-repeat center center;
 	/* Animates zoom effect on loading the page */
-	animation-name: lotus-flower-zoom;
+	animation-name: lotus-flower-rotation;
 	animation-duration: 15s;
 	animation-fill-mode: forwards;
 }
 
 
-/* Creates the level of zoom for Lotus Flower image */
+/* Creates the rotation for Lotus Flower image */
 
-@keyframes lotus-flower-zoom {
+@keyframes lotus-flower-rotation {
 	from {
 		transform: rotate(180deg);
 	}
@@ -310,41 +315,6 @@ a {
 }
 
 
-/*** START Hero section media queries ***/
-
-@media screen and (max-width: 768px) {
-	.hero-quotation {
-		width: 100vw;
-		height: fit-content;
-		padding: 27px 10vw 3vw 10vw;
-		transform: translate(0%, -150px);
-	}
-	.quotation-block {
-		width: 100vw;
-	}
-	.hero-quotation h2 {
-		padding: 1rem;
-	}
-	.lotus-flower-vertical-line {
-		height: 35px;
-	}
-	.lotus-flower {
-		width: 30px;
-		height: 30px;
-		margin-top: -5px;
-		margin-bottom: 10px;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.lotus-flower {
-		margin-top: -5px;
-		margin-bottom: 10px;
-	}
-}
-
-
-/*** END Hero section media queries ***/
 
 
 /*** End Hero styling ***/
@@ -366,7 +336,7 @@ a {
 	margin: auto;
 	padding-left: 5vw;
 	padding-right: 5vw;
-	text-align: center;
+	text-align: left;
 }
 
 
@@ -401,12 +371,8 @@ a {
 	
 	.benefits-text-area {
 		grid-area: benefits-text-area;
-		max-width: 35vw;
-		margin-left: 10vw;
-		padding-left: 20vw;
-		padding-right: 5vw;
-		
-
+		padding-left: 2vw;
+		padding-right: 2vw;
 	}
 	
 	.benefits-image-container {
@@ -426,7 +392,19 @@ a {
 	}
 		
 }
+@media screen and (min-width: 1024px) {
+	#benefits-container {
+		padding: 5vh 3vw 5vh 3vw;
+	}
+	
+	.benefits-text-area {
+		margin-left: 5vw;
+		padding-left: 5vw;
 
+		
+
+	}
+}
 
 /*** END Benefits section media queries ***/
 
@@ -556,30 +534,11 @@ a {
 	overflow: hidden;
 }
 
-.quotation-block {
-	width: 70vw;
-	height: fit-content;
-	padding: 1.5vw 2vw 1vw 2vw;
-	background-color: var(--clr-primary-200);
-	margin: 0rem auto 1vh auto;
-	border-radius: 2rem;
-}
 .quotation-block h2 {
 	padding: 1rem;
 	font-size: var(--fs-default);
 }
-/*** START Quotation section media queries ***/
 
-@media screen and (min-width: 768px) {
-	.quotation-block {
-		max-width: 70ch;
-		height: fit-content;
-		padding: 3rem;
-	}
-}
-
-
-/*** END Quotation section media queries ***/
 
 
 /** End Quotation Block 1 **/
@@ -694,12 +653,13 @@ a {
 	padding: 0 2rem 0 2rem;
 }
 
-iframe {
+.ytube-video>video {
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
 	width:90vw;
-	height: 50.6vw;
+	box-shadow: .5rem .5rem 1rem var(--clr-box-shadow);
+	border-radius: 2rem;
 }
 
 .ytube-video-header {
@@ -721,15 +681,14 @@ iframe {
 		column-gap: 5rem;
 		padding: 0 2rem 0 2rem;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "heading heading" "video-1 video-2" "video-3 video-4"
+		grid-template-areas: "heading heading" "video-1 video-2" "video-3 ."
 	}
 	
-	iframe {
+	.ytube-video>video {
 		position: relative;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 40vw;
-		height: 22.2vw;
+		width: 40vw;		
 	}
 
 	.ytube-video-header {
@@ -740,6 +699,7 @@ iframe {
 	
 	.video-1 {
 		grid-area: video-1;
+		
 	}
 	
 	.video-2 {
@@ -750,9 +710,6 @@ iframe {
 		grid-area: video-3;
 	}
 	
-	.video-4 {
-		grid-area: video-4;
-	}
 	
 	.ytube-video {
 		margin: 1rem .5rem 6rem .5rem;
