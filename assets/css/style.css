@@ -91,19 +91,45 @@ h6 {
 	margin-top: 1vw;
 	margin-bottom: 1vw;
 }
-
-li {
-	list-style-position: inside;
+.benefits-text-area h1 {
+	line-height: 200%;
+}
+#poses-container h3 {
+	text-align: center;
+	padding-bottom: 15px;
+}
+.benefits-text-area p {
+	margin-top: 5vh;
+	color: var(--clr-primary-400);
+	line-height: 150%;
 }
 
 
-
-
-/*** Start Nav bar ***/
-
+#videos-container h2 {
+	line-height: 200%;
+	font-size: var(--fs-1);
+   text-align: center;
+}
+.ytube-video-header p {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	color: var(--clr-primary-300);
+	text-align: center;
+}
+#videos-container p {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	color: var(--clr-primary-400);
+	text-align: center;
+}
+li {
+	list-style-position: inside;
+}
 a {
 	text-decoration: none;
  }
+
+/*** Start Nav bar ***/
  
  .nav-bar-header{
 	background-color: var(--clr-primary-100);
@@ -313,46 +339,36 @@ a {
 /*** START Benefits section ***/
 
 #benefits-container {
-	width: 100vw;
+	width: 100w;
 	height: fit-content;
 	padding: 5vh 5vw 5vh 5vw;
 	background-color: var(--clr-primary-150);
-	display: grid;
-	grid-gap: 1rem;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: auto auto;
-	grid-template-areas: "benefits-text benefits-text benefits-text benefits-image benefits-image" "benefits-text benefits-text benefits-text benefits-image benefits-image"
 }
 
-.benefits-text {
-	grid-area: benefits-text;
+.benefits-text-area {
+	grid-area: benefits-text-area;
 	height: auto;
-	max-width: 60vw;
+	max-width: 90vw;
 	margin: auto;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	text-align: left;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-align: center;
 }
 
-.benefits-text h1 {
-	line-height: 200%;
+
+
+.benefits-image-container {
+	max-width: 90vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
 
-.benefits-text p {
-	margin-top: 5vh;
-	color: var(--clr-primary-400);
-	line-height: 150%;
-}
-
-.benefits-image {
-	/* max-width: 60vw; */
-	grid-area: benefits-image;
-	margin: auto;
-}
-
-.benefits-image img {
-	max-width: 30vw;
+.benefits-image-container img {
+	max-width: 85vw;
 	overflow: hidden;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 	border-radius: 1rem 1rem 1rem 1rem;
 	box-shadow: 0 0 1rem var(--clr-box-shadow);
 }
@@ -360,32 +376,40 @@ a {
 
 /*** START Benefits section media queries ***/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 	#benefits-container {
-		grid-template-areas: "benefits-text benefits-text benefits-text benefits-text benefits-text" "benefits-image benefits-image benefits-image benefits-image benefits-image"
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2vw;
+		padding: 5vh 3vw 5vh 3vw;
+		grid-template-areas: "benefits-text-area benefits-image-container benefits-image-container";
 	}
-	.benefits-text {
-		max-width: 90vw;
+	
+	.benefits-text-area {
+		grid-area: benefits-text-area;
+		max-width: 35vw;
+		margin-left: 2vw;
+		padding-left: 2vw;
+		padding-right: 5vw;
+
 	}
-	.benefits-text h1 {
-		color: var(--clr-primary-300);
-		line-height: 150%;
-	}
-	.benefits-text p {
-		margin-top: 5vh;
-		line-height: 150%;
-	}
-	.benefits-image {
-		width: 70vw;
-		grid-area: benefits-image;
+	
+	.benefits-image-container {
+		grid-area: benefits-image-container;
 		margin: auto;
+		max-width: 35vw;
+		position: unset;
+		transform: unset;
 	}
 	.benefits-image img {
+		max-width: 30vw;
+		margin:auto;
+		height: auto;
 		overflow: hidden;
-		display: block;
-		margin: auto;
-		max-width: 65vw;
+		border-radius: 1rem 1rem 1rem 1rem;
+		box-shadow: 0 0 1rem var(--clr-box-shadow);
 	}
+		
 }
 
 
@@ -460,7 +484,7 @@ a {
 
 @media screen and (max-width: 768px) {
 	#history-container {
-		width: 100vw;
+		width: 98vw;
 		height: fit-content;
 		display: grid;
 		row-gap: 5vw;
@@ -553,11 +577,6 @@ a {
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-}
-
-#poses-container h3 {
-	text-align: center;
-	padding-bottom: 15px;
 }
 
 .poses-border {
@@ -661,29 +680,23 @@ a {
 /*** End poses section ***/
 
 
+
 /*** Start Exercise Videos ***/
 
-.ytube-video-header h1 {
-	text-align: center;
-}
+
 
 #videos-container {
-	width: 100vw;
+	width: 98vw;
 	height: fit-content;
-	display: grid;
-	column-gap: 5rem;
 	padding: 0 2rem 0 2rem;
-	grid-template-columns: repeat(2, 1fr);
-	grid-auto-rows: minmax(100px, auto);
-	grid-template-areas: "heading heading" "video-1 video-2" "video-3 video-4"
 }
 
 iframe {
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 450px;
-	height: 253px;
+	width:90vw;
+	height: 50.6vw;
 }
 
 .ytube-video-header {
@@ -691,110 +704,65 @@ iframe {
 	padding: 0%
 }
 
-.video-1 {
-	grid-area: video-1;
-}
-
-.video-2 {
-	grid-area: video-2;
-}
-
-.video-3 {
-	grid-area: video-3;
-}
-
-.video-4 {
-	grid-area: video-4;
-}
-
 .ytube-video {
 	margin: 1rem .5rem 6rem .5rem;
-}
-
-.ytube-video-header p {
-	padding-left: 3rem;
-	padding-right: 3rem;
-	color: var(--clr-primary-300);
-	text-align: center;
-}
-
-#videos-container h2 {
-	line-height: 200%;
-	font-size: var(--fs-1);
-   text-align: center;
-}
-
-#videos-container p {
-	padding-left: 3rem;
-	padding-right: 3rem;
-	color: var(--clr-primary-400);
-	text-align: center;
 }
 
 
 /*** START Exercise Videos section media queries ***/
 
-@media screen and (max-width: 1000px) {
-	#videos-container {
-		display: inline-block;
-	}
-	.iframe {
-		width: 380px;
-		height: 225.5px;
-	}
-}
+@media screen and (min-width: 800px) {
 
-@media screen and (max-width: 900px) {
 	#videos-container {
-		display: inline-block;
+		display: grid;
+		column-gap: 5rem;
+		padding: 0 2rem 0 2rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "heading heading" "video-1 video-2" "video-3 video-4"
 	}
+	
+	iframe {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40vw;
+		height: 22.2vw;
+	}
+
 	.ytube-video-header {
-		padding-top: 8rem;
-		text-align: center;
+		grid-area: heading;
+		padding: 0%;
+		margin-bottom: 5rem;
 	}
-	iframe {
-		width: 380px;
-		height: 213px;
+	
+	.video-1 {
+		grid-area: video-1;
 	}
-}
+	
+	.video-2 {
+		grid-area: video-2;
+	}
+	
+	.video-3 {
+		grid-area: video-3;
+	}
+	
+	.video-4 {
+		grid-area: video-4;
+	}
+	
+	.ytube-video {
+		margin: 1rem .5rem 6rem .5rem;
+	}
 
-@media screen and (max-width: 700px) {
-	iframe {
-		width: 500px;
-		height: 281.25px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	iframe {
-		width: 400px;
-		height: 225.5px;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	iframe {
-		width: 300px;
-		height: 168.75px;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	#videos-container {
-		width: 100vw;
-		padding: 0;
-	}
-	iframe {
-		width: 250px;
-		height: 140.625px;
-	}
 }
 
 
-/*** End Exercise Videos section media queries ***/
+
 
 
 /*** End Exercise Videos section ***/
+
 
 
 /*** Start newsletter-signup-section section ***/
