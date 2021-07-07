@@ -575,7 +575,7 @@ a {
 	padding: 2vw;
 }
 
-.poses-video-container {
+.poses-gif-container {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 4rem;
@@ -586,7 +586,7 @@ a {
 	border-radius: 1rem 1rem 1rem 1rem;
 	box-shadow: 0 0 1rem var(--clr-box-shadow);
 }
-.pose-video {
+.pose-gif {
 	width: 70vw;
 	position: relative;
 	left: 50%;
@@ -609,10 +609,10 @@ a {
 	"supinetwist cat-cow"
 	"forward-fold ."
 }
-	.poses-video-container {
+	.poses-gif-container {
 		max-width: 40vw;
 	}
-	.pose-video {
+	.pose-gif {
 		width: 35vw;
 	}
 	.pose-information {grid-area: information;}
@@ -638,10 +638,10 @@ a {
 	"dog bridge tree"
 	"supinetwist cat-cow forward-fold"
 }
-	.poses-video-container {
+	.poses-gif-container {
 		max-width: 28vw;
 	}
-	.pose-video {
+	.pose-gif {
 		width: 25vw;
 	}
 }
