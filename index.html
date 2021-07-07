@@ -15,7 +15,7 @@
    </head>
    <body>
       <header id="nav-bar-header">
-         <nav class="navbar">
+         <nav class="navbar" aria-labelledby="navigation bar">
              <a href="#hero-container" class="nav-logo">Yoga Centric</a>
              <ul class="nav-menu">
                  <li class="nav-item">
@@ -34,7 +34,7 @@
                   <a href="#videos-container" class="nav-link">Yoga Videos</a>
               </li>
              </ul>
-             <div class="hamburger">
+             <div class="hamburger" aria-label="Close">
                  <span class="bar"></span>
                  <span class="bar"></span>
                  <span class="bar"></span>
@@ -51,7 +51,7 @@
             <h2 class="quotation">"The gift of learning to meditate is the greatest gift you can give yourself in this lifetime"</h2>
          </div>
       </section>
-      <section id="benefits-container">
+      <section aria-labelledby="The health benefits of Yoga" id="benefits-container">
          <div class="benefits-text-area">
             <h1>The health benefits of Yoga</h1>
             <p>Yoga is a safe and effective way to increase your physical activity.<br>
@@ -64,7 +64,7 @@
                <img src="./assets/images/pretty-blonde-woman-practicing-yoga-outdoors_10887519.jpg" alt="Beach photo">
          </div>
       </section>
-      <section id="history-container">
+      <section aria-labelledby="A Brief History of Yoga" id="history-container">
          <div class="a-brief-history">
             <h1>A Brief History of Yoga</h1>
             <p>Yoga has a vast and rich, 5,000-year history. This is because it is such a multifaceted practice, Yoga has in the past intertwined with philosophy, religion and exercise.
@@ -130,9 +130,9 @@
             <p class="author">- Rolf Gates</p>
          </div>
       </section>
-      <section id="poses-container">
+      <section aria-labelledby="A Guide to Foundational Poses" id="poses-container">
          <div class="pose-information">
-            <h1>Foundational Poses Guide</h1>
+            <h1>A Guide to Foundational Poses</h1>
             <p>It can be helpful to familiarize yourself with some of the main foundational poses that most physical practices use.<br>
                Check out this list of poses with alignment cues that you can practice in the comfort of your own home.<br>
                Here are 9 foundational yoga poses for you to practice and familiarize yourself with.
@@ -277,7 +277,7 @@
             <p class="author">– Aadil Palkhivala</p>
          </div>
       </section>
-      <section id="videos-container">
+      <section aria-labelledby="Exercise Videos" id="videos-container">
          <div class="ytube-video-header">
             <h2>Exercise Videos</h2>
             <p>Yoga videos from Lindsay Jays Youtube channel</p>
@@ -296,16 +296,16 @@
          </div>
    
       </section>
-      <section id="newsletter-signup-section">
+      <section aria-labelledby="Newsletter signup form" id="newsletter-signup-section">
          <form class="newsletter-signup-form">
             <h2>Sign up to our Newsletter for monthly Yoga guides</h2>
             <label for="firstname">First Name</label>
-            <input id="firstname" class="text-input" name="first_name" type="text" required>
+            <input id="firstname" class="text-input" name="first_name" type="text" required aria-label="write your first name here" placeholder="Write your first name here">
             <label for="lastname" >Last Name</label>
-            <input id="lastname" class="text-input" name="last_name" type="text" required>
+            <input id="lastname" class="text-input" name="last_name" type="text" required aria-label="write your last name here" placeholder="Write your last name here">
             <label for="email">Email Address</label>
-            <input class="text-input" type="email" id="email" name="email_address" required>
-            <input class="newsletter-button" type="submit" value="Send me the Newsletter">
+            <input class="text-input" type="email" id="email" name="email_address" required aria-label="write your email address here" placeholder="Write your email address here">
+            <input class="newsletter-button" type="submit" value="Send me the Newsletter" aria-label="submit request for newsletter">
             <p>* This is a sample form, the information will not be submitted *</p>
          </form>
       </section>

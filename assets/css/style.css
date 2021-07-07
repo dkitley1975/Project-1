@@ -148,7 +148,15 @@ a {
 	font-weight: var(--fw-b);
 	text-decoration:underline;
   }
- 
+::placeholder {
+	color: var(--clr-primary-200);
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: var(--clr-primary-200);
+  }
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: var(--clr-primary-200);
+  }
 
 /*** Start Nav bar ***/
  
@@ -752,7 +760,7 @@ a {
 	color: var(--clr-primary-400);
 	background-color: var(--clr-primary-150);
 	width: 350px;
-	max-width: 85vw;
+	max-width: 80vw;
 	padding: 3rem;
 	border: .25rem solid var(--clr-primary-400);
 	border-radius: 2rem;
@@ -789,8 +797,8 @@ a {
 	border-radius: 1.5rem;
 	padding: 1.8rem 2rem 1.8rem 2rem;
 	text-align: center;
-	background-color: var(--clr-primary-200);
-	color: var(--clr-primary-300);
+	background-color: var(--clr-primary-400);
+	color: white;
 }
 
 .newsletter-button:hover {
@@ -801,9 +809,9 @@ a {
 
 /*** Start Newsletter  section media queries ***/
 
-@media screen and (max-width: 680px) {
+@media screen and (min-width: 680px) {
 	.newsletter-signup-form {
-		margin: auto;
+		width: 500px;	
 	}
 }
 
