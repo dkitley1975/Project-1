@@ -790,7 +790,7 @@ a {
 	border-color: var(--clr-primary-300);
 }
 
-.newsletter-button {
+.newsletter-button-submit, .newsletter-button-reset{
 	max-width: 65vw;
 	margin: auto;
 	margin-top: 2.5rem;
@@ -799,9 +799,14 @@ a {
 	text-align: center;
 	background-color: var(--clr-primary-400);
 	color: white;
+} 
+.newsletter-button-reset{
+	margin-left: 3rem;
+	background-color: transparent;
+	border: .25rem solid var(--clr-primary-300);
+	color: var(--clr-primary-400)
 }
-
-.newsletter-button:hover {
+.newsletter-button-submit:hover, .newsletter-button-reset:hover{
 	background-color: var(--clr-primary-300);
 	color: white;
 }
