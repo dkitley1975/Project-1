@@ -13,8 +13,8 @@
       <link rel="manifest" href="./assets/favicon/site.webmanifest">
       <script src="https://kit.fontawesome.com/bfd0787cc4.js" crossorigin="anonymous"></script>
       <!-- connect emailJS to the newsletter sign up form -->
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-      <script type="text/javascript">
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script>
          (function() {
                // https://dashboard.emailjs.com/admin/integration
                emailjs.init('user_5DbhIUbFrA2loA1fd9IcN');
@@ -42,7 +42,7 @@
                   <a href="#videos-container" class="nav-link">Yoga Videos</a>
                </li>
             </ul>
-            <div class="hamburger" aria-label="Close">
+            <div class="hamburger">
                <span class="bar"></span>
                <span class="bar"></span>
                <span class="bar"></span>
@@ -312,7 +312,7 @@
                <input type="submit" class="newsletter-button-submit" value="Submit" aria-label="submit request for newsletter" tabindex="4">
                <input class="newsletter-button-reset" type="reset" value="Reset" aria-label="reset the form values" tabindex="5">
                <!-- Run javascript to send email, reset form and replace form with thanks for signing up -->
-               <script type="text/javascript" src="./assets/scripts/newsletter_signup.js"></script>  
+               <script src="./assets/scripts/newsletter_signup.js"></script>  
             </div>
          </form>
       </section>
