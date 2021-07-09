@@ -13,7 +13,6 @@ window.onload = function() {
             }, function(error) {
                 console.log('FAILED...', error)
                 document.getElementById("newsletter-signup-form-thank-you").style.display="none";
-                ;
             });
     });
     
