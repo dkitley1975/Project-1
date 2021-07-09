@@ -46,26 +46,26 @@ In this section, you should go over the different parts of your project, and des
   - This section introduces the user to Yoga Centric and has an unobtrusive, understated animated spinning lotus flower emblem above the quotation.
   - The landing page is fully responsive across screen sizes, keeping the text legible by having the quotation block resize. 
 
-![Landing Page](./readme-asset/screen-shots/Yoga-Centric_mobile_landing_page.png)
+![Landing Page](./readme-assets/screen-shots/Yoga-Centric_mobile_landing_page.png)
 
 - __Health Benefits Section__
 
   - The health Benefits section will allow the user to read a few of the health benefits of practising Yoga. 
   - This user will see another image of the same woman as the landing page performing a Yoga pose. the consistency in the still images through out the site adds a uniform look within the site. 
 
-![Health Benefits](./readme-asset/screen-shots/Yoga-Centric-health-benefits.png)
+![Health Benefits](./readme-assets/screen-shots/Yoga-Centric-health-benefits.png)
 
 - __A Brief History section__
 
   - This section is to inform the user of a very brief history of the way Yoga has developed of last 5000 years (this is a long time and a lot of history, so I kept this so 4 eras). I added another image to this section, again it is another image of the same woman as the landing page performing a Yoga pose. the consistency in the still images through out the site adds a uniform look within the site.
 
-![A Brief History](./readme-asset/screen-shots/yoga-centric-brief-history.png)
+![A Brief History](./readme-assets/screen-shots/yoga-centric-brief-history.png)
 
 - __A Guide to Fundamental Yoga Poses section__
 
   - This section is to demonstrate to the user 9 fundamental yoya poses, each pose has a set of step by step instructions and an animated gif, this animated gif loops, so the user and watch as they read the guide instead of continually pressing play.
 
-![A Guide to Fundamental Yoga Poses](./readme-asset/screen-shots/yoga-centric-yoga-pose.png)
+![A Guide to Fundamental Yoga Poses](./readme-assets/screen-shots/yoga-centric-yoga-pose.png)
 
 - __Yoga Exercise Videos section__
 
@@ -73,28 +73,28 @@ In this section, you should go over the different parts of your project, and des
   - The videos are not set to autoplay as these are longer videos and will only begin downloading as the user begins to play, they are also set at mute.
   - The videos also have a poster image set.
 
-![Yoga Exercise Videos](./readme-asset/screen-shots/yoga-centric-exercise-videos.png)
+![Yoga Exercise Videos](./readme-assets/screen-shots/yoga-centric-exercise-videos.png)
 
 - __Newsletter Sign Up Section__
 
   - This section will allow the user to sign up to the Yoga Centric Monthly Newsletter. The user will be asked to submit their full name and email address, the form is validated within html5 and after submitting the form is hidden and replaced with a thank you form message. 
 
-![Sign Up](./readme-asset/screen-shots/yoga-centric-newsletter-sign-up.png)
-![Sign Up - Thank You](./readme-asset/screen-shots/yoga-centric-newsletter-sign-up-complete.png)
+![Sign Up](./readme-assets/screen-shots/yoga-centric-newsletter-sign-up.png)
+![Sign Up - Thank You](./readme-assets/screen-shots/yoga-centric-newsletter-sign-up-complete.png)
 
 - __The Footer__ 
 
   - The footer section includes links to the relevant social media sites for Yoga Centric. The links will open to a new tab to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media.
 
-![Footer](./readme-asset/screen-shots/yoga-centric-footer.png)
+![Footer](./readme-assets/screen-shots/yoga-centric-footer.png)
 
 - __Quotation Blocks__ 
 
   - There are two additional quotation blocks with full width images within the site, these help to seperate the sections in to clear section breaks.
   
-![Quotation Block](./readme-asset/screen-shots/yoga-centric-quotation-block-1.png)
-![Another Quotation Block](./readme-asset/screen-shots/yoga-centric-quotation-block-2.png)
+![Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-1.png)
+![Another Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-2.png)
 
 
 ### Typeface
@@ -103,7 +103,7 @@ For the main body text I have chosen the google typeface Source Sans Pro. This i
 For the headings I wanted a slightly different typeface. I explored for headings on [Fontpair](https://www.fontpair.co/ "Font Pair") and choose the google font Lato.
 This font is visually appealing and pairs well with source sans pro.
 
-![Typefaces](./readme-asset/../../Yoga-Centric/readme-assets/stylings/typefaces.png)
+![Typefaces](./readme-assets/../../Yoga-Centric/readme-assets/stylings/typefaces.png)
 
 ### Colours
 I based my color scheme on a pallet devised around beach landscapes using the crams of the sand to help create a calm, natural feeling.
@@ -116,7 +116,7 @@ I based my color scheme on a pallet devised around beach landscapes using the cr
 
 I have used to contract checker on Coolors in order to make sure that the contract is sufficient.
 This way my content will be easily readable.
-![Color Scheme](./readme-asset/../../Yoga-Centric/readme-assets/stylings/color-scheme.png)
+![Color Scheme](./readme-assets/../../Yoga-Centric/readme-assets/stylings/color-scheme.png)
 
 
 ### Features Left to Implement
