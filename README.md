@@ -1,5 +1,5 @@
 ## **Yoga Centric**
-![Mokeup image](wireframes/mockup-image.jpg)
+![Mokeup image](readme-assets/mockup-image.jpg)
 
 ## **The goal for this project** 
 
@@ -92,7 +92,7 @@ This font is visually appealing and pairs well with source sans pro.
 #### Colors
 I based my color scheme on a pallet devised around beach landscapes using the crams of the sand to help create a calm, natural feeling. 
 
-![Color Scheme](wireframes/color-scheme.png)
+![Color Scheme](readme-assets/color-scheme.png)
 
 * rgba(254, 232, 223, 1) This color is called Champagne Pink - will be used as  a background colour and will be used with a .6 transparency. 
 * rgba(222, 183, 152, 1) This color is called tumbleweed - to be used as a contrast tot the background colour.
@@ -117,11 +117,11 @@ I based the wireframe on the smaller iphone 5s screen and will apply media queri
 
 You can find my wireframes below:
 
-### [Mobile Wireframe](wireframes/mobile-wireframe.png)
-### [Tablet Wireframe](wireframes/tablet-wireframe.png)
+### [Mobile Wireframe](readme-assets/mobile-wireframe.png)
+### [Tablet Wireframe](readme-assets/tablet-wireframe.png)
 below are reduced sized images.
-![Mobile Wireframe](wireframes/mobile-wireframe-thumb.png) 
-![Tablet Wireframe](wireframes/tablet-wireframe-thumb.png)
+![Mobile Wireframe](readme-assets/mobile-wireframe-thumb.png) 
+![Tablet Wireframe](readme-assets/tablet-wireframe-thumb.png)
 
 
 [Back to Top](#table-of-contents)
