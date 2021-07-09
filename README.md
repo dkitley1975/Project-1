@@ -46,14 +46,14 @@ In this section, you should go over the different parts of your project, and des
   - This section introduces the user to Yoga Centric and has an unobtrusive, understated animated spinning lotus flower emblem above the quotation.
   - The landing page is fully responsive across screen sizes, keeping the text legible by having the quotation block resize. 
 
-![Landing Page](./readme-assets/screen-shots/Yoga-Centric_mobile_landing_page.png)
+![Landing Page](./readme-assets/screen-shots/yoga-centric_mobile_landing_page.png)
 
 - __Health Benefits Section__
 
   - The health Benefits section will allow the user to read a few of the health benefits of practising Yoga. 
   - This user will see another image of the same woman as the landing page performing a Yoga pose. the consistency in the still images through out the site adds a uniform look within the site. 
 
-![Health Benefits](./readme-assets/screen-shots/Yoga-Centric-health-benefits.png)
+![Health Benefits](./readme-assets/screen-shots/yoga-centric-health-benefits.png)
 
 - __A Brief History section__
 
@@ -103,7 +103,7 @@ For the main body text I have chosen the google typeface Source Sans Pro. This i
 For the headings I wanted a slightly different typeface. I explored for headings on [Fontpair](https://www.fontpair.co/ "Font Pair") and choose the google font Lato.
 This font is visually appealing and pairs well with source sans pro.
 
-![Typefaces](./readme-assets/../../Yoga-Centric/readme-assets/stylings/typefaces.png)
+![Typefaces](./readme-assets/stylings/typefaces.png)
 
 ### Colours
 I based my color scheme on a pallet devised around beach landscapes using the crams of the sand to help create a calm, natural feeling.
@@ -116,7 +116,7 @@ I based my color scheme on a pallet devised around beach landscapes using the cr
 
 I have used to contract checker on Coolors in order to make sure that the contract is sufficient.
 This way my content will be easily readable.
-![Color Scheme](./readme-assets/../../Yoga-Centric/readme-assets/stylings/color-scheme.png)
+![Color Scheme](./readme-assets/stylings/color-scheme.png)
 
 
 ### Features Left to Implement
