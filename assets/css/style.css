@@ -334,7 +334,7 @@ a {
 /* Benefits */
 
 #benefits-container {
-	width: 100w;
+	width: 100vw;
 	height: fit-content;
 	padding: 5vh 5vw;
 	background-color: var(--clr-primary-150);
