@@ -1,134 +1,162 @@
-## **Yoga Centric**
-![Mokeup image](readme-assets/mockup-image.jpg)
+# Yoga Centric! 
 
-## **The goal for this project** 
+Welcome, this is an information site about yoga (whodathoughtit).
+The goal of the site is to inform the user a little about yoga and to encourage the user to yoga.
+There is a brief description of the health benefits of practising yoga.
+With a shallow dive into the main era of yogas history.
+The user is encouraged to try some foundation poses with a step by step guide on each of the poses along with an animated gif to help the user visualize the described steps.
+The user can watch a small selection of videos with yoga exercise routines and meditation routines.
+If the user finds the site useful and informative there is the option to sign up for the monthly newsletter.
 
-Welcome to Yoga Centric! 
-This is an information site about yoga (whodathoughtit).The goal of the site is to inform the user about the yoga life style and to encourage the user to try out some easy poses. these are to be demonstrated with either still images and some videos.
 
 Thank you for visiting my project!
 
----
-<a></a>
-## Table of contents 
-- [**Yoga Centric**](#yoga-centric)
-- [**The goal for this project**](#the-goal-for-this-project)
-- [Table of contents](#table-of-contents)
-- [**UX**](#ux)
-  - [**The User Goals**](#the-user-goals)
-  - [**User Stories**](#user-stories)
-  - [**Site owners Goals**](#site-owners-goals)
-  - [**User Requirements and Expectations**](#user-requirements-and-expectations)
-    - [Requirements](#requirements)
-    - [Expectations](#expectations)
-  - [**Design Choices**](#design-choices)
-    - [Typeface](#typeface)
-    - [Colors](#colors)
-- [**Wireframes**](#wireframes)
-  - [Mobile Wireframe](#mobile-wireframe)
-  - [Tablet Wireframe](#tablet-wireframe)
+![Responsive Mockup](./readme-assets/stylings/mockup-image.jpg)
+
+## Features 
+
+In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+
+### Existing Features
+
+- __Navigation Bar: Desktop__
+![Nav Bar Desktop](./readme-assets/screen-shots/Yoga-Centric_desktop_menu.png)
+  - Featured as a fixed navigation bar at the top of the single page scrolling site. this full responsive navigation bar includes links to the Logo, Home page, Benefits section, History section, Poses and the yoga video sections.
+  - As the user scrolls through the different sections the active section is displayed under the appropriate menu selection with a simple underline as the indicator.
+  - This section will allow the user to easily navigate from section to section across all devices without having scroll from the top to bottom to find the required section. 
 
 
-<a name="ux"></a>
-## **UX**
-<a></a>
-### **The User Goals**
 
-* The website should filled with valuable information for the user
-* The website should be easy to use on mobile, tablet and desktop
-* The website should be visually appealing
-* The website should encourage the user to try yoga
-* The website should demonstrate different poses
+- __Navigation Bar: Mobile__
 
-[Back to Top](#table-of-contents)
+![Nav Bar Mobile](./readme-assets/screen-shots/Yoga-Centric_mobile_menu-closed.png)
 
-<a></a>
-### **User Stories**
-
-* As a user, I want to be able to easily find the information on yoga
-* As a user, I want to be able to navigate to the each section of the web site
-* As a user, 
+![Nav Bar Mobile](./readme-assets/screen-shots/Yoga-Centric_mobile_menu-open.png)
+  - Featured as a fixed navigation bar at the top of the single page scrolling site. this full responsive navigation bar initially displays a hamburger menu, when pressed this animates to a close icon as the menu is displayed.
+  - The links includes links to the Logo, Home page, Benefits section, History section, Poses and the yoga video sections.
+  - This section will allow the user to easily navigate from section to section across all devices without having scroll from the top to bottom to find the required section. 
+  - When a link is pressed the menu auto closes as the page smoothly scrolls to the required section.
 
 
-<a></a>
-### **Site owners Goals**
-* As the website owner, I want to inform the user about yoga 
-* As the website owner, I want to encourage the user to try different some yoga poses
-* As the website owner, I want to demonstrate some yoga exercises to the user
-
-[Back to Top](#table-of-contents)
-
-<a></a>
-### **User Requirements and Expectations**
-<a></a>
-#### Requirements
-* The site is to be easy to navigate by using the navigation menu
-* The site is to be visually appealing
-* The site is to encourage users to try poses through poses and videos
-
-<a></a>
-#### Expectations
-* When clicking on links (like social media), I expect the page to open in a separate browser
-* I expect that the navigation links work properly so that is takes me wherever I want to go
-* I expect that the video work properly with clear command buttons 
-
-[Back to Top](#table-of-contents)
-
-<a></a>
-### **Design Choices**
-As the site is to inform the user about yoga, the design choices were made around calmness and tranquility. The site is not to be afraid of blank space.
-
-I have used [ColorSpace](https://mycolor.space/ "Coolors.co") to come up with a color scheme that fits the overall feeling calmness.
-
-<a></a>
-#### Typeface
-In order to find appropriate typefaces for my website, I have visited [Google Fonts](https://fonts.google.com/ "Google Fonts") to explore the various options.
-For the main body text I have chosen the google typeface Source Sans Pro. This is a visually appealing and easy to read typeface.
-For the headings I wanted a slightly different typeface. I explored for headings on [Fontpair](https://www.fontpair.co/ "Font Pair") and choose the google font Lato.
-This font is visually appealing and pairs well with source sans pro.
 
 
-<a></a>
-#### Colors
-I based my color scheme on a pallet devised around beach landscapes using the crams of the sand to help create a calm, natural feeling. 
+- __The landing page image__
 
-![Color Scheme](readme-assets/color-scheme.png)
+  - The landing includes a photograph with text overlay with a quotation regarding yoga in it. 
+  - This section introduces the user to Yoga Centric and has an unobtrusive, understated animated spinning lotus flower emblem above the quotation.
+  - The landing page is fully responsive across screen sizes, keeping the text legible by having the quotation block resize. 
 
-* rgba(254, 232, 223, 1) This color is called Champagne Pink - will be used as  a background colour and will be used with a .6 transparency. 
-* rgba(222, 183, 152, 1) This color is called tumbleweed - to be used as a contrast tot the background colour.
-* rgba(153, 95, 58, 1) This color is a called Brown Sugar - This is to be used as my header colours.
-* rgba(153, 95, 58, 1) This color is a called Van Dyke Brown - This is to be used as my colour to over lay the Champagne Pink.
-* The main colour of my text is to be black.
+![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+
+- __Club Ethos Section__
+
+  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
+  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+
+![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+
+- __Meetup Times section__
+
+  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
+  - This section will be updated as these times change to keep the user up to date. 
+
+![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+
+- __The Footer__ 
+
+  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it encourages them to keep connected via social media
+
+![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+
+- __Gallery__
+
+  - The gallery will provide the user with supporting images to see what the meet ups look like. 
+  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+
+![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+
+- __The Sign Up Page__
+
+  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
+
+![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
+
+For some/all of your features, you may choose to reference the specific project files that implement them.
+
+In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+
+### Features Left to Implement
+
+- Another feature idea
+
+## Testing 
+
+In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+
+In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 
-I have used to contract checker on Coolors in order to make sure that the contract is sufficient.
-This way my content will be easily readable. 
+### Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+
+### Unfixed Bugs
+
+You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+
+## Deployment
+
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
 
 
-[Back to Top](#table-of-contents)
+## Credits 
 
---- 
-<a></a>
-## **Wireframes**
-I have decided to use [Balsamic](https://balsamiq.com/wireframes/) to create wireframes for my website. 
-Initially I created a basic wireframe for the mobile and then for tablet with the desktop last. 
-For my website I have decided to go for a 1 page scrolling website which suits more with todays current trends, with a fixed navigation bar at the top for easy navigation. 
-I based the wireframe on the smaller iphone 5s screen and will apply media queries where required to keep the responsiveness site.
+In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 
-You can find my wireframes below:
+You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
-### [Mobile Wireframe](readme-assets/mobile-wireframe.png)
-### [Tablet Wireframe](readme-assets/tablet-wireframe.png)
-below are reduced sized images.
-![Mobile Wireframe](readme-assets/mobile-wireframe-thumb.png) 
-![Tablet Wireframe](readme-assets/tablet-wireframe-thumb.png)
+### Content 
 
+- The text for the Home page was taken from Wikipedia Article A
+- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
-[Back to Top](#table-of-contents)
+### Media
 
----
+- The photos used on the home and sign up page are from This Open Source site
+- The images used for the gallery page were taken from this other open source site
 
 
-[Back to Top](#table-of-contents)
+Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
 
----
+## Other General Project Advice
+
+Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
+
+- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
+  - Make sure to keep the messages in the imperative mood 
+
+- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
+  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
+
+- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
+  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
+  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
+  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
+
+Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
