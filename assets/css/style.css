@@ -7,17 +7,19 @@
 	padding: 0;
 	border: 0;
 }
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
+
 :root {
-	/*  Fonts for the site  -  select using font-family: var(--ff-main); within classes etc. change here to affect whole site */
+	/*  Fonts */
 	--ff-main: 'Source Sans Pro', sans-serif;
 	--ff-headline: 'Lato', serif;
 	--ff-quotation: 'Patrick Hand', 'Source Sans Pro', sans-serif;
-	/*  FONT WEIGHTS  -  Select using font-weight: var(--fw-m); Change here to affect whole site */
+	/*  FONT WEIGHTS */
 	--fw-l: 300;
 	--fw-n: 400;
 	--fw-m: 600;
@@ -30,27 +32,25 @@
 	--fs-5: 1.33rem;
 	--fs-6: 1.072rem;
 	--fs-default: 1.6rem;
-	/* I am adding my basic colours for the site here */
+	/* Default colours */
 	--clr-primary-100: rgba(254, 232, 223, 1);
 	--clr-primary-130: rgba(254, 232, 223, 0.3);
 	--clr-primary-150: rgba(254, 232, 223, 0.5);
-	--clr-primary-160: rgba(254, 232, 223, 0.6);
 	--clr-primary-170: rgba(254, 232, 223, 0.7);
 	--clr-primary-200: rgba(222, 183, 152, 1);
 	--clr-primary-250: rgba(222, 183, 152, 0.6);
 	--clr-primary-300: rgba(153, 95, 58, 1);
-	--clr-primary-350: rgba(153, 95, 58, 0.6);
 	--clr-primary-400: rgb(100, 64, 41, 1);
 	--clr-box-shadow: rgb(136, 148, 141);
 }
-
-
-/* setting the basic font weights and sizes here */
 
 html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
 }
+
+
+/* setting the default font weights and sizes here */
 
 body {
 	font-family: var(--ff-main);
@@ -100,15 +100,13 @@ h6 {
 
 .benefits-text-area h1 {
 	line-height: 150%;
-
 }
+
 .benefits-text-area p {
 	margin-top: 2vh;
 	color: var(--clr-primary-400);
 	line-height: 150%;
 }
-
-
 
 .a-brief-history p {
 	margin-top: 1rem;
@@ -117,69 +115,81 @@ h6 {
 
 #videos-container h2 {
 	font-size: var(--fs-1);
-   text-align: center;
+	text-align: center;
 }
+
 .exercise-video-header p {
 	padding-left: 3rem;
 	padding-right: 3rem;
 	color: var(--clr-primary-300);
 	text-align: center;
 }
+
 #videos-container p {
 	padding-left: 3rem;
 	padding-right: 3rem;
 	color: var(--clr-primary-400);
 	text-align: center;
 }
-#history-container ul{
-margin-top: 1rem;
-margin-bottom: 1rem;
+
+#history-container ul {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
+
 li {
 	list-style-position: inside;
 	margin: .5rem 0 .5rem 1rem;
 	text-indent: -2rem;
-    padding-left: 1rem;
+	padding-left: 1rem;
 }
+
 a {
 	text-decoration: none;
- }
- .active {
+}
+
+.active {
 	font-weight: var(--fw-b);
-	text-decoration:underline;
-  }
+	text-decoration: underline;
+}
+
 ::placeholder {
 	color: var(--clr-primary-200);
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-	color: var(--clr-primary-200);
-  }
-::-ms-input-placeholder { /* Microsoft Edge */
-	color: var(--clr-primary-200);
-  }
 
-/*** Start Nav bar ***/
- 
- #nav-bar-header{
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: var(--clr-primary-200);
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: var(--clr-primary-200);
+}
+
+
+/* Nav bar */
+
+#nav-bar-header {
 	background-color: var(--clr-primary-100);
 	border-bottom: 1px solid var(--clr-primary-250);
 	width: 100vw;
 	position: fixed;
 	z-index: 99;
- }
- 
- .navbar {
+}
+
+.navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 1.5rem;
- }
- 
- .hamburger {
+}
+
+.hamburger {
 	display: none;
- }
- 
- .bar {
+}
+
+.bar {
 	display: block;
 	width: 2.5rem;
 	height: .25rem;
@@ -187,35 +197,38 @@ a {
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	background-color: var(--clr-primary-400);
- }
- 
- .nav-menu {
+}
+
+.nav-menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
- }
- 
- .nav-item {
+}
+
+.nav-item {
 	list-style: none;
 	margin-left: 5rem;
- }
- 
- .nav-link{
+}
+
+.nav-link {
 	font-weight: var(--fw-m);
 	color: var(--clr-primary-400);
- }
- .nav-link:hover{
+}
+
+.nav-link:hover {
 	color: var(--clr-primary-300);
-	
- }
- 
- .nav-logo {
+}
+
+.nav-logo {
 	font-size: 2rem;
 	font-weight: var(--fw-b);
 	color: var(--clr-primary-400)
- }
- 
- @media only screen and (max-width: 768px) {
+}
+
+
+/* Nav Bar media query for mobile alternative */
+
+@media only screen and (max-width: 768px) {
 	.nav-menu {
 		position: fixed;
 		left: -100%;
@@ -225,45 +238,35 @@ a {
 		width: 100%;
 		text-align: center;
 		transition: 0.3s;
-		
 	}
- 
 	.nav-menu.active {
 		left: 0;
 	}
 	.active {
-		text-decoration:none !important;
-	  }
- 
+		text-decoration: none !important;
+	}
 	.nav-item {
 		margin: 2.5rem 0;
 	}
- 
 	.hamburger {
 		display: block;
 		cursor: pointer;
 	}
- 
 	.hamburger.active .bar:nth-child(2) {
 		opacity: 0;
 	}
- 
 	.hamburger.active .bar:nth-child(1) {
 		-webkit-transform: translateY(8px) rotate(45deg);
 		transform: translateY(8px) rotate(45deg);
 	}
- 
 	.hamburger.active .bar:nth-child(3) {
 		-webkit-transform: translateY(-8px) rotate(-45deg);
 		transform: translateY(-8px) rotate(-45deg);
 	}
- }
+}
 
 
-/*** END Nav ***/
-
-
-/*** START Hero styling ***/
+/* Hero */
 
 .hero-container {
 	width: 100vw;
@@ -282,7 +285,7 @@ a {
 	width: 100vw;
 	max-width: 60ch;
 	height: fit-content;
-	padding:  3rem 2rem 1rem;
+	padding: 3rem 2rem 1rem;
 	background-color: var(--clr-primary-250);
 	margin: auto;
 	margin-bottom: -8rem;
@@ -298,7 +301,6 @@ a {
 	margin-bottom: 0;
 	left: 50%;
 	border-left: 1px solid var(--clr-primary-400);
-	/* transform: translate(-50%); */
 }
 
 .lotus-flower {
@@ -329,12 +331,7 @@ a {
 }
 
 
-
-
-/*** End Hero styling ***/
-
-
-/*** START Benefits section ***/
+/* Benefits */
 
 #benefits-container {
 	width: 100w;
@@ -353,8 +350,6 @@ a {
 	text-align: left;
 }
 
-
-
 .benefits-image-container {
 	max-width: 90vw;
 	padding: 5vw;
@@ -371,7 +366,7 @@ a {
 }
 
 
-/*** START Benefits section media queries ***/
+/* Benefits media queries */
 
 @media screen and (min-width: 768px) {
 	#benefits-container {
@@ -382,13 +377,11 @@ a {
 		align-items: center;
 		grid-template-areas: "benefits-text-area benefits-image-container benefits-image-container";
 	}
-	
 	.benefits-text-area {
 		grid-area: benefits-text-area;
 		padding-left: 2vw;
 		padding-right: 2vw;
 	}
-	
 	.benefits-image-container {
 		grid-area: benefits-image-container;
 		margin: auto;
@@ -398,35 +391,26 @@ a {
 	}
 	.benefits-image img {
 		max-width: 30vw;
-		margin:auto;
+		margin: auto;
 		height: auto;
 		overflow: hidden;
 		border-radius: 1rem;
 		box-shadow: 0 0 1rem var(--clr-box-shadow);
 	}
-		
 }
+
 @media screen and (min-width: 1024px) {
 	#benefits-container {
 		padding: 5vh 3vw;
 	}
-	
 	.benefits-text-area {
 		margin-left: 5vw;
 		padding-left: 5vw;
-
-		
-
 	}
 }
 
-/*** END Benefits section media queries ***/
 
-
-/*** End Benefits styling ***/
-
-
-/*** START History section ***/
+/* History */
 
 #history-container {
 	width: 100vw;
@@ -439,15 +423,17 @@ a {
 
 .history-classical {
 	grid-area: history-classical;
-	padding:10vw;
+	padding: 10vw;
 	background-color: var(--clr-primary-130);
 }
+
 .history-image-container {
 	margin: auto;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	max-width: 90vw;
 }
+
 .history-image-container img {
 	max-width: 80vw;
 	overflow: hidden;
@@ -457,6 +443,7 @@ a {
 	border-radius: 1rem;
 	box-shadow: 0 0 1rem var(--clr-box-shadow);
 }
+
 .history-post-classical {
 	padding: 10vw;
 	background-color: var(--clr-primary-130);
@@ -467,9 +454,7 @@ a {
 }
 
 
-
-
-/*** START History section media queries ***/
+/* History media queries */
 
 @media screen and (min-width: 768px) {
 	#history-container {
@@ -479,42 +464,34 @@ a {
 		padding: 5vw 2.5vw;
 		grid-template-columns: repeat(3, 1fr);
 		grid-auto-rows: minmax(100px, auto);
-		grid-template-areas: 
-		"a-brief-history a-brief-history a-brief-history " 
-		"history-classical history-classical history-post-classical" 
-		"history-modern-yoga history-modern-yoga history-image"
+		grid-template-areas: "a-brief-history a-brief-history a-brief-history " "history-classical history-classical history-post-classical" "history-modern-yoga history-modern-yoga history-image"
 	}
 	.a-brief-history {
 		grid-area: a-brief-history;
 		padding: 2vw 10vw;
 	}
-	
 	.history-classical {
 		grid-area: history-classical;
 		background-color: unset;
 		padding: 2vw;
 		border-radius: 30px;
 	}
-	
 	.history-post-classical {
 		grid-area: history-post-classical;
 		padding: 2vw;
 		background-color: var(--clr-primary-130);
 		border-radius: 30px;
 	}
-	
 	.history-modern-yoga {
 		grid-area: history-modern-yoga;
 		padding: 2vw;
 		background-color: var(--clr-primary-130);
 		border-radius: 30px;
 	}
-	
 	.history-image {
 		grid-area: history-image;
 		margin: auto;
 	}
-	
 	.history-image img {
 		max-width: 30vh;
 		overflow: hidden;
@@ -524,13 +501,7 @@ a {
 }
 
 
-/*** END History section media queries ***/
-
-
-/*** End History styling ***/
-
-
-/** Start Quotation Block 1 **/
+/* Quotation Blocks  */
 
 .quotation-image-1 {
 	height: 65vh;
@@ -554,11 +525,7 @@ a {
 }
 
 
-
-/** End Quotation Block 1 **/
-
-
-/*** Start Poses ***/
+/* Poses */
 
 #poses-container {
 	width: 100vw;
@@ -567,7 +534,7 @@ a {
 	height: fit-content;
 }
 
-.pose-information{
+.pose-information {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1rem;
@@ -586,6 +553,7 @@ a {
 	border-radius: 1rem;
 	box-shadow: 0 0 1rem var(--clr-box-shadow);
 }
+
 .pose-gif {
 	width: 70vw;
 	position: relative;
@@ -593,51 +561,63 @@ a {
 	transform: translateX(-50%);
 }
 
-/*** START poses section media queries ***/
+
+/* Poses media queries */
 
 @media screen and (min-width: 768px) {
 	#poses-container {
-	display: grid;
-	column-gap: 1vw;
-	row-gap: 1vw;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas: 
-	"information information"
-	"warrior-i warrior-ii"
-	"cobra dog"
-	"bridge tree"
-	"supinetwist cat-cow"
-	"forward-fold ."
-}
+		display: grid;
+		column-gap: 1vw;
+		row-gap: 1vw;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "information information" "warrior-i warrior-ii" "cobra dog" "bridge tree" "supinetwist cat-cow" "forward-fold ."
+	}
 	.poses-gif-container {
 		max-width: 40vw;
 	}
 	.pose-gif {
 		width: 35vw;
 	}
-	.pose-information {grid-area: information;}
-	.pose-warrior-i {grid-area: warrior-i;}
-	.pose-warrior-ii {grid-area: warrior-ii;}	
-	.pose-cobra {grid-area: cobra;}
-	.pose-down-dog {grid-area: dog;}
-	.pose-bridge {grid-area: bridge;}
-	.pose-tree {grid-area: tree;}
-	.pose-supinetwist {grid-area: supinetwist;}
-	.pose-cat-cow {grid-area: cat-cow;}
-	.pose-forward-fold {grid-area: forward-fold;}	
+	.pose-information {
+		grid-area: information;
+	}
+	.pose-warrior-i {
+		grid-area: warrior-i;
+	}
+	.pose-warrior-ii {
+		grid-area: warrior-ii;
+	}
+	.pose-cobra {
+		grid-area: cobra;
+	}
+	.pose-down-dog {
+		grid-area: dog;
+	}
+	.pose-bridge {
+		grid-area: bridge;
+	}
+	.pose-tree {
+		grid-area: tree;
+	}
+	.pose-supinetwist {
+		grid-area: supinetwist;
+	}
+	.pose-cat-cow {
+		grid-area: cat-cow;
+	}
+	.pose-forward-fold {
+		grid-area: forward-fold;
+	}
 }
+
 @media screen and (min-width: 1024px) {
 	#poses-container {
-	display: grid;
-	column-gap: .5vw;
-	row-gap: .5vw;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-areas: 
-	"information information information"
-	"warrior-i warrior-ii cobra"
-	"dog bridge tree"
-	"supinetwist cat-cow forward-fold"
-}
+		display: grid;
+		column-gap: .5vw;
+		row-gap: .5vw;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "information information information" "warrior-i warrior-ii cobra" "dog bridge tree" "supinetwist cat-cow forward-fold"
+	}
 	.poses-gif-container {
 		max-width: 28vw;
 	}
@@ -647,19 +627,7 @@ a {
 }
 
 
-
-
-
-/*** End poses section media queries ***/
-
-
-/*** End poses section ***/
-
-
-
-/*** Start Exercise Videos ***/
-
-
+/* Exercise Videos */
 
 #videos-container {
 	width: 98vw;
@@ -671,7 +639,7 @@ a {
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	width:90vw;
+	width: 90vw;
 	box-shadow: .5rem .5rem 1rem var(--clr-box-shadow);
 	border-radius: 2rem;
 }
@@ -686,10 +654,9 @@ a {
 }
 
 
-/*** START Exercise Videos section media queries ***/
+/* Exercise Videos media queries */
 
 @media screen and (min-width: 800px) {
-
 	#videos-container {
 		display: grid;
 		column-gap: 5rem;
@@ -697,51 +664,35 @@ a {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-areas: "heading heading" "video-1 video-2" "video-3 ."
 	}
-	
 	.exercise-video>video {
 		position: relative;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 40vw;		
+		width: 40vw;
 	}
-
 	.exercise-video-header {
 		grid-area: heading;
 		padding: 0%;
 		margin-bottom: 5rem;
 	}
-	
 	.video-1 {
 		grid-area: video-1;
-		
 	}
-	
 	.video-2 {
 		grid-area: video-2;
 	}
-	
 	.video-3 {
 		grid-area: video-3;
 	}
-	
-	
 	.exercise-video {
 		margin: 1rem .5rem 6rem;
 	}
-
 }
 
 
+/* Newsletter-sign up */
 
-
-
-/*** End Exercise Videos section ***/
-
-
-
-/*** Start newsletter-signup-section section ***/
-
-#newsletter-signup-section {
+#newsletter-signup-container {
 	background: url('../images/beautiful-blonde-woman-doing-yoga-outdoors_10887584.jpg') no-repeat bottom left;
 	background-size: cover;
 	overflow: hidden;
@@ -765,6 +716,7 @@ a {
 	border: .25rem solid var(--clr-primary-400);
 	border-radius: 2rem;
 }
+
 #newsletter-signup-form-thank-you {
 	display: none;
 	margin: auto;
@@ -777,7 +729,6 @@ a {
 	border: .25rem solid var(--clr-primary-400);
 	border-radius: 2rem;
 }
-
 
 .newsletter-signup-form P {
 	margin: 2rem 0 0;
@@ -802,13 +753,16 @@ a {
 .text-input:hover {
 	border-color: var(--clr-primary-300);
 }
+
 .newsletter-button-flex {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	min-height: 10rem;
 }
-.newsletter-button-submit, .newsletter-button-reset{
+
+.newsletter-button-submit,
+.newsletter-button-reset {
 	max-width: 65vw;
 	margin: auto;
 	margin-top: 2.5rem;
@@ -817,35 +771,32 @@ a {
 	text-align: center;
 	background-color: var(--clr-primary-400);
 	color: white;
-} 
-.newsletter-button-reset{
+}
+
+.newsletter-button-reset {
 	margin-left: 3rem;
 	background-color: transparent;
 	border: .25rem solid var(--clr-primary-300);
 	color: var(--clr-primary-400)
 }
-.newsletter-button-submit:hover, .newsletter-button-reset:hover{
+
+.newsletter-button-submit:hover,
+.newsletter-button-reset:hover {
 	background-color: var(--clr-primary-300);
 	color: white;
 }
 
 
-/*** Start Newsletter  section media queries ***/
+/* Newsletter sign up media queries */
 
 @media screen and (min-width: 680px) {
 	.newsletter-signup-form {
-		width: 500px;	
+		width: 500px;
 	}
 }
 
 
-/*** End Exercise Videos section media queries ***/
-
-
-/*** End newsletter-signup-section section ***/
-
-
-/*** Start Footer section ***/
+/* Start Footer section */
 
 .footer {
 	display: flex;
@@ -866,6 +817,3 @@ i.fab:hover {
 	font-size: 4rem;
 	color: var(--clr-primary-170);
 }
-
-
-/*** End Footer section ***/
