@@ -12,41 +12,43 @@
       <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
       <link rel="manifest" href="./assets/favicon/site.webmanifest">
       <script src="https://kit.fontawesome.com/bfd0787cc4.js" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      <!-- connect emailJS to the newsletter sign up form -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
       <script type="text/javascript">
          (function() {
-         emailjs.init("user_5DbhIUbFrA2loA1fd9IcN");
+               // https://dashboard.emailjs.com/admin/integration
+               emailjs.init('user_5DbhIUbFrA2loA1fd9IcN');
          })();
       </script>
    </head>
    <body>
       <header id="nav-bar-header">
          <nav class="navbar" aria-labelledby="navigation bar">
-             <a href="#hero-container" class="nav-logo">Yoga Centric</a>
-             <ul class="nav-menu">
-                 <li class="nav-item">
-                     <a href="#hero-container" class="nav-link">Home</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#benefits-container" class="nav-link">Yoga's Benefits</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#history-container" class="nav-link">History</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#poses-container" class="nav-link">Pose Demonstrations</a>
-                 </li>
-                 <li class="nav-item">
+            <a href="#hero-container" class="nav-logo">Yoga Centric</a>
+            <ul class="nav-menu">
+               <li class="nav-item">
+                  <a href="#hero-container" class="nav-link">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#benefits-container" class="nav-link">Yoga's Benefits</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#history-container" class="nav-link">History</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#poses-container" class="nav-link">Pose Demonstrations</a>
+               </li>
+               <li class="nav-item">
                   <a href="#videos-container" class="nav-link">Yoga Videos</a>
-              </li>
-             </ul>
-             <div class="hamburger" aria-label="Close">
-                 <span class="bar"></span>
-                 <span class="bar"></span>
-                 <span class="bar"></span>
-             </div>
+               </li>
+            </ul>
+            <div class="hamburger" aria-label="Close">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
          </nav>
-     </header>
+      </header>
       <section id="hero-container">
          <div class="hero-image"></div>
          <div class="quotation-block">
@@ -67,7 +69,7 @@
             <p>
          </div>
          <div class="benefits-image-container">
-               <img src="./assets/images/pretty-blonde-woman-practicing-yoga-outdoors_10887519.jpg" alt="Beach photo">
+            <img src="./assets/images/pretty-blonde-woman-practicing-yoga-outdoors_10887519.jpg" alt="Beach photo">
          </div>
       </section>
       <section aria-labelledby="A Brief History of Yoga" id="history-container">
@@ -96,7 +98,7 @@
             </ul>
          </div>
          <div class="history-image-container">
-               <img src="./assets/images/pretty-woman-practicing-yoga-beach_10887531.jpg" alt="Beach photo">
+            <img src="./assets/images/pretty-woman-practicing-yoga-beach_10887531.jpg" alt="Beach photo">
          </div>
          <div class="history-post-classical">
             <h2>Post-Classical</h2>
@@ -266,35 +268,52 @@
          </div>
       </section>
       <section aria-labelledby="Exercise Videos" id="videos-container">
-         <div class="ytube-video-header">
+         <div class="exercise-video-header">
             <h2>Exercise Videos</h2>
             <p>Yoga videos from Lindsay Jays Youtube channel</p>
          </div>
-         <div class="ytube-video video-1">
-            <video poster="./assets/images/yoga_videos/Posters/wake-up-&-flow-yoga-poster.png" src="./assets/images/yoga_videos/wake-up-flow-yoga-yogafit-retreats_360p.mp4" controls muted><p>Your browser doesn't support HTML5 video.</p><a href="./assets/images/yoga_videos/wake-up-flow-yoga-yogafit-retreats_360p.mp4">Link to the video.</a></video>
+         <div class="exercise-video video-1">
+            <video poster="./assets/images/yoga_videos/Posters/wake-up-&-flow-yoga-poster.png" src="./assets/images/yoga_videos/wake-up-flow-yoga-yogafit-retreats_360p.mp4" controls muted>
+               <p>Your browser doesn't support HTML5 video.</p>
+               <a href="./assets/images/yoga_videos/wake-up-flow-yoga-yogafit-retreats_360p.mp4">Link to the video.</a>
+            </video>
             <p>Wake Up & Flow Yoga | YogaFit Retreats - Lindsay Jay</p>
          </div>
-         <div class="ytube-video video-2">
-            <video poster="assets/images/yoga_videos/Posters/happiness-&-gratitude-meditation-poster.png" src="./assets/images/yoga_videos/happiness-gratitude-meditation-lindsay-jay_360p.mp4" controls muted><p>Your browser doesn't support HTML5 video.</p><a href="./assets/images/yoga_videos/happiness-gratitude-meditation-lindsay-jay_360p">Link to the video.</a></video>
+         <div class="exercise-video video-2">
+            <video poster="assets/images/yoga_videos/Posters/happiness-&-gratitude-meditation-poster.png" src="./assets/images/yoga_videos/happiness-gratitude-meditation-lindsay-jay_360p.mp4" controls muted>
+               <p>Your browser doesn't support HTML5 video.</p>
+               <a href="./assets/images/yoga_videos/happiness-gratitude-meditation-lindsay-jay_360p">Link to the video.</a>
+            </video>
             <p>Happiness & Gratitude Meditation - Lindsay Jay</p>
          </div>
-         <div class="ytube-video video-3">
-            <video poster="assets/images/yoga_videos/Posters/lindsay-jay-yoga-poster.png" src="./assets/images/yoga_videos/lindsay-jay-yoga_360p.mp4" controls muted><p>Your browser doesn't support HTML5 video.</p><a href="./assets/images/yoga_videos/lindsay-jay-yoga_360p.mp4">Link to the video.</a></video>
+         <div class="exercise-video video-3">
+            <video poster="assets/images/yoga_videos/Posters/lindsay-jay-yoga-poster.png" src="./assets/images/yoga_videos/lindsay-jay-yoga_360p.mp4" controls muted>
+               <p>Your browser doesn't support HTML5 video.</p>
+               <a href="./assets/images/yoga_videos/lindsay-jay-yoga_360p.mp4">Link to the video.</a>
+            </video>
             <p>Lindsay Jay Yoga</p>
          </div>
-   
       </section>
       <section aria-labelledby="Newsletter signup form" id="newsletter-signup-section">
-         <form action="" method="POST" class="newsletter-signup-form">
+         <form id="newsletter-signup-form-thank-you">
+            <h3>Thanks for signing up for our Monthly Newsletter,<br>we'll be in touch soon.</h3>
+            <h3>Please check for your confirmation email and, remember to check your spam</h3>
+         </form>
+         <form id="newsletter-signup-form">
             <h2>Sign up to our Newsletter for monthly Yoga guides</h2>
+            <input type="hidden" name="ident_number">
             <label for="firstname">First Name</label>
             <input id="firstname" class="text-input" name="first_name" type="text" required aria-label="write your first name here" placeholder="Write your first name here" tabindex="1">
             <label for="lastname" >Last Name</label>
             <input id="lastname" class="text-input" name="last_name" type="text" required aria-label="write your last name here" placeholder="Write your last name here" tabindex="2">
             <label for="email">Email Address</label>
             <input class="text-input" type="email" id="email" name="email_address" required aria-label="write your email address here" placeholder="Write your email address here" tabindex="3">
-            <input class="newsletter-button-submit" type="submit" value="Send me the Newsletter" aria-label="submit request for newsletter" tabindex="4">
-            <input class="newsletter-button-reset" type="reset" value="Reset" aria-label="reset the form values" tabindex="5">
+            <div class="newsletter-button-flex">
+               <input type="submit" class="newsletter-button-submit" value="Submit" aria-label="submit request for newsletter" tabindex="4">
+               <input class="newsletter-button-reset" type="reset" value="Reset" aria-label="reset the form values" tabindex="5">
+               <!-- Run javascript to send email, reset form and replace form with thanks for signing up -->
+               <script type="text/javascript" src="./assets/scripts/newsletter_signup.js"></script>  
+            </div>
          </form>
       </section>
       <footer class="footer social-networks">
