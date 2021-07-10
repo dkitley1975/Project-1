@@ -764,6 +764,7 @@ a {
 .newsletter-button-submit,
 .newsletter-button-reset {
 	max-width: 65vw;
+        height: 8rem; 
 	margin: auto;
 	margin-top: 2.5rem;
 	border-radius: 1.5rem;
