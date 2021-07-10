@@ -763,12 +763,13 @@ a {
 
 .newsletter-button-submit,
 .newsletter-button-reset {
-	max-width: 65vw;
-        height: 4rem; 
+    height: 5rem; 
+    width: 20rem;
+    max-width: 65vw;
 	margin: auto;
 	margin-top: 2.5rem;
-	border-radius: 1.5rem;
-	padding: 1.8rem 2rem;
+	border-radius: 1rem;
+	padding: 1rem 1.5rem;
 	text-align: center;
 	background-color: var(--clr-primary-400);
 	color: white;
