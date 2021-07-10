@@ -222,7 +222,7 @@ a {
 .nav-logo {
 	font-size: 2rem;
 	font-weight: var(--fw-b);
-	color: var(--clr-primary-400)
+	color: var(--clr-primary-400);
 }
 
 
@@ -464,7 +464,7 @@ a {
 		padding: 5vw 2.5vw;
 		grid-template-columns: repeat(3, 1fr);
 		grid-auto-rows: minmax(100px, auto);
-		grid-template-areas: "a-brief-history a-brief-history a-brief-history " "history-classical history-classical history-post-classical" "history-modern-yoga history-modern-yoga history-image"
+		grid-template-areas: "a-brief-history a-brief-history a-brief-history " "history-classical history-classical history-post-classical" "history-modern-yoga history-modern-yoga history-image";
 	}
 	.a-brief-history {
 		grid-area: a-brief-history;
@@ -570,7 +570,7 @@ a {
 		column-gap: 1vw;
 		row-gap: 1vw;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "information information" "warrior-i warrior-ii" "cobra dog" "bridge tree" "supinetwist cat-cow" "forward-fold ."
+		grid-template-areas: "information information" "warrior-i warrior-ii" "cobra dog" "bridge tree" "supinetwist cat-cow" "forward-fold .";
 	}
 	.poses-gif-container {
 		max-width: 40vw;
@@ -616,7 +616,7 @@ a {
 		column-gap: .5vw;
 		row-gap: .5vw;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-areas: "information information information" "warrior-i warrior-ii cobra" "dog bridge tree" "supinetwist cat-cow forward-fold"
+		grid-template-areas: "information information information" "warrior-i warrior-ii cobra" "dog bridge tree" "supinetwist cat-cow forward-fold";
 	}
 	.poses-gif-container {
 		max-width: 28vw;
@@ -646,7 +646,7 @@ a {
 
 .exercise-video-header {
 	grid-area: heading;
-	padding: 0%
+	padding: 0%;
 }
 
 .exercise-video {
@@ -662,7 +662,7 @@ a {
 		column-gap: 5rem;
 		padding: 0 2rem;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "heading heading" "video-1 video-2" "video-3 ."
+		grid-template-areas: "heading heading" "video-1 video-2" "video-3 .";
 	}
 	.exercise-video>video {
 		position: relative;
@@ -767,7 +767,7 @@ a {
     width: 20rem;
 	margin: auto;
 	margin-top: 2.5rem;
-	border-radius: .3rem;
+	border-radius: 1rem;
 	padding: 1rem 1.5rem;
 	text-align: center;
 	background-color: var(--clr-primary-400);
