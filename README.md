@@ -22,8 +22,7 @@ In this section, you should go over the different parts of your project, and des
 - __Navigation Bar: Desktop__
 ![Nav Bar Desktop](./readme-assets/screen-shots/yoga-centric_desktop_menu.png)
   - Featured as a fixed navigation bar at the top of the single page scrolling site. this full responsive navigation bar includes links to the Logo, Home page, Benefits section, History section, Poses and the yoga video sections.
-  - As the user scrolls through the different sections the active section is displayed under the appropriate menu selection with a simple underline as the indicator.
-  - This section will allow the user to easily navigate from section to section across all devices without having scroll from the top to bottom to find the required section. 
+
 
 
 
