@@ -181,7 +181,8 @@ Rather than attempt to rewrite these instructions It was better to use the verba
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - The photos used on the throughout the site were all from www.freepik.com
 - The animated gifs used for the Foundation Poses were taken from gfycat.com
-- The Wake Up & Flow Yoga | YogaFit Retreats - Lindsay Jay video is from:  https://youtu.be/bTs73IH7Ycw
-- Happiness & Gratitude Meditation - Lindsay Jay video is from: https://youtu.be/nSISnimEq30
-- Lindsay Jay Yoga video is from: https://youtu.be/KarBeaitMNs
+- Videos
+-- The Wake Up & Flow Yoga | YogaFit Retreats - Lindsay Jay video is from:  https://youtu.be/bTs73IH7Ycw
+-- Happiness & Gratitude Meditation - Lindsay Jay video is from: https://youtu.be/nSISnimEq30
+-- Lindsay Jay Yoga video is from: https://youtu.be/KarBeaitMNs
 These were downloaded and added directly to the site as using the correct YouTube embedded link meant 3rd party cookies were also added to the site.
