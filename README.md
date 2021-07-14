@@ -137,9 +137,9 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdkitley1975.github.io%2FYoga-Centric%2F)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdkitley1975.github.io%2FYoga-Centric%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Unfixed Bugs
 
@@ -153,7 +153,7 @@ After writing the code, committing and pushing it to GitHub:
 1. Navigate to the repository on github and click **Settings**.
 1. From there, go to the **Source section** within the Github Pages section.
 1. Select **master branch** on the dropdown menu, and click save.
-1. Now the website is live on **https://dkitley1975.github.io/Yoga-Centric/**
+1. Now the website is live on **https://dkitley1975.github.io/yoga-centric/**
 1. Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
 
 To run the project locally:
@@ -164,7 +164,7 @@ To run the project locally:
 1. Change the working directory to the location where the cloned directory is to go.
 1. Use the **"git clone" command** and paste the url copied in the second step.
 
-The live link can be found here - **https://dkitley1975.github.io/Yoga-Centric/** 
+The live link can be found here - **https://dkitley1975.github.io/yoga-centric/** 
 
 
 ## Credits 
