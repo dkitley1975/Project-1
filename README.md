@@ -22,8 +22,7 @@ In this section, you should go over the different parts of your project, and des
 - __Navigation Bar: Desktop__
 ![Nav Bar Desktop](./readme-assets/screen-shots/yoga-centric_desktop_menu.png)
   - Featured as a fixed navigation bar at the top of the single page scrolling site. this full responsive navigation bar includes links to the Logo, Home page, Benefits section, History section, Poses and the yoga video sections.
-  - As the user scrolls through the different sections the active section is displayed under the appropriate menu selection with a simple underline as the indicator.
-  - This section will allow the user to easily navigate from section to section across all devices without having scroll from the top to bottom to find the required section. 
+
 
 
 
@@ -121,11 +120,8 @@ This way my content will be easily readable.
 
 ### Features Left to Implement
 
-- All the features I wished to implement are added to this site.
-- I would of liked to fix the issue with in the nav-bar.js TypeError: Cannot read property 'classList' of null
-    at nav-bar.js:33
-    at NodeList.forEach (<anonymous>)
-    at navHighlighter (nav-bar.js:23)
+- A HTML and CSS only Navigation bar
+- To have the current section show active in the navigation bar
 
 ## Testing 
 
@@ -147,12 +143,7 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ### Unfixed Bugs
 
-There is an error displayed which has proved difficult to fix to date within nav-bar.js.
-
-TypeError: Cannot read property 'classList' of null
-    at nav-bar.js:33
-    at NodeList.forEach (<anonymous>)
-    at navHighlighter (nav-bar.js:23) 
+No Known bugs at present
 
 ## Deployment
 
@@ -181,8 +172,7 @@ The live link can be found here - **https://dkitley1975.github.io/Yoga-Centric/*
 ### Content 
 
 - The Newsletter sign up section uses Email.js to implement the sending of the emails - Instead of having the javascript run totally within the html, I created a new .js file and placed the code in there. referencing this external file. I added additional code to this to add a 'display = "none"' to the original Newsletter Sign-up form and display = "block" to the Thank you form.
-- I wanted to incorporate on the mobile Navigation menu the ability to have it automatically close after selecting a link. I google and found the solution I required here: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci. Adapting and incorporating this into my navigation worked.
-- I wanted to highlight the active sections on the desktop navigation and used javascript coding from:  https://codepen.io/malsu/pen/VwKzoPG to achieve this.
+- I wanted to incorporate on the mobile Navigation menu the ability to have it automatically close after selecting a link. I found demonstration which did what I wanted here: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci. Adapting and incorporating this into my navigation worked.
 - The instructions for the Yoga poses was taken from:
 https://www.healthline.com/health/fitness-exercises/definitive-guide-to-yoga#-the-basics-and-foundation
 Rather than attempt to rewrite these instructions It was better to use the verbatim, as trying to rewrite them would still cause an issue with plagiarism checkers and most likely would cause some one a injury from following unsafe instructions.
