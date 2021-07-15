@@ -11,7 +11,7 @@ If the user finds the site useful and informative there is the option to sign up
 
 Thank you for visiting my project!
 
-![Responsive Mockup](./readme-assets/stylings/mockup-image.jpg)
+![Responsive mock up](./readme-assets/stylings/mockup-image.jpg)
 <p>&nbsp;</p>
 
 ## Features
@@ -58,10 +58,8 @@ Thank you for visiting my project!
 
 - __A Guide to Fundamental Yoga Poses section__
 
-  - This section is to demonstrate to the user 9 fundamental yoya poses, each pose has a set of step by step instructions, these short videos are set to not autoplay but have controls visible and will automatically loop once played, so the user and watch as they read the guide instead of continually pressing play.
+  - This section is to demonstrate to the user 9 fundamental yoga poses, each pose has a set of step by step instructions, these short videos are set to not autoplay but have controls visible and will automatically loop once played, so the user and watch as they read the guide instead of continually pressing play.
   
-
-
 ![A Guide to Fundamental Yoga Poses](./readme-assets/screen-shots/yoga-centric-yoga-pose.png)
   <p>&nbsp;</p>
 
@@ -91,7 +89,7 @@ Thank you for visiting my project!
 
 - __Quotation Blocks__ 
 
-  - There are two additional quotation blocks with full width images within the site, these help to seperate the sections in to clear section breaks.
+  - There are two additional quotation blocks with full width images within the site, these help to separate the sections in to clear section breaks.
   
 ![Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-1.png)
 ![Another Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-2.png)<p>&nbsp;</p>
@@ -109,7 +107,7 @@ This font is visually appealing and pairs well with source sans pro.
 I based my color scheme on a pallet devised around beach landscapes using the crams of the sand to help create a calm, natural feeling.
 
 * rgba(254, 232, 223, 1) This color is called Champagne Pink - will be used as  a background colour and will be used with a .6 transparency. 
-* rgba(222, 183, 152, 1) This color is called tumbleweed - to be used as a contrast tot the background colour.
+* rgba(222, 183, 152, 1) This color is called Tumbleweed - to be used as a contrast tot the background colour.
 * rgba(153, 95, 58, 1) This color is a called Brown Sugar - This is to be used as my header colours.
 * rgba(153, 95, 58, 1) This color is a called Van Dyke Brown - This is to be used as my colour to over lay the Champagne Pink.
 * The main colour of my text is to be black.
@@ -148,8 +146,9 @@ This way my content will be easily readable.
     - To test the newsletter sign up, I have signed up for the yoga newsletter multiple times ensuring that it works as expected and after sign up displays the thank you for signing up message. 
     - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make ensure the sign up form displays as expected.<p>&nbsp;</p>
     
--  Font Awesome
-    - Footer Icons - Whilst checking the site  across multiple platforms, I noticed a GET fa-brands-400.woff2 error had accured. When checking on different browsers the icons disappeared. I rolled back the site a couple of iterations to check my code and the error continued. I have decide to self host the fonts and the error has since stopped.<p>&nbsp;</p>
+-  Footer Social Icons
+    - Links - these were checked to ensure they open open in the correct platforms, on mobile testing they opened up the appropriate application. On desktop they opened the correct website.
+     - Social Font Awesome Icons - Whilst checking the site across multiple platforms, I noticed a GET fa-brands-400.woff2 error had accured. When cross checking on different browsers the icons also disappeared. I rolled back the site a couple of iterations to check my code and the error continued, after readding the icons to the site the issue remained. The issue was also appearing on other random websites, after this I decide to self host the icons and the error has since stopped.<p>&nbsp;</p>
 
 ### Validator Testing 
 
@@ -172,8 +171,8 @@ After writing the code, committing and pushing it to GitHub:
 1. Navigate to the repository on github and click **Settings**.
 1. From there, go to the **Source section** within the Github Pages section.
 1. Select **master branch** on the dropdown menu, and click save.
-1. Now the website is live on **https://dkitley1975.github.io/yoga-centric/**
-1. Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
+2. Now the website is live on **https://dkitley1975.github.io/yoga-centric/** 
+3. Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
 
 To run the project locally:
 
