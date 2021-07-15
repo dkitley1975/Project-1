@@ -120,8 +120,8 @@ This way my content will be easily readable.
 
 ### Features Left to Implement
 
-- A HTML and CSS only Navigation bar
-- To have the current section show active in the navigation bar
+- A HTML and CSS only Navigation bar - rather than relying on javascript to close the menu after a click.
+- To have the current section show active in the navigation bar.
 
 ## Testing 
 
