@@ -12,19 +12,13 @@ If the user finds the site useful and informative there is the option to sign up
 Thank you for visiting my project!
 
 ![Responsive Mockup](./readme-assets/stylings/mockup-image.jpg)
+<p>&nbsp;</p>
 
-## Features 
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-### Existing Features
+## Features
 
 - __Navigation Bar: Desktop__
 ![Nav Bar Desktop](./readme-assets/screen-shots/yoga-centric_desktop_menu.png)
-  - Featured as a fixed navigation bar at the top of the single page scrolling site. this full responsive navigation bar includes links to the Logo, Home page, Benefits section, History section, Poses and the yoga video sections.
-
-
-
+  - Featured as a fixed navigation bar at the top of the single page scrolling site. this full responsive navigation bar includes links to the Logo, Home page, Benefits section, History section, Poses and the yoga video sections.<p>&nbsp;</p>
 
 - __Navigation Bar: Mobile__
 
@@ -34,9 +28,7 @@ In this section, you should go over the different parts of your project, and des
   - Featured as a fixed navigation bar at the top of the single page scrolling site. this full responsive navigation bar initially displays a hamburger menu, when pressed this animates to a close icon as the menu is displayed.
   - The links includes links to the Logo, Home page, Benefits section, History section, Poses and the yoga video sections.
   - This section will allow the user to easily navigate from section to section across all devices without having scroll from the top to bottom to find the required section. 
-  - When a link is pressed the menu auto closes as the page smoothly scrolls to the required section.
-
-
+  - When a link is pressed the menu auto closes as the page smoothly scrolls to the required section.<p>&nbsp;</p>
 
 
 - __The landing page image__
@@ -44,8 +36,10 @@ In this section, you should go over the different parts of your project, and des
   - The landing includes a photograph with text overlay with a quotation regarding yoga in it. 
   - This section introduces the user to Yoga Centric and has an unobtrusive, understated animated spinning lotus flower emblem above the quotation.
   - The landing page is fully responsive across screen sizes, keeping the text legible by having the quotation block resize. 
+  <p>&nbsp;</p>
+  The landing page is meant to give a calm and welcoming appearance. whilst inviting the user to scroll down to see the partially visible content below.
 
-![Landing Page](./readme-assets/screen-shots/yoga-centric_mobile_landing_page.png)
+![Landing Page](./readme-assets/screen-shots/yoga-centric_mobile_landing_page.png)<p>&nbsp;</p>
 
 - __Health Benefits Section__
 
@@ -53,18 +47,23 @@ In this section, you should go over the different parts of your project, and des
   - This user will see another image of the same woman as the landing page performing a Yoga pose. the consistency in the still images through out the site adds a uniform look within the site. 
 
 ![Health Benefits](./readme-assets/screen-shots/yoga-centric-health-benefits.png)
+  <p>&nbsp;</p>
 
 - __A Brief History section__
 
-  - This section is to inform the user of a very brief history of the way Yoga has developed of last 5000 years (this is a long time and a lot of history, so I kept this so 4 eras). I added another image to this section, again it is another image of the same woman as the landing page performing a Yoga pose. the consistency in the still images through out the site adds a uniform look within the site.
+  - This section is to inform the user of a very brief history of the way Yoga has developed of last 5000 years (this is a long time and a lot of history, so I kept this so 4 eras). I added another image to this section, again it is another image of the same woman as the landing page performing a Yoga pose. the consistency in the still images through out the site adds a uniform look within the site.<p>&nbsp;</p>
 
 ![A Brief History](./readme-assets/screen-shots/yoga-centric-brief-history.png)
+  <p>&nbsp;</p>
 
 - __A Guide to Fundamental Yoga Poses section__
 
   - This section is to demonstrate to the user 9 fundamental yoya poses, each pose has a set of step by step instructions, these short videos are set to not autoplay but have controls visible and will automatically loop once played, so the user and watch as they read the guide instead of continually pressing play.
+  
+
 
 ![A Guide to Fundamental Yoga Poses](./readme-assets/screen-shots/yoga-centric-yoga-pose.png)
+  <p>&nbsp;</p>
 
 - __Yoga Exercise Videos section__
 
@@ -73,13 +72,14 @@ In this section, you should go over the different parts of your project, and des
   - The videos also have a poster image set.
 
 ![Yoga Exercise Videos](./readme-assets/screen-shots/yoga-centric-exercise-videos.png)
+  <p>&nbsp;</p>
 
 - __Newsletter Sign Up Section__
 
-  - This section will allow the user to sign up to the Yoga Centric Monthly Newsletter. The user will be asked to submit their full name and email address, the form is validated within html5 and after submitting the form is hidden and replaced with a thank you form message. 
+  - This section will allow the user to sign up to the Yoga Centric Monthly Newsletter. The user will be asked to submit their full name and email address, the form is validated within html5 and after submitting the form is hidden and replaced with a thank you form message. <p>&nbsp;</p>
 
 ![Sign Up](./readme-assets/screen-shots/yoga-centric-newsletter-sign-up.png)
-![Sign Up - Thank You](./readme-assets/screen-shots/yoga-centric-newsletter-sign-up-complete.png)
+![Sign Up - Thank You](./readme-assets/screen-shots/yoga-centric-newsletter-sign-up-complete.png)<p>&nbsp;</p>
 
 - __The Footer__ 
 
@@ -87,13 +87,14 @@ In this section, you should go over the different parts of your project, and des
   - The footer is valuable to the user as it encourages them to keep connected via social media.
 
 ![Footer](./readme-assets/screen-shots/yoga-centric-footer.png)
+<p>&nbsp;</p>
 
 - __Quotation Blocks__ 
 
   - There are two additional quotation blocks with full width images within the site, these help to seperate the sections in to clear section breaks.
   
 ![Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-1.png)
-![Another Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-2.png)
+![Another Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-2.png)<p>&nbsp;</p>
 
 
 ### Typeface
@@ -102,7 +103,7 @@ For the main body text I have chosen the google typeface Source Sans Pro. This i
 For the headings I wanted a slightly different typeface. I explored for headings on [Fontpair](https://www.fontpair.co/ "Font Pair") and choose the google font Lato.
 This font is visually appealing and pairs well with source sans pro.
 
-![Typefaces](./readme-assets/stylings/typefaces.png)
+![Typefaces](./readme-assets/stylings/typefaces.png)<p>&nbsp;</p>
 
 ### Colours
 I based my color scheme on a pallet devised around beach landscapes using the crams of the sand to help create a calm, natural feeling.
@@ -115,13 +116,13 @@ I based my color scheme on a pallet devised around beach landscapes using the cr
 
 I have used to contract checker on Coolors in order to make sure that the contract is sufficient.
 This way my content will be easily readable.
-![Color Scheme](./readme-assets/stylings/color-scheme.png)
+![Color Scheme](./readme-assets/stylings/color-scheme.png)<p>&nbsp;</p>
 
 
 ### Features Left to Implement
-
 - A HTML and CSS only Navigation bar - rather than relying on javascript to close the menu after a click.
 - To have the current section show active in the navigation bar.
+<p>&nbsp;</p>
 
 ## Testing 
 
@@ -130,8 +131,25 @@ This way my content will be easily readable.
   - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make sure it works on all browsers and devices.
   - I adjusted the padding on each section to ensure the h1 text at the top of each section was not covered by the navigation bar when the nav links were followed.
   - I checked the nav bar menu changed to the hamburger menu on small devices.
-  
+   <p>&nbsp;</p>
 
+-  Foundation Poses
+     - To test the foundation poses, I have played all the videos to ensure play and loop as expected. 
+     - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make ensure they play on all browsers and devices.
+     - These were initially gifs which I replaced  with the mp4 versions. I added the video controls and stopped the videos from auto playing as this looked too busy when scrolling through.
+     - I have opened the site at various sizes to ensure the grid adjusts at the required break points.  <p>&nbsp;</p>
+    
+ -  Exercise Videos
+    - To test the exercise videos, I have played all the videos to ensure play and loop as expected. 
+    - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make ensure they play on all browsers and devices.
+    - These were initially added as embedded YouTube iframes. These however gave cookie errors displayed within the developer tools. I choose to replace the iframe with a link to the downloaded video to circumnavigate the cookie issue.<p>&nbsp;</p>
+  
+ -  Newsletter Sign up
+    - To test the newsletter sign up, I have signed up for the yoga newsletter multiple times ensuring that it works as expected and after sign up displays the thank you for signing up message. 
+    - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make ensure the sign up form displays as expected.<p>&nbsp;</p>
+    
+-  Font Awesome
+    - Footer Icons - Whilst checking the site  across multiple platforms, I noticed a GET fa-brands-400.woff2 error had accured. When checking on different browsers the icons disappeared. I rolled back the site a couple of iterations to check my code and the error continued. I have decide to self host the fonts and the error has since stopped.<p>&nbsp;</p>
 
 ### Validator Testing 
 
@@ -139,10 +157,12 @@ This way my content will be easily readable.
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+<p>&nbsp;</p>
 
 ### Unfixed Bugs
 
-No Known bugs at present
+No Known bugs at present.
+<p>&nbsp;</p>
 
 ## Deployment
 
@@ -164,7 +184,7 @@ To run the project locally:
 1. Use the **"git clone" command** and paste the url copied in the second step.
 
 The live link can be found here - **https://dkitley1975.github.io/yoga-centric/** 
-
+<p>&nbsp;</p>
 
 ## Credits 
 
@@ -175,12 +195,13 @@ The live link can be found here - **https://dkitley1975.github.io/yoga-centric/*
 - The instructions for the Yoga poses was taken from:
 https://www.healthline.com/health/fitness-exercises/definitive-guide-to-yoga#-the-basics-and-foundation
 Rather than attempt to rewrite these instructions It was better to use the verbatim, as trying to rewrite them would still cause an issue with plagiarism checkers and most likely would cause some one a injury from following unsafe instructions.
+<p>&nbsp;</p>
 
 ### Media
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - The photos used on the throughout the site were all from www.freepik.com
 - The animated gifs used for the Foundation Poses were taken from gfycat.com
-- Videos (These were downloaded and added directly to the site as using the correct YouTube embedded link meant 3rd party cookies were also added to the site.)
+- Videos (*These were initially added as embedded YouTube iframes. This however gave cookie errors displayed within the developer tools. I choose to replace the iframe with a link to the downloaded video to circumnavigate the cookie issue, and just incase the Youtube video was removed this would result in a broken link within this project.*)
   - The Wake Up & Flow Yoga | YogaFit Retreats - Lindsay Jay video is from:  https://youtu.be/bTs73IH7Ycw
   - Happiness & Gratitude Meditation - Lindsay Jay video is from: https://youtu.be/nSISnimEq30
   - Lindsay Jay Yoga video is from: https://youtu.be/KarBeaitMNs
