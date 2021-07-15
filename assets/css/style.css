@@ -148,7 +148,7 @@ a {
 	text-decoration: none;
 }
 
-.active {
+.section-active {
 	font-weight: var(--fw-b);
 	text-decoration: underline;
 }
@@ -373,7 +373,7 @@ a {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 2vw;
-		padding: 5vh 3vw;
+		padding: 8vh 3vw;
 		align-items: center;
 		grid-template-areas: "benefits-text-area benefits-image-container benefits-image-container";
 	}
@@ -401,7 +401,7 @@ a {
 
 @media screen and (min-width: 1024px) {
 	#benefits-container {
-		padding: 5vh 3vw;
+		padding: 8vh 3vw;
 	}
 	.benefits-text-area {
 		margin-left: 5vw;
@@ -461,7 +461,7 @@ a {
 		display: grid;
 		row-gap: 2.5vw;
 		column-gap: 5vw;
-		padding: 5vw 2.5vw;
+		padding: 5vh 2.5vw;
 		grid-template-columns: repeat(3, 1fr);
 		grid-auto-rows: minmax(100px, auto);
 		grid-template-areas: "a-brief-history a-brief-history a-brief-history " "history-classical history-classical history-post-classical" "history-modern-yoga history-modern-yoga history-image";
@@ -566,6 +566,7 @@ a {
 
 @media screen and (min-width: 768px) {
 	#poses-container {
+		padding: 8vh 5vw;
 		display: grid;
 		column-gap: 1vw;
 		row-gap: 1vw;
@@ -660,7 +661,7 @@ a {
 	#videos-container {
 		display: grid;
 		column-gap: 5rem;
-		padding: 0 2rem;
+		padding: 8vh 2rem;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-areas: "heading heading" "video-1 video-2" "video-3 .";
 	}
