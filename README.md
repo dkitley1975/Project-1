@@ -62,7 +62,7 @@ In this section, you should go over the different parts of your project, and des
 
 - __A Guide to Fundamental Yoga Poses section__
 
-  - This section is to demonstrate to the user 9 fundamental yoya poses, each pose has a set of step by step instructions and an animated gif, this animated gif loops, so the user and watch as they read the guide instead of continually pressing play.
+  - This section is to demonstrate to the user 9 fundamental yoya poses, each pose has a set of step by step instructions, these short videos are set to not autoplay but have controls visible and will automatically loop once played, so the user and watch as they read the guide instead of continually pressing play.
 
 ![A Guide to Fundamental Yoga Poses](./readme-assets/screen-shots/yoga-centric-yoga-pose.png)
 
@@ -125,13 +125,12 @@ This way my content will be easily readable.
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+- Navigation Bar
+  - To test the navigation bar, I have click all the links to ensure they all link to the relevant sections and they all works as expected. 
+  - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make sure it works on all browsers and devices.
+  - I adjusted the padding on each section to ensure the h1 text at the top of each section was not covered by the navigation bar when the nav links were followed.
+  - I checked the nav bar menu changed to the hamburger menu on small devices.
+  
 
 
 ### Validator Testing 
