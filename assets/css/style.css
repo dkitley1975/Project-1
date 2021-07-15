@@ -148,7 +148,7 @@ a {
 	text-decoration: none;
 }
 
-.section-active {
+.active {
 	font-weight: var(--fw-b);
 	text-decoration: underline;
 }
@@ -274,6 +274,7 @@ a {
 }
 
 .hero-image {
+	padding-top: 90vh;
 	height: 65vh;
 	width: 100vw;
 	background: url('../images/pretty-blonde-woman-stretching-beach_10887539.jpg') no-repeat center left;
@@ -336,7 +337,7 @@ a {
 #benefits-container {
 	width: 100vw;
 	height: fit-content;
-	padding: 5vh 5vw;
+	padding: 9vh 5vw;
 	background-color: var(--clr-primary-150);
 }
 
@@ -372,27 +373,27 @@ a {
 	#benefits-container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 2vw;
-		padding: 8vh 3vw;
+		grid-gap: 5vw;
+		padding: 8vh 4vw 8vh 2vw;
 		align-items: center;
 		grid-template-areas: "benefits-text-area benefits-image-container benefits-image-container";
 	}
 	.benefits-text-area {
 		grid-area: benefits-text-area;
-		padding-left: 2vw;
+		padding-left: 1vw;
 		padding-right: 2vw;
 	}
 	.benefits-image-container {
 		grid-area: benefits-image-container;
+		max-width: 50vw;
 		margin: auto;
-		max-width: 35vw;
 		position: unset;
 		transform: unset;
 	}
 	.benefits-image img {
-		max-width: 30vw;
 		margin: auto;
 		height: auto;
+		max-width: 40vw;
 		overflow: hidden;
 		border-radius: 1rem;
 		box-shadow: 0 0 1rem var(--clr-box-shadow);
@@ -415,6 +416,7 @@ a {
 #history-container {
 	width: 100vw;
 	height: fit-content;
+	padding: 8vh 3vw;
 }
 
 .a-brief-history {
@@ -532,6 +534,7 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	height: fit-content;
+	padding: 10vh 3vw;
 }
 
 .pose-information {
@@ -542,7 +545,7 @@ a {
 	padding: 2vw;
 }
 
-.poses-gif-container {
+.poses-video-container {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 4rem;
@@ -554,7 +557,7 @@ a {
 	box-shadow: 0 0 1rem var(--clr-box-shadow);
 }
 
-.pose-gif {
+.pose-video {
 	width: 70vw;
 	position: relative;
 	left: 50%;
@@ -573,10 +576,10 @@ a {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-areas: "information information" "warrior-i warrior-ii" "cobra dog" "bridge tree" "supinetwist cat-cow" "forward-fold .";
 	}
-	.poses-gif-container {
+	.poses-video-container {
 		max-width: 40vw;
 	}
-	.pose-gif {
+	.pose-video {
 		width: 35vw;
 	}
 	.pose-information {
@@ -619,10 +622,10 @@ a {
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-areas: "information information information" "warrior-i warrior-ii cobra" "dog bridge tree" "supinetwist cat-cow forward-fold";
 	}
-	.poses-gif-container {
+	.poses-video-container {
 		max-width: 28vw;
 	}
-	.pose-gif {
+	.pose-video {
 		width: 25vw;
 	}
 }
@@ -633,7 +636,7 @@ a {
 #videos-container {
 	width: 98vw;
 	height: fit-content;
-	padding: 0 2rem;
+	padding: 10vh 3vw;
 }
 
 .exercise-video>video {
