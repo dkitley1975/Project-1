@@ -767,13 +767,11 @@ a {
 
 .newsletter-button-submit,
 .newsletter-button-reset {
-	height: 5rem;
-	width: 20rem;
 	margin: auto;
 	-webkit-appearance: none;
 	margin-top: 2.5rem;
 	border-radius: 2rem;
-	padding: 1rem 1.5rem;
+	padding: 2rem 3rem;
 	text-align: center;
 	background-color: var(--clr-primary-400);
 	color: white;
