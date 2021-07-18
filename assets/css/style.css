@@ -182,7 +182,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 1.5rem;
+	padding: 1rem 4rem;
 }
 
 .hamburger {
@@ -229,6 +229,10 @@ a {
 /* Nav Bar media query for mobile alternative */
 
 @media only screen and (max-width: 768px) {
+	.navbar {
+		padding: 1rem 1.5rem;
+	}
+	
 	.nav-menu {
 		position: fixed;
 		left: -100%;
@@ -767,13 +771,11 @@ a {
 
 .newsletter-button-submit,
 .newsletter-button-reset {
-	height: 5rem;
-	width: 20rem;
 	margin: auto;
 	-webkit-appearance: none;
 	margin-top: 2.5rem;
 	border-radius: 2rem;
-	padding: 1rem 1.5rem;
+	padding: 2rem 3rem;
 	text-align: center;
 	background-color: var(--clr-primary-400);
 	color: white;
