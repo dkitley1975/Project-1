@@ -94,7 +94,8 @@ h6 {
 	margin-bottom: 1vw;
 }
 
-#poses-container h3 {
+#poses-container h2 {
+	font-size: var(--fs-3);
 	text-align: center;
 	padding-bottom: 15px;
 }
@@ -155,16 +156,6 @@ a {
 }
 
 ::placeholder {
-	color: var(--clr-primary-200);
-}
-
-:-ms-input-placeholder {
-	/* Internet Explorer 10-11 */
-	color: var(--clr-primary-200);
-}
-
-::-ms-input-placeholder {
-	/* Microsoft Edge */
 	color: var(--clr-primary-200);
 }
 
@@ -233,7 +224,6 @@ a {
 	.navbar {
 		padding: 1rem 1.5rem;
 	}
-	
 	.nav-menu {
 		position: fixed;
 		left: -100%;
