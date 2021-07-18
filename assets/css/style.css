@@ -41,6 +41,7 @@
 	--clr-primary-250: rgba(222, 183, 152, 0.6);
 	--clr-primary-300: rgba(153, 95, 58, 1);
 	--clr-primary-400: rgb(100, 64, 41, 1);
+	--clr-primary-600: rgba(26, 16, 11, 1);
 	--clr-box-shadow: rgb(136, 148, 141);
 }
 
@@ -75,7 +76,7 @@ h6 {
 	text-align: center;
 	letter-spacing: 3px;
 	line-height: 150%;
-	color: var(--clr-primary-400);
+	color: var(--clr-primary-600);
 	font-family: var(--ff-quotation);
 	font-size: var(--fs-3);
 }
