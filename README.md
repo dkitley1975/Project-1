@@ -149,7 +149,7 @@ After testing my colour scheme on the live site I amended the text in the quotat
     
 -  Footer Social Icons
     - Links - these were checked to ensure they open open in the correct platforms, on mobile testing they opened up the appropriate application. On desktop they opened the correct website.
-     - Social Font Awesome Icons - Whilst checking the site across multiple platforms, I noticed a GET fa-brands-400.woff2 error had accured. When cross checking on different browsers the icons also disappeared. I rolled back the site a couple of iterations to check my code and the error continued, after readding the icons to the site the issue remained. The issue was also appearing on other random websites, after this I decide to self host the icons and the error has since stopped.<p>&nbsp;</p>
+    - Social Font Awesome Icons - Whilst checking the site across multiple platforms, I noticed a GET fa-brands-400.woff2 error had accured. When cross checking on different browsers the icons also disappeared. I rolled back the site a couple of iterations to check my code and the error continued, after readding the icons to the site the issue remained. The issue was also appearing on other random websites, after this I decide to self host the icons and the error has since stopped.<p>&nbsp;</p>
 
 #### Chrome Lighthouse Report
 I tested the live site https://dkitley1975.github.io/yoga-centric/ with the lighthouse extension, this showed a few performance improvements were required, I reduced the size of the images to achieve this.
@@ -214,4 +214,7 @@ Rather than attempt to rewrite these instructions It was better to use the verba
   - Happiness & Gratitude Meditation - Lindsay Jay video is from: https://youtu.be/nSISnimEq30
   - Lindsay Jay Yoga video is from: https://youtu.be/KarBeaitMNs
 
-
+### Wire Frames
+My wire frames can be found here:
+- [Desktop/Tablet wireframe](./readme-assets/wireframes/tablet-wireframe.png)
+- [Mobile wireframe](./readme-assets/wireframes/mobile-wireframe.png) 
