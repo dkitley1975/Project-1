@@ -114,6 +114,7 @@ I based my color scheme on a pallet devised around beach landscapes using the cr
 
 I have used to contract checker on Coolors in order to make sure that the contract is sufficient.
 This way my content will be easily readable.
+After testing my colour scheme on the live site I amended the text in the quotation blocks to black to help improve the colour contract between the background colour transparancy and the text.
 ![Color Scheme](./readme-assets/stylings/color-scheme.png)<p>&nbsp;</p>
 
 
@@ -149,6 +150,14 @@ This way my content will be easily readable.
 -  Footer Social Icons
     - Links - these were checked to ensure they open open in the correct platforms, on mobile testing they opened up the appropriate application. On desktop they opened the correct website.
      - Social Font Awesome Icons - Whilst checking the site across multiple platforms, I noticed a GET fa-brands-400.woff2 error had accured. When cross checking on different browsers the icons also disappeared. I rolled back the site a couple of iterations to check my code and the error continued, after readding the icons to the site the issue remained. The issue was also appearing on other random websites, after this I decide to self host the icons and the error has since stopped.<p>&nbsp;</p>
+
+#### Chrome Lighthouse Report
+I tested the live site https://dkitley1975.github.io/yoga-centric/ with the lighthouse extension, this showed a few performance improvements were required, I reduced the size of the images to achieve this.
+<p>&nbsp;</p>
+
+#### Silk Tide
+I used this to give a test of a simulated screen reader on the site. I made some alterations to the ARIA attributes and tested the site again until it read the required sections in a explanatory way.
+<p>&nbsp;</p>
 
 ### Validator Testing 
 
