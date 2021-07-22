@@ -1,7 +1,8 @@
 {
-    "name":"",
-    "short_name":"",
+    "name":"Yoga Centric",
+    "short_name":"YC",
     "icons":
+    "start_url": "https://dkitley1975.github.io/yoga-centric/#hero-container"
     [
         {
             "src":"/android-chrome-192x192.png",
