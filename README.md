@@ -153,7 +153,8 @@ After testing my colour scheme on the live site I amended the text in the quotat
 
 #### Chrome Lighthouse Report
 I tested the live site https://dkitley1975.github.io/yoga-centric/ with the lighthouse extension, this showed a few performance improvements were required, I reduced the size of the images to achieve this.
-<p>&nbsp;</p>
+
+![Lighthouse Report](./readme-assets/screen-shots/lighthouse-report.png)<p>&nbsp;</p>
 
 #### Silk Tide
 I used this to give a test of a simulated screen reader on the site. I made some alterations to the ARIA attributes and tested the site again until it read the required sections in a explanatory way.
