@@ -12,7 +12,7 @@
       <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
       <link rel="manifest" href="./assets/favicon/site.webmanifest">
-      <!-- connect emailJS to the newsletter sign up form -->
+      <!-- Code to connect emailJS to the newsletter sign up form -->
       <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
       <script>
          (function() {
@@ -20,6 +20,7 @@
                emailjs.init('user_5DbhIUbFrA2loA1fd9IcN');
          })();
       </script>
+      <!-- End of code to connect emailJS to the newsletter sign up form -->
    </head>
    <body>
       <header id="nav-bar-header">
@@ -340,7 +341,8 @@
                <div class="newsletter-button-flex">
                   <button class="newsletter-button-submit" type="submit" value="Submit" aria-label="submit request for newsletter">Submit</button>
                   <button class="newsletter-button-reset" type="reset" value="Reset" aria-label="reset the form values">Reset</button>
-                  <!-- Run javascript to send email, reset form and replace form with thanks for signing up -->
+                  <!-- Run javascript to send email,using emailJS. 
+                     javascript amended to reset form and replace form with thanks for signing up -->
                   <script src="./assets/scripts/newsletter_signup.js"></script>  
                </div>
             </form>
