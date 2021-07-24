@@ -1,4 +1,3 @@
-// webmanifest created by https://favicon.io/favicon-generator/
 {
     "name":"Yoga Centric",
     "short_name":"Yoga",
@@ -16,8 +15,8 @@
             "type":"image/png"
         }
     ],
-    "theme_color":"#ffffff",
-    "background_color":"#ffffff",
+    "theme_color":"cream",
+    "background_color":"white",
     "display":"standalone"
 }
     
