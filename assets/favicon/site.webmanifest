@@ -1,6 +1,7 @@
 {
     "name":"Yoga Centric",
     "short_name":"Yoga",
+    "start_url":"https://dkitley1975.github.io/yoga-centric",
     "description": "A simple single page scrolling website for project 1 - Yoga Centric",
     "icons":
     [
