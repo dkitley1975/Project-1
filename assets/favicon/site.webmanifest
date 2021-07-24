@@ -1,17 +1,17 @@
 {
     "name":"Yoga Centric",
     "short_name":"Yoga",
-    "start_url":"https://dkitley1975.github.io/yoga-centric",
+    "start_url":"https://www.dkitley1975.github.io/yoga-centric/",
     "description": "A simple single page scrolling website for project 1 - Yoga Centric",
     "icons":
     [
         {
-            "src":"/android-chrome-192x192.png",
+            "src":"./assets/favicon/android-chrome-192x192.png",
             "sizes":"192x192",
             "type":"image/png"
         },
         {
-            "src":"/android-chrome-512x512.png",
+            "src":"./assets/favicon/android-chrome-512x512.png",
             "sizes":"512x512",
             "type":"image/png"
         }
