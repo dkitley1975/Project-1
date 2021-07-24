@@ -16,15 +16,22 @@ Thank you for visiting my project!
 
 ## Features
 
+- __Favicons__ 
+
+  ![Favicon](./readme-assets/screen-shots/android-chrome-192x192.png)
+
+  Favicons are added to include the favicon within the address bar, as the bookmark icon and the desktop bookmark icon on apple devices.<p>&nbsp;</p>
+
 - __Navigation Bar: Desktop__
 ![Nav Bar Desktop](./readme-assets/screen-shots/yoga-centric_desktop_menu.png)
+
   - Featured as a fixed navigation bar at the top of the single page scrolling site. this full responsive navigation bar includes links to the Logo, Home page, Benefits section, History section, Poses and the yoga video sections.<p>&nbsp;</p>
 
 - __Navigation Bar: Mobile__
 
-![Nav Bar Mobile](./readme-assets/screen-shots/yoga-centric_mobile_menu-closed.png)
+  ![Nav Bar Mobile](./readme-assets/screen-shots/yoga-centric_mobile_menu-closed.png)
 
-![Nav Bar Mobile](./readme-assets/screen-shots/yoga-centric_mobile_menu-open.png)
+  ![Nav Bar Mobile](./readme-assets/screen-shots/yoga-centric_mobile_menu-open.png)
   - Featured as a fixed navigation bar at the top of the single page scrolling site. this full responsive navigation bar initially displays a hamburger menu, when pressed this animates to a close icon as the menu is displayed.
   - The links includes links to the Logo, Home page, Benefits section, History section, Poses and the yoga video sections.
   - This section will allow the user to easily navigate from section to section across all devices without having scroll from the top to bottom to find the required section. 
@@ -39,28 +46,28 @@ Thank you for visiting my project!
   <p>&nbsp;</p>
   The landing page is meant to give a calm and welcoming appearance. whilst inviting the user to scroll down to see the partially visible content below.
 
-![Landing Page](./readme-assets/screen-shots/yoga-centric_mobile_landing_page.png)<p>&nbsp;</p>
+  ![Landing Page](./readme-assets/screen-shots/yoga-centric_mobile_landing_page.png)<p>&nbsp;</p>
 
 - __Health Benefits Section__
 
   - The health Benefits section will allow the user to read a few of the health benefits of practising Yoga. 
   - This user will see another image of the same woman as the landing page performing a Yoga pose. the consistency in the still images through out the site adds a uniform look within the site. 
 
-![Health Benefits](./readme-assets/screen-shots/yoga-centric-health-benefits.png)
+  ![Health Benefits](./readme-assets/screen-shots/yoga-centric-health-benefits.png)
   <p>&nbsp;</p>
 
 - __A Brief History section__
 
   - This section is to inform the user of a very brief history of the way Yoga has developed of last 5000 years (this is a long time and a lot of history, so I kept this so 4 eras). I added another image to this section, again it is another image of the same woman as the landing page performing a Yoga pose. the consistency in the still images through out the site adds a uniform look within the site.<p>&nbsp;</p>
 
-![A Brief History](./readme-assets/screen-shots/yoga-centric-brief-history.png)
+  ![A Brief History](./readme-assets/screen-shots/yoga-centric-brief-history.png)
   <p>&nbsp;</p>
 
 - __A Guide to Fundamental Yoga Poses section__
 
   - This section is to demonstrate to the user 9 fundamental yoga poses, each pose has a set of step by step instructions, these short videos are set to not autoplay but have controls visible and will automatically loop once played, so the user and watch as they read the guide instead of continually pressing play.
   
-![A Guide to Fundamental Yoga Poses](./readme-assets/screen-shots/yoga-centric-yoga-pose.png)
+  ![A Guide to Fundamental Yoga Poses](./readme-assets/screen-shots/yoga-centric-yoga-pose.png)
   <p>&nbsp;</p>
 
 - __Yoga Exercise Videos section__
@@ -69,30 +76,30 @@ Thank you for visiting my project!
   - The videos are not set to autoplay as these are longer videos and will only begin downloading as the user begins to play, they are also set at mute.
   - The videos also have a poster image set.
 
-![Yoga Exercise Videos](./readme-assets/screen-shots/yoga-centric-exercise-videos.png)
+  ![Yoga Exercise Videos](./readme-assets/screen-shots/yoga-centric-exercise-videos.png)
   <p>&nbsp;</p>
 
 - __Newsletter Sign Up Section__
 
   - This section will allow the user to sign up to the Yoga Centric Monthly Newsletter. The user will be asked to submit their full name and email address, the form is validated within html5 and after submitting the form is hidden and replaced with a thank you form message. <p>&nbsp;</p>
 
-![Sign Up](./readme-assets/screen-shots/yoga-centric-newsletter-sign-up.png)
-![Sign Up - Thank You](./readme-assets/screen-shots/yoga-centric-newsletter-sign-up-complete.png)<p>&nbsp;</p>
+  ![Sign Up](./readme-assets/screen-shots/yoga-centric-newsletter-sign-up.png)
+  ![Sign Up - Thank You](./readme-assets/screen-shots/yoga-centric-newsletter-sign-up-complete.png)<p>&nbsp;</p>
 
 - __The Footer__ 
 
   - The footer section includes links to the relevant social media sites for Yoga Centric. The links will open to a new tab to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media.
 
-![Footer](./readme-assets/screen-shots/yoga-centric-footer.png)
+  ![Footer](./readme-assets/screen-shots/yoga-centric-footer.png)
 <p>&nbsp;</p>
 
 - __Quotation Blocks__ 
 
   - There are two additional quotation blocks with full width images within the site, these help to separate the sections in to clear section breaks.
   
-![Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-1.png)
-![Another Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-2.png)<p>&nbsp;</p>
+  ![Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-1.png)
+  ![Another Quotation Block](./readme-assets/screen-shots/yoga-centric-quotation-block-2.png)<p>&nbsp;</p>
 
 
 ### Typeface
@@ -101,7 +108,7 @@ For the main body text I have chosen the google typeface Source Sans Pro. This i
 For the headings I wanted a slightly different typeface. I explored for headings on [Fontpair](https://www.fontpair.co/ "Font Pair") and choose the google font Lato.
 This font is visually appealing and pairs well with source sans pro.
 
-![Typefaces](./readme-assets/stylings/typefaces.png)<p>&nbsp;</p>
+  ![Typefaces](./readme-assets/stylings/typefaces.png)<p>&nbsp;</p>
 
 ### Colours
 I based my color scheme on a pallet devised around beach landscapes using the crams of the sand to help create a calm, natural feeling.
@@ -197,13 +204,13 @@ The live link can be found here - **https://dkitley1975.github.io/yoga-centric/*
 
 ## Credits 
 
-### Content 
-
 - The Newsletter sign up section uses Email.js to implement the sending of the emails - Instead of having the javascript run totally within the html, I created a new .js file and placed the code in there. referencing this external file. I added additional code to this to add a 'display = "none"' to the original Newsletter Sign-up form and display = "block" to the Thank you form.
-- I wanted to incorporate on the mobile Navigation menu the ability to have it automatically close after selecting a link. I found demonstration which did what I wanted here: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci. Adapting and incorporating this into my navigation worked.
+- I wanted to incorporate on the mobile Navigation menu the ability to have it automatically close after selecting a link. I found a tutorial which suited this purpose here: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci. This tutorial was followed and the code was adapted for my own purposes and styled to match my site.
 - The instructions for the Yoga poses was taken from:
 https://www.healthline.com/health/fitness-exercises/definitive-guide-to-yoga#-the-basics-and-foundation
-Rather than attempt to rewrite these instructions It was better to use the verbatim, as trying to rewrite them would still cause an issue with plagiarism checkers and most likely would cause some one a injury from following unsafe instructions.
+Rather than attempt to rewrite these instructions It was better to use the verbatim, as trying to rewrite them would most likely would cause some one a injury from following unsafe instructions.
+- Favicons were created here: https://favicon.io/favicon-generator/
+Rather than creating my own this was a simple and quick way to create the simple icons and webmanifest code.
 <p>&nbsp;</p>
 
 ### Media
