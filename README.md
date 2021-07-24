@@ -20,7 +20,7 @@ Thank you for visiting my project!
 
   ![Favicon](./readme-assets/screen-shots/android-chrome-192x192.png)
 
-  Favicons are added to include the favicon within the address bar, as the bookmark icon and the desktop bookmark icon on apple devices.<p>&nbsp;</p>
+  Favicons have been added to include the favicon within the address bar, as the bookmark icon and the bookmark icon on apple devices.<p>&nbsp;</p>
 
 - __Navigation Bar: Desktop__
 ![Nav Bar Desktop](./readme-assets/screen-shots/yoga-centric_desktop_menu.png)
@@ -223,8 +223,22 @@ Rather than creating my own this was a simple and quick way to create the simple
   - The Wake Up & Flow Yoga | YogaFit Retreats - Lindsay Jay video is from:  https://youtu.be/bTs73IH7Ycw
   - Happiness & Gratitude Meditation - Lindsay Jay video is from: https://youtu.be/nSISnimEq30
   - Lindsay Jay Yoga video is from: https://youtu.be/KarBeaitMNs
+<p>&nbsp;</p>
 
 ### Wire Frames
 My wire frames can be found here:
 - [Desktop/Tablet wireframe](./readme-assets/wireframes/tablet-wireframe.png)
 - [Mobile wireframe](./readme-assets/wireframes/mobile-wireframe.png) 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+### What I've learnt from mistakes made during  this first project
+- Commit messages
+  - I've learnt I need to make clearer and uniformed messages.  My messages have been without any naming convention framework. This I have taken action towards correcting in the future.
+  - Not making enough commits. I found I became carried away during coding and forgot to commit often enough, thus my commits contained too many changes to code between commits.
+- Mobile first 
+  - I should of coded mobile first, changing the code to mobile first reduced the amount of code and reduced the amount of media queries. Although this could also be because I had become more familiar with code during this time. 
+- Learn to let it go  
+  - I have spent far too long tweaking, with no real substantial gain to the site.
