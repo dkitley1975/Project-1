@@ -81,6 +81,10 @@ h6 {
 	font-size: var(--fs-3);
 }
 
+.center-text{
+	text-align: center;
+}
+
 .author {
 	font-family: var(--ff-main);
 	font-weight: var(--fw-l);
