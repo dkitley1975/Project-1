@@ -1,10 +1,10 @@
 # Yoga Centric!
 
 Welcome, this is an information site about yoga (whodathoughtit).
-The goal of the site is to inform the user a little about yoga and to encourage the user to yoga.
+The goal of the site is to inform the user a little bit about yoga and to encourage the user to try yoga.
 There is a brief description of the health benefits of practising yoga.
-With a shallow dive into the main era of yoga's history.
-The user is encouraged to try some foundation poses with a step by step guide on each of the poses along with an animated gif to help the user visualize the described steps.
+With a shallow dive into the main era's of yoga's history.
+The foundation poses section is to encourage the user to try some foundation poses with a step by step guide on each of the poses along with an animated gif to help the user visualize the described steps.
 The user can watch a small selection of videos with yoga exercise routines and meditation routines.
 If the user finds the site useful and informative there is the option to sign up for the monthly newsletter.
 
@@ -158,23 +158,21 @@ After testing my colour scheme on the live site I amended the text in the quotat
     - Links - these were checked to ensure they open open in the correct platforms, on mobile testing they opened up the appropriate application. On desktop they opened the correct website.
     - Social Font Awesome Icons - Whilst checking the site across multiple platforms, I noticed a GET fa-brands-400.woff2 error had accured. When cross checking on different browsers the icons also disappeared. I rolled back the site a couple of iterations to check my code and the error continued, after readding the icons to the site the issue remained. The issue was also appearing on other random websites, after this I decide to self host the icons and the error has since stopped.<p>&nbsp;</p>
 
-#### Chrome Lighthouse Report
-I tested the live site https://dkitley1975.github.io/yoga-centric/ with the lighthouse extension, this showed a few performance improvements were required, I reduced the size of the images to achieve this.
+- #### Chrome Lighthouse Report
+  I tested the live site https://dkitley1975.github.io/yoga-centric/ with the lighthouse extension, this showed a few performance improvements were required, I reduced the size of the images to achieve this.
 
-![Lighthouse Report](./readme-assets/screen-shots/lighthouse-report.png)
-[See Report](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F%23hero-container&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#pwa)
+  ![Lighthouse Report](./readme-assets/screen-shots/lighthouse-report.png)
+  [See Report](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F%23hero-container&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#pwa)
 <p>&nbsp;</p>
 
-#### Silk Tide
-I used this to give a test of a simulated screen reader on the site. I made some alterations to the ARIA attributes and tested the site again until it read the required sections in a explanatory way.
+- #### Silk Tide
+  I used this to give a test of a simulated screen reader on the site. I made some alterations to the ARIA attributes and tested the site again until it read the required sections in a explanatory way.
 <p>&nbsp;</p>
 
 ### Validator Testing 
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- HTML - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F)
+- CSS -  No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 <p>&nbsp;</p>
 
 ### Unfixed Bugs
@@ -188,18 +186,18 @@ This project was deployed via GitHub by executing the following steps.
 After writing the code, committing and pushing it to GitHub:
 
 1. Navigate to the repository on github and click **Settings**.
-1. From there, go to the **Source section** within the Github Pages section.
-1. Select **master branch** on the dropdown menu, and click save.
-2. Now the website is live on **https://dkitley1975.github.io/yoga-centric/** 
-3. Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
+2. From there, go to the **Source section** within the Github Pages section.
+3. Select **master branch** on the dropdown menu, and click save.
+4. Now the website is live on **https://dkitley1975.github.io/yoga-centric/** 
+5. Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
 
 To run the project locally:
 
 1. Click the **green Clone or Download button** on the Github Repository
-1. Using the **Clone with HTTPS option**, copy the link displayed.
-1. Open your IDE, and ensure the Git Terminal is open.
-1. Change the working directory to the location where the cloned directory is to go.
-1. Use the **"git clone" command** and paste the url copied in the second step.
+2. Using the **Clone with HTTPS option**, copy the link displayed.
+3. Open your IDE, and ensure the Git Terminal is open.
+4. Change the working directory to the location where the cloned directory is to go.
+5. Use the **"git clone" command** and paste the url copied in the second step.
 
 The live link can be found here - **https://dkitley1975.github.io/yoga-centric/** 
 <p>&nbsp;</p>
@@ -236,9 +234,14 @@ My wire frames can be found here:
 
 ### What I've learnt from mistakes made during  this first project
 - Commit messages
-  - I've learnt I need to make clearer and uniformed messages.  My messages have been without any naming convention framework. This I have taken action towards correcting in the future.
+  - I've learnt I need to make clearer and uniformed messages.  My messages have been without any naming convention framework. I have taken action to correct this in my future projects.
   - Not making enough commits. I found I became carried away during coding and forgot to commit often enough, thus my commits contained too many changes to code between commits.
 - Mobile first 
-  - I should of coded mobile first, changing the code to mobile first reduced the amount of code and reduced the amount of media queries. Although this could also be because I had become more familiar with code during this time. 
+  - On this project I should of coded mobile first, changing the code to mobile first after the fact reduced the amount of code and reduced the amount of media queries. Although this could also be because I had become more familiar with my project and code during this time. 
 - Learn to let it go  
   - I have spent far too long tweaking, with no real substantial gain to the site.
+
+<p>&nbsp;</p>
+Well thanks for reading all the way to the bottom, and for visiting this  
+
+[my first project](https://dkitley1975.github.io/yoga-centric/)
