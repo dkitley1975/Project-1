@@ -33,15 +33,15 @@
 	--fs-6: 1.072rem;
 	--fs-default: 1.6rem;
 	/* Default colours */
-	--clr-primary-100: rgba(254, 232, 223, 1);
+	--clr-primary-100: rgb(254, 232, 223);
 	--clr-primary-130: rgba(254, 232, 223, 0.3);
 	--clr-primary-150: rgba(254, 232, 223, 0.5);
 	--clr-primary-170: rgba(254, 232, 223, 0.7);
-	--clr-primary-200: rgba(222, 183, 152, 1);
+	--clr-primary-200: rgb(222, 183, 152);
 	--clr-primary-250: rgba(222, 183, 152, 0.6);
-	--clr-primary-300: rgba(153, 95, 58, 1);
-	--clr-primary-400: rgb(100, 64, 41, 1);
-	--clr-primary-600: rgba(26, 16, 11, 1);
+	--clr-primary-300: rgb(130, 84, 54);
+	--clr-primary-400: rgb(100, 64, 41);
+	--clr-primary-600: rgb(26, 16, 11);
 	--clr-box-shadow: rgb(136, 148, 141);
 }
 
@@ -69,6 +69,22 @@ h6 {
 	font-weight: var(--fw-b);
 	color: var(--clr-primary-300);
 	margin-bottom: .5rem;
+}
+
+li {
+	list-style-position: inside;
+	margin: .5rem 0 .5rem 1rem;
+	text-indent: -2rem;
+	padding-left: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.active {
+	font-weight: var(--fw-b);
+	text-decoration: underline;
 }
 
 .quotation {
@@ -143,22 +159,6 @@ h6 {
 	margin-bottom: 1rem;
 }
 
-li {
-	list-style-position: inside;
-	margin: .5rem 0 .5rem 1rem;
-	text-indent: -2rem;
-	padding-left: 1rem;
-}
-
-a {
-	text-decoration: none;
-}
-
-.active {
-	font-weight: var(--fw-b);
-	text-decoration: underline;
-}
-
 ::placeholder {
 	color: var(--clr-primary-200);
 }
@@ -222,51 +222,7 @@ a {
 }
 
 
-/* Nav Bar media query for mobile alternative */
-
-@media only screen and (max-width: 768px) {
-	.navbar {
-		padding: 1rem 1.5rem;
-	}
-	.nav-menu {
-		position: fixed;
-		left: -100%;
-		top: 5rem;
-		flex-direction: column;
-		background-color: var(--clr-primary-100);
-		width: 100%;
-		text-align: center;
-		transition: 0.3s;
-	}
-	.nav-menu.active {
-		left: 0;
-	}
-	.active {
-		text-decoration: none !important;
-	}
-	.nav-item {
-		margin: 2.5rem 0;
-	}
-	.hamburger {
-		display: block;
-		cursor: pointer;
-	}
-	.hamburger.active .bar:nth-child(2) {
-		opacity: 0;
-	}
-	.hamburger.active .bar:nth-child(1) {
-		-webkit-transform: translateY(8px) rotate(45deg);
-		transform: translateY(8px) rotate(45deg);
-	}
-	.hamburger.active .bar:nth-child(3) {
-		-webkit-transform: translateY(-8px) rotate(-45deg);
-		transform: translateY(-8px) rotate(-45deg);
-	}
-}
-
-
 /* Hero */
-
 .hero-container {
 	width: 100vw;
 	margin: 0;
@@ -366,52 +322,7 @@ a {
 }
 
 
-/* Benefits media queries */
-
-@media screen and (min-width: 768px) {
-	#benefits-container {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 5vw;
-		padding: 8vh 4vw 8vh 2vw;
-		align-items: center;
-		grid-template-areas: "benefits-text-area benefits-image-container benefits-image-container";
-	}
-	.benefits-text-area {
-		grid-area: benefits-text-area;
-		padding-left: 1vw;
-		padding-right: 2vw;
-	}
-	.benefits-image-container {
-		grid-area: benefits-image-container;
-		max-width: 50vw;
-		margin: auto;
-		position: unset;
-		transform: unset;
-	}
-	.benefits-image img {
-		margin: auto;
-		height: auto;
-		max-width: 40vw;
-		overflow: hidden;
-		border-radius: 1rem;
-		box-shadow: 0 0 1rem var(--clr-box-shadow);
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	#benefits-container {
-		padding: 8vh 3vw;
-	}
-	.benefits-text-area {
-		margin-left: 5vw;
-		padding-left: 5vw;
-	}
-}
-
-
 /* History */
-
 #history-container {
 	width: 100vw;
 	height: fit-content;
@@ -455,55 +366,7 @@ a {
 }
 
 
-/* History media queries */
-
-@media screen and (min-width: 768px) {
-	#history-container {
-		display: grid;
-		row-gap: 2.5vw;
-		column-gap: 5vw;
-		padding: 5vh 2.5vw;
-		grid-template-columns: repeat(3, 1fr);
-		grid-auto-rows: minmax(100px, auto);
-		grid-template-areas: "a-brief-history a-brief-history a-brief-history " "history-classical history-classical history-post-classical" "history-modern-yoga history-modern-yoga history-image";
-	}
-	.a-brief-history {
-		grid-area: a-brief-history;
-		padding: 2vw 10vw;
-	}
-	.history-classical {
-		grid-area: history-classical;
-		background-color: unset;
-		padding: 2vw;
-		border-radius: 30px;
-	}
-	.history-post-classical {
-		grid-area: history-post-classical;
-		padding: 2vw;
-		background-color: var(--clr-primary-130);
-		border-radius: 30px;
-	}
-	.history-modern-yoga {
-		grid-area: history-modern-yoga;
-		padding: 2vw;
-		background-color: var(--clr-primary-130);
-		border-radius: 30px;
-	}
-	.history-image {
-		grid-area: history-image;
-		margin: auto;
-	}
-	.history-image img {
-		max-width: 30vh;
-		overflow: hidden;
-		border-radius: 1rem;
-		box-shadow: 0 0 1rem var(--clr-box-shadow);
-	}
-}
-
-
 /* Quotation Blocks  */
-
 .quotation-image-1 {
 	height: 65vh;
 	width: 100vw;
@@ -527,7 +390,6 @@ a {
 
 
 /* Poses */
-
 #poses-container {
 	width: 100vw;
 	margin-left: auto;
@@ -564,74 +426,7 @@ a {
 }
 
 
-/* Poses media queries */
-
-@media screen and (min-width: 768px) {
-	#poses-container {
-		padding: 8vh 5vw;
-		display: grid;
-		column-gap: 1vw;
-		row-gap: 1vw;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "information information" "warrior-i warrior-ii" "cobra dog" "bridge tree" "supinetwist cat-cow" "forward-fold .";
-	}
-	.poses-video-container {
-		max-width: 40vw;
-	}
-	.pose-video {
-		width: 35vw;
-	}
-	.pose-information {
-		grid-area: information;
-	}
-	.pose-warrior-i {
-		grid-area: warrior-i;
-	}
-	.pose-warrior-ii {
-		grid-area: warrior-ii;
-	}
-	.pose-cobra {
-		grid-area: cobra;
-	}
-	.pose-down-dog {
-		grid-area: dog;
-	}
-	.pose-bridge {
-		grid-area: bridge;
-	}
-	.pose-tree {
-		grid-area: tree;
-	}
-	.pose-supinetwist {
-		grid-area: supinetwist;
-	}
-	.pose-cat-cow {
-		grid-area: cat-cow;
-	}
-	.pose-forward-fold {
-		grid-area: forward-fold;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	#poses-container {
-		display: grid;
-		column-gap: .5vw;
-		row-gap: .5vw;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-areas: "information information information" "warrior-i warrior-ii cobra" "dog bridge tree" "supinetwist cat-cow forward-fold";
-	}
-	.poses-video-container {
-		max-width: 28vw;
-	}
-	.pose-video {
-		width: 25vw;
-	}
-}
-
-
 /* Exercise Videos */
-
 #videos-container {
 	width: 98vw;
 	height: fit-content;
@@ -657,44 +452,7 @@ a {
 }
 
 
-/* Exercise Videos media queries */
-
-@media screen and (min-width: 800px) {
-	#videos-container {
-		display: grid;
-		column-gap: 5rem;
-		padding: 8vh 2rem;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "heading heading" "video-1 video-2" "video-3 .";
-	}
-	.exercise-video>video {
-		position: relative;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 40vw;
-	}
-	.exercise-video-header {
-		grid-area: heading;
-		padding: 0%;
-		margin-bottom: 5rem;
-	}
-	.video-1 {
-		grid-area: video-1;
-	}
-	.video-2 {
-		grid-area: video-2;
-	}
-	.video-3 {
-		grid-area: video-3;
-	}
-	.exercise-video {
-		margin: 1rem .5rem 6rem;
-	}
-}
-
-
 /* Newsletter-sign up */
-
 #newsletter-signup-container {
 	background: url('../images/beautiful-blonde-woman-doing-yoga-outdoors_10887584.jpg') no-repeat bottom left;
 	background-size: cover;
@@ -790,17 +548,7 @@ a {
 }
 
 
-/* Newsletter sign up media queries */
-
-@media screen and (min-width: 680px) {
-	.newsletter-signup-form {
-		width: 500px;
-	}
-}
-
-
 /* Start Footer section */
-
 .footer {
 	display: flex;
 	flex-direction: row;
@@ -819,4 +567,237 @@ i.fab {
 i.fab:hover {
 	font-size: 4rem;
 	color: var(--clr-primary-170);
+}
+
+
+/* Media Queries
+
+/* Nav Bar media query for mobile alternative */
+@media only screen and (max-width: 768px) {
+	.navbar {
+		padding: 1rem 1.5rem;
+	}
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 5rem;
+		flex-direction: column;
+		background-color: var(--clr-primary-100);
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+	.nav-menu.active {
+		left: 0;
+	}
+	.active {
+		text-decoration: none !important;
+	}
+	.nav-item {
+		margin: 2.5rem 0;
+	}
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1) {
+		-webkit-transform: translateY(8px) rotate(45deg);
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3) {
+		-webkit-transform: translateY(-8px) rotate(-45deg);
+		transform: translateY(-8px) rotate(-45deg);
+	}
+}
+
+
+/* Benefits media queries */
+@media screen and (min-width: 768px) {
+	#benefits-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 5vw;
+		padding: 8vh 4vw 8vh 2vw;
+		align-items: center;
+		grid-template-areas: "benefits-text-area benefits-image-container benefits-image-container";
+	}
+	.benefits-text-area {
+		grid-area: benefits-text-area;
+		padding-left: 1vw;
+		padding-right: 2vw;
+	}
+	.benefits-image-container {
+		grid-area: benefits-image-container;
+		max-width: 50vw;
+		margin: auto;
+		position: unset;
+		transform: unset;
+	}
+	.benefits-image img {
+		margin: auto;
+		height: auto;
+		max-width: 40vw;
+		overflow: hidden;
+		border-radius: 1rem;
+		box-shadow: 0 0 1rem var(--clr-box-shadow);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#benefits-container {
+		padding: 8vh 3vw;
+	}
+	.benefits-text-area {
+		margin-left: 5vw;
+		padding-left: 5vw;
+	}
+}
+
+
+/* History media queries */
+@media screen and (min-width: 768px) {
+	#history-container {
+		display: grid;
+		row-gap: 2.5vw;
+		column-gap: 5vw;
+		padding: 5vh 2.5vw;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		grid-template-areas: "a-brief-history a-brief-history a-brief-history " "history-classical history-classical history-post-classical" "history-modern-yoga history-modern-yoga history-image";
+	}
+	.a-brief-history {
+		grid-area: a-brief-history;
+		padding: 2vw 20vw;
+	}
+	.history-classical {
+		grid-area: history-classical;
+		background-color: unset;
+		padding: 2vw;
+		border-radius: 30px;
+	}
+	.history-post-classical {
+		grid-area: history-post-classical;
+		padding: 2vw;
+		background-color: var(--clr-primary-130);
+		border-radius: 30px;
+	}
+	.history-modern-yoga {
+		grid-area: history-modern-yoga;
+		padding: 2vw;
+		background-color: var(--clr-primary-130);
+		border-radius: 30px;
+	}
+	.history-image {
+		grid-area: history-image;
+		margin: auto;
+	}
+	.history-image img {
+		max-width: 30vh;
+		overflow: hidden;
+		border-radius: 1rem;
+		box-shadow: 0 0 1rem var(--clr-box-shadow);
+	}
+}
+
+
+/* Poses media queries */
+@media screen and (min-width: 768px) {
+	#poses-container {
+		padding: 8vh 5vw;
+		display: grid;
+		column-gap: 1vw;
+		row-gap: 1vw;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "information information" "warrior-i warrior-ii" "cobra dog" "bridge tree" "supinetwist cat-cow" "forward-fold .";
+	}
+	.poses-video-container {
+		max-width: 40vw;
+	}
+	.pose-video {
+		width: 35vw;
+	}
+	.pose-information {
+		grid-area: information;
+	}
+	.pose-warrior-i {
+		grid-area: warrior-i;
+	}
+	.pose-warrior-ii {
+		grid-area: warrior-ii;
+	}
+	.pose-cobra {
+		grid-area: cobra;
+	}
+	.pose-down-dog {
+		grid-area: dog;
+	}
+	.pose-bridge {
+		grid-area: bridge;
+	}
+	.pose-tree {
+		grid-area: tree;
+	}
+	.pose-supinetwist {
+		grid-area: supinetwist;
+	}
+	.pose-cat-cow {
+		grid-area: cat-cow;
+	}
+	.pose-forward-fold {
+		grid-area: forward-fold;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#poses-container {
+		display: grid;
+		column-gap: .5vw;
+		row-gap: .5vw;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "information information information" "warrior-i warrior-ii cobra" "dog bridge tree" "supinetwist cat-cow forward-fold";
+	}
+	.poses-video-container {
+		max-width: 28vw;
+	}
+	.pose-video {
+		width: 25vw;
+	}
+}
+
+
+/* Exercise Videos media queries */
+@media screen and (min-width: 800px) {
+	#videos-container {
+		display: grid;
+		column-gap: 5rem;
+		padding: 8vh 2rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "heading heading" "video-start video-middle" "video-last .";
+	}
+	.exercise-video>video {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40vw;
+	}
+	.exercise-video-header {
+		grid-area: heading;
+		padding: 0%;
+		margin-bottom: 5rem;
+	}
+	.video-start {
+		grid-area: video-start;
+	}
+	.video-middle {
+		grid-area: video-middle;
+	}
+	.video-last {
+		grid-area: video-last;
+	}
+	.exercise-video {
+		margin: 1rem .5rem 6rem;
+	}
 }

@@ -1,3 +1,20 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+	hamburger.classList.toggle("active");
+	navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+	hamburger.classList.remove("active");
+	navMenu.classList.remove("active");
+}
+
 window.onload = function () {
 	document.getElementById('newsletter-signup-form').addEventListener('submit', function (event) {
 		event.preventDefault();
@@ -17,3 +34,7 @@ window.onload = function () {
 	});
 
 }
+
+(function() {
+               emailjs.init('user_5DbhIUbFrA2loA1fd9IcN');
+         })();
