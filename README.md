@@ -197,9 +197,8 @@ To run the project locally:
 2. Using the **Clone with HTTPS option**, copy the link displayed.
 3. Open your IDE, and ensure the Git Terminal is open.
 4. Change the working directory to the location where the cloned directory is to go.
-5. Use the **"git clone" command** and paste the url copied in the second step.
+5. Use the **"git clone" command** and paste the url  **https://github.com/dkitley1975/yoga-centric.git/** copied in the second step.
 
-The live link can be found here - **https://dkitley1975.github.io/yoga-centric/** 
 <p>&nbsp;</p>
 
 ## Credits 
