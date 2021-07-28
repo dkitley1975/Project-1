@@ -132,32 +132,32 @@ My wire frames can be found here:
 
 ## Testing
 
-- Navigation Bar
+- **Navigation Bar**
   - To test the navigation bar, I have click all the links to ensure they all link to the relevant sections and they all works as expected.
   - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make sure it works on all browsers and devices.
   - I adjusted the padding on each section to ensure the h1 text at the top of each section was not covered by the navigation bar when the nav links were followed.
   - I checked the nav bar menu changed to the hamburger menu on small devices.
 
-- Foundation Poses
+- **Foundation Poses**
   - To test the foundation poses, I have played all the videos to ensure play and loop as expected.
   - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make ensure they play on all browsers and devices.
   - These were initially gifs which I replaced  with the mp4 versions. I added the video controls and stopped the videos from auto playing as this looked too busy when scrolling through.
   - I have opened the site at various sizes to ensure the grid adjusts at the required break points.  
 
-- Exercise Videos
+- **Exercise Videos**
   - To test the exercise videos, I have played all the videos to ensure play and loop as expected.
-    - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make ensure they play on all browsers and devices.
-    - These were initially added as embedded YouTube iframes. These however gave cookie errors displayed within the developer tools. I choose to replace the iframe with a link to the downloaded video to circumnavigate the cookie issue.
+  - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make ensure they play on all browsers and devices.
+  - These were initially added as embedded YouTube iframes. These however gave cookie errors displayed within the developer tools. I choose to replace the iframe with a link to the downloaded video to circumnavigate the cookie issue.
   
-- Newsletter Sign up
+- **Newsletter Sign up**
   - To test the newsletter sign up, I have signed up for the yoga newsletter multiple times ensuring that it works as expected and after sign up displays the thank you for signing up message.
-    - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make ensure the sign up form displays as expected.
+  - I have also opened the website in various browsers (safari, google chrome, mozilla firefox, Edge) to make ensure the sign up form displays as expected.
 
-- Footer Social Icons
+- **Footer Social Icons**
   - Links - these were checked to ensure they open open in the correct platforms, on mobile testing they opened up the appropriate application. On desktop they opened the correct website.
   - Social Font Awesome Icons - Whilst checking the site across multiple platforms, I noticed a GET fa-brands-400.woff2 error had accured. When cross checking on different browsers the icons also disappeared. I rolled back the site a couple of iterations to check my code and the error continued, after readding the icons to the site the issue remained. The issue was also appearing on other random websites, after this I decide to self host the icons and the error has since stopped.
 
-- ### Chrome Lighthouse Report
+### Chrome Lighthouse Report
 
   I tested the [live site](https://dkitley1975.github.io/yoga-centric)
   with the lighthouse extension, this showed a few performance improvements were required, I reduced the size of the images to achieve this.
@@ -165,7 +165,7 @@ My wire frames can be found here:
   ![Lighthouse Report](./docs/screenshots/lighthouse-report.png)
   [See Report](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fdkitley1975.github.io%2Fyoga-centric%2F%23hero-container&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#pwa)
 
-- ### Silk Tide
+### Silk Tide
 
   I used this to give a test of a simulated screen reader on the site. I made some alterations to the ARIA attributes and tested the site again until it read the required sections in a explanatory way.
 
@@ -201,7 +201,7 @@ To run the project locally:
 
 - The Newsletter sign up section uses Email.js to implement the sending of the emails - Instead of having the javascript run totally within the html, I created a new .js file and placed the code in there. referencing this external file. I added additional code to this to add a 'display = "none"' to the original Newsletter Sign-up form and display = "block" to the Thank you form.
 - I wanted to incorporate on the mobile Navigation menu the ability to have it automatically close after selecting a link. I found a [tutorial](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci) which suited this purpose. This tutorial was followed and the code was adapted for my own purposes and styled to match my site.
-- The instructions for the Yoga poses was taken [from](https://www.healthline.com/health/fitness-exercises/definitive-guide-to-yoga#-the-basics-and-foundation).
+- The instructions for the Yoga poses was taken from [healthline.com](https://www.healthline.com/health/fitness-exercises/definitive-guide-to-yoga#-the-basics-and-foundation).
 
 Rather than attempt to rewrite these instructions It was better to use the verbatim, as trying to rewrite them would most likely would cause some one a injury from following unsafe instructions.
 
@@ -229,6 +229,4 @@ Rather than creating my own this was a simple and quick way to create the simple
 - Learn to let it go  
   - I have spent far too long tweaking, with no real substantial gain to the site.
 
-Well thanks for reading all the way to the bottom, and for visiting this  
-
-[my first project](https://dkitley1975.github.io/yoga-centric/)
+Well thanks for reading all the way to the bottom, and for visiting this [my first project](https://dkitley1975.github.io/yoga-centric/)
